@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;gEAEgE;AAEhE,AAAA,gBAAgB,CAAC,CAAC,CAAC;EAClB,SAAS,EAAE,UAAU;CACrB;;AAED,AAAA,aAAa,CAAC;EACb,OAAO,EAAE,KAAK;CACd",
+    "sources": [
+        "../sass/comments-sm.scss",
+        "../sass/_variables.scss"
+    ],
+    "names": [],
+    "file": "comments-sm.css"
+}

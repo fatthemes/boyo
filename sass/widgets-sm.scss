@@ -1,0 +1,77 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "variables";
+.widget {
+	margin: 0 0 1.5em;
+	/* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/* Widgets */
+
+.top-widget-area {
+    background-color: #edeef4;
+    padding: 20px;
+}
+
+.bottom-widget-area,
+.footer-widget-area,
+.site-footer {
+    background-color: #1f1f1f;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px 40px 0;
+}
+
+.bottom-widget-area {
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.site-footer {
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+}
+
+.bottom-widget-area .widget,
+.footer-widget-area .widget {
+    color: #b7b7b7;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.bottom-widget-area .widget-title,
+.footer-widget-area .widget-title {
+    color: #dedede;
+}
+
+.bottom-widget-area p,
+.footer-widget-area p,
+.site-info,
+.site-info a {
+    color: #b7b7b7;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+}
+
+.widget_nav_menu {
+    margin: 0;
+}
+
+.widget_nav_menu .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget_nav_menu .menu-item a {
+    color: #c5c5c5;
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-decoration: none;
+}
+
