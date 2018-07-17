@@ -226,7 +226,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * CSS loader.
  */
-require get_template_directory() . '/inc/css-loader.php';
+require get_template_directory() . '/inc/class-boyo-css-loader.php';
 
 /**
  * Load Jetpack compatibility file.

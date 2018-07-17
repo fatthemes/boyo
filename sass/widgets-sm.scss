@@ -11,28 +11,81 @@
 	max-width: 100%;
 }
 
-/* Widgets */
+.widget_nav_menu {
+    margin: 0;
+}
+
+.widget_nav_menu .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget_nav_menu .menu-item a {
+    color: $color_4;
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-decoration: none;
+}
+
+.bc-about-us-title {
+    font-family: $font_family_headers;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.bc-about-us-subtitle {
+    font-size: 15px;
+}
+
+.bc-recent-posts-widget-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bc-recent-posts-widget-list-item-title {
+    font-size: 1.125rem;
+    line-height: 1.25;
+    letter-spacing: -0.06em;
+    margin-bottom: 0;
+}
+
+.bc-recent-posts-widget-list-item-title a {
+    color: $color_font_secondary;
+    text-decoration: none;
+    color: $color_footer_title;
+}
+
+/* Top Widgets */
 
 .top-widget-area {
     background-color: #edeef4;
     padding: 20px;
 }
 
+/* Bottom Widgets */
+
 .bottom-widget-area,
 .footer-widget-area,
 .site-footer {
-    background-color: #1f1f1f;
+    background-color: $color_background_footer;
     margin-left: -20px;
     margin-right: -20px;
-    padding: 20px 40px 0;
+    
 }
 
 .bottom-widget-area {
     border-bottom: 1px solid #4c4c4c;
+    padding: 0 40px;
+}
+
+.footer-widget-area {
+    padding: 20px 40px 0;
 }
 
 .site-footer {
-    padding-bottom: 20px;
+    padding: 20px 40px 20px;
     margin-bottom: -20px;
 }
 
@@ -53,25 +106,9 @@
 .footer-widget-area p,
 .site-info,
 .site-info a {
-    color: #b7b7b7;
+    color: $color_footer_text;
     font-size: 14px;
     letter-spacing: 0.04em;
 }
 
-.widget_nav_menu {
-    margin: 0;
-}
-
-.widget_nav_menu .menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.widget_nav_menu .menu-item a {
-    color: #c5c5c5;
-    font-size: 12px;
-    letter-spacing: 0.32em;
-    text-decoration: none;
-}
 

@@ -146,3 +146,13 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 		endif; // End is_singular().
 	}
 endif;
+
+function boyo_excerpt_more() {
+    return '';
+}
+add_filter( 'excerpt_more', 'boyo_excerpt_more', 100 );
+
+function boyo_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'boyo_excerpt_length', 100 );
