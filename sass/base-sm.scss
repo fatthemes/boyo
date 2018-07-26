@@ -454,7 +454,7 @@ html {
 }
 
 body {
-	background: $color_background;
+	background: $color_2;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -907,4 +907,8 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site {
 	padding: 20px;
+}
+
+.underlined {
+    border-bottom: 4px solid $color_15;
 }

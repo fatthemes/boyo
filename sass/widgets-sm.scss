@@ -15,27 +15,51 @@
     margin: 0;
 }
 
-.widget_nav_menu .menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+.widget_nav_menu {
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+} 
 
-.widget_nav_menu .menu-item a {
-    color: $color_4;
-    font-size: 12px;
-    letter-spacing: 0.32em;
-    text-decoration: none;
+.widget_nav_menu {
+    .menu-item {
+        a {
+            color: $color_4;
+            font-size: 12px;
+            letter-spacing: 0.32em;
+            text-decoration: none;
+        }
+    } 
+} 
+
+.bc-about-us-title,
+.bc-about-us-subtitle {
+    color: $color_14;
+    font-family: $font_family_headers;
+    letter-spacing: -0.04em;
 }
 
 .bc-about-us-title {
-    font-family: $font_family_headers;
     font-size: 48px;
     line-height: 55px;
+    margin-bottom: 0;
 }
 
 .bc-about-us-subtitle {
+    font-size: 25px;
+}
+
+.bc-about-us-description {
+    color: $color_14;
     font-size: 15px;
+    letter-spacing: 0.045em;
+    line-height: 27px;
+}
+
+.bc-about-us-image-wrapper {
+    margin: 0 -20px;
 }
 
 .bc-recent-posts-widget-list {
@@ -51,11 +75,13 @@
     margin-bottom: 0;
 }
 
-.bc-recent-posts-widget-list-item-title a {
-    color: $color_font_secondary;
-    text-decoration: none;
-    color: $color_footer_title;
-}
+.bc-recent-posts-widget-list-item-title {
+    a {
+        color: $color_2;
+        text-decoration: none;
+        color: $color_12;
+    }
+} 
 
 /* Top Widgets */
 
@@ -69,7 +95,7 @@
 .bottom-widget-area,
 .footer-widget-area,
 .site-footer {
-    background-color: $color_background_footer;
+    background-color: $color_11;
     margin-left: -20px;
     margin-right: -20px;
     
@@ -89,26 +115,28 @@
     margin-bottom: -20px;
 }
 
-.bottom-widget-area .widget,
-.footer-widget-area .widget {
-    color: #b7b7b7;
-    margin: 0;
-    padding-bottom: 20px;
-    padding-top: 20px;
+.bottom-widget-area,
+.footer-widget-area {
+    .widget {
+        color: #b7b7b7;
+        margin: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
 }
 
-.bottom-widget-area .widget-title,
-.footer-widget-area .widget-title {
-    color: #dedede;
+.bottom-widget-area,
+.footer-widget-area {
+    .widget-title {
+        color: #dedede;
+    }
 }
 
 .bottom-widget-area p,
 .footer-widget-area p,
 .site-info,
 .site-info a {
-    color: $color_footer_text;
+    color: $color_4;
     font-size: 14px;
     letter-spacing: 0.04em;
 }
-
-

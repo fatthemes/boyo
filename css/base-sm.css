@@ -444,7 +444,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #ffffff;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -901,5 +901,9 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site {
   padding: 20px;
+}
+
+.underlined {
+  border-bottom: 4px solid #ffd73e;
 }
 /*# sourceMappingURL=base-sm.css.map */

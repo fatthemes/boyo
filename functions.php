@@ -79,7 +79,11 @@ if ( ! function_exists( 'boyo_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
-	}
+
+		// Add custom image sizes.
+		add_image_size( 'boyo-sm', 440 ); // 440 pixels wide (and unlimited height);
+
+		}
 endif;
 add_action( 'after_setup_theme', 'boyo_setup' );
 
