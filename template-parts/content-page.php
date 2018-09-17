@@ -12,6 +12,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php if(function_exists('boyo_companion_the_subtitle'))
+			boyo_companion_the_subtitle(); ?>
 	</header><!-- .entry-header -->
 
 	<?php boyo_post_thumbnail(); ?>
@@ -26,6 +28,8 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
+
+	<?php get_sidebar('page-below-content'); ?>
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

@@ -1,0 +1,38 @@
+.content-area {
+    padding: 0 20px;
+}
+
+.post-thumbnail {
+    margin: 0 -20px;
+}
+
+.single-post-featured-image-caption {
+    padding: 0 10px;
+    font-size: 75%;
+}
+
+.coauthors-list,
+.post-authors-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.byline .author {
+    display:flex;
+    align-items: center;
+}
+
+.byline .avatar,
+.post-authors-list-item .avatar {
+    border-radius: 50%;
+}
+
+.post-authors-list-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.post-authors-list-name {
+    padding-left: 20px;
+}

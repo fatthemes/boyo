@@ -123,7 +123,7 @@ function boyo_register_stylesheets() {
 }
 
 /**
- * Function for loading of css files related to specific template.
+ * Function for loading css files related to specific template.
  */
 function boyo_css_loader( $filename ) {
 	$css_loader = Boyo_CSS_Loader::instance();

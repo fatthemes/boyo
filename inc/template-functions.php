@@ -35,3 +35,15 @@ function boyo_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'boyo_pingback_header' );
+
+function boyo_excerpt_more()
+{
+    return '';
+}
+add_filter('excerpt_more', 'boyo_excerpt_more', 100);
+
+function boyo_excerpt_length($length)
+{
+    return 20;
+}
+add_filter('excerpt_length', 'boyo_excerpt_length', 100);

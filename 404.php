@@ -8,6 +8,7 @@
  */
 
 get_header();
+boyo_css_loader( '404' );
 ?>
 
 	<div id="primary" class="content-area">

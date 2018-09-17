@@ -675,18 +675,12 @@ a:hover, a:active {
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
+.menu-toggle {
+	display: inline-block;
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
+.main-navigation.toggled ul {
+	display: block;
 }
 
 .site-main .comment-navigation, .site-main
@@ -720,9 +714,9 @@ a:hover, a:active {
     transition-duration: .1s;
 }
 
-.menu-toggle {
+.menu-toggle,
+.search-toggle {
     border: none;
-    display: inline-block;
     padding: 20px;
     background-color: transparent;
 }
@@ -783,8 +777,8 @@ a:hover, a:active {
 
 .main-navigation.toggled .menu-toggle {
     position:fixed;
-    right:20px;
-    top:20px;
+    right:0;
+    top:0;
     z-index:20;
     transition-duration: .5s;
 }
@@ -797,6 +791,10 @@ a:hover, a:active {
 .main-navigation .custom-logo {
     max-height: 21px;
     width: auto;
+}
+
+.main-menu {
+	display: inline-block;
 }
 
 .main-navigation.toggled .main-menu {
@@ -827,6 +825,25 @@ a:hover, a:active {
 .main-menu .current-menu-item a {
     font-weight: 700;
     border-bottom: 2px solid #ffd73e;
+}
+
+@media screen and (min-width: 42.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+	.main-navigation li {
+		padding: 0;
+	}
+	.main-menu .menu-item {
+		display: inline-block;
+	}
+	.main-menu .menu-item > a {
+		padding: 27px 14px;
+		line-height: 1;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -905,9 +922,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.site {
-	padding: 20px;
-}
 
 .underlined {
     border-bottom: 4px solid $color_15;

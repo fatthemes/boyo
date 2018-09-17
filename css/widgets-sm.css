@@ -27,6 +27,56 @@
   text-decoration: none;
 }
 
+/* Top Widgets */
+.top-widget-area {
+  background-color: #edeef4;
+  padding: 20px;
+}
+
+/* Bottom Widgets */
+.bottom-widget-area,
+.footer-widget-area,
+.site-footer {
+  background-color: #1f1f1f;
+}
+
+.bottom-widget-area {
+  border-bottom: 1px solid #4c4c4c;
+  padding: 0 40px;
+}
+
+.footer-widget-area {
+  padding: 20px 40px 0;
+}
+
+.site-footer {
+  padding: 20px 40px 20px;
+  margin-bottom: -20px;
+}
+
+.bottom-widget-area .widget,
+.footer-widget-area .widget {
+  color: #b7b7b7;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.bottom-widget-area .widget-title,
+.footer-widget-area .widget-title {
+  color: #dedede;
+}
+
+.bottom-widget-area p,
+.footer-widget-area p,
+.site-info,
+.site-info a {
+  color: #b7b7b7;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+/* Boyo Companion */
 .bc-about-us-title,
 .bc-about-us-subtitle {
   color: #181818;
@@ -74,54 +124,4 @@
   color: #dedede;
 }
 
-/* Top Widgets */
-.top-widget-area {
-  background-color: #edeef4;
-  padding: 20px;
-}
-
-/* Bottom Widgets */
-.bottom-widget-area,
-.footer-widget-area,
-.site-footer {
-  background-color: #1f1f1f;
-  margin-left: -20px;
-  margin-right: -20px;
-}
-
-.bottom-widget-area {
-  border-bottom: 1px solid #4c4c4c;
-  padding: 0 40px;
-}
-
-.footer-widget-area {
-  padding: 20px 40px 0;
-}
-
-.site-footer {
-  padding: 20px 40px 20px;
-  margin-bottom: -20px;
-}
-
-.bottom-widget-area .widget,
-.footer-widget-area .widget {
-  color: #b7b7b7;
-  margin: 0;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
-.bottom-widget-area .widget-title,
-.footer-widget-area .widget-title {
-  color: #dedede;
-}
-
-.bottom-widget-area p,
-.footer-widget-area p,
-.site-info,
-.site-info a {
-  color: #b7b7b7;
-  font-size: 14px;
-  letter-spacing: 0.04em;
-}
 /*# sourceMappingURL=widgets-sm.css.map */

@@ -8,6 +8,7 @@
  */
 
 get_header();
+boyo_css_loader( 'archive' );
 ?>
 
 	<div id="primary" class="content-area">

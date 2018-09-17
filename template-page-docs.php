@@ -10,6 +10,7 @@
  */
 
 get_header();
+boyo_css_loader( 'page-docs' );
 ?>
 
 	<div id="primary" class="content-area">
@@ -21,6 +22,10 @@ get_header();
 
 			get_template_part( 'template-parts/content', 'page' );
 
+			if (function_exists('boyo_docs_the_docs_list')) {
+				boyo_docs_the_docs_list();
+			}
+
 		endwhile; // End of the loop.
 		?>
 
@@ -28,5 +33,4 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-//get_sidebar();
 get_footer();

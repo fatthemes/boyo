@@ -32,8 +32,29 @@
 	margin: 0 0 1.5em;
 }
 
-.updated:not(.published) {
+.entry-title {
+	font-size: 2.5em;
+}
+
+/* Boyo Companion */
+
+.entry-title,
+.boyo-companion-subtitle {
+  color: #181818;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.boyo-companion-subtitle {
+  font-size: 25px;
+}
+
+.published {
 	display: none;
+}
+
+.updated.published {
+	display: inherit;
 }
 
 .page-content,

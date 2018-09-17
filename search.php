@@ -8,6 +8,7 @@
  */
 
 get_header();
+boyo_css_loader( 'search' );
 ?>
 
 	<section id="primary" class="content-area">

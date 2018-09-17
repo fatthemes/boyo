@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The template for displaying all single docs
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -8,6 +8,7 @@
  */
 
 get_header();
+boyo_css_loader( 'single-doc' );
 ?>
 
 	<div id="primary" class="content-area">
@@ -36,12 +37,14 @@ while (have_posts()):
 
     the_content();
 
+    if (function_exists('boyo_docs_the_docs_list')) {
+		boyo_docs_the_docs_list();
+    }
+
     if (function_exists('boyo_docs_the_sections')) {
 		boyo_docs_the_sections();
     }
-    if (function_exists('boyo_docs_get_theme_changelog')) {
-        echo wp_kses_post(boyo_docs_get_theme_changelog());
-    }
+
 endwhile; // End of the loop.
 ?>
 
@@ -49,5 +52,4 @@ endwhile; // End of the loop.
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

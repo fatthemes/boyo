@@ -8,6 +8,7 @@
  */
 
 get_header();
+boyo_css_loader( 'single' );
 ?>
 
 	<div id="primary" class="content-area">
@@ -19,12 +20,17 @@ get_header();
 
 			get_template_part( 'template-parts/content', get_post_type() );
 
-			the_post_navigation();
+			boyo_the_authors();
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
 			endif;
+
+			the_post_navigation(array(
+				'prev_text'          => '<span class="previous-article">' . esc_html__('Previous article', 'boyo') . '</span><h3 class="previous-article-title"> %title</h3>',
+        		'next_text'          => '<span class="next-article">' . esc_html__('Next article', 'boyo') . '</span><br><h3 class="next-article-title"> %title</h3>',
+			));
 
 		endwhile; // End of the loop.
 		?>

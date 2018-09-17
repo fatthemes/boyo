@@ -29,9 +29,9 @@ function boyo_customize_register( $wp_customize ) {
 	// Section - "Advanced settings".
 	$wp_customize->add_section(
 		'advanced_settings', array(
-			'title' => esc_html__( 'Advanced', 'blover' ),
+			'title' => esc_html__( 'Advanced', 'boyo' ),
 			'priority' => 1050,
-			'description' => esc_html__( 'Advanced Settings', 'blover' ),
+			'description' => esc_html__( 'Advanced Settings', 'boyo' ),
 		)
 	);
 
@@ -44,12 +44,25 @@ function boyo_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control(
 		'load_google_fonts_from_google', array(
-			'label' => esc_html__( 'Load fonts from Google servers', 'loose' ),
+			'label' => esc_html__( 'Load fonts from Google servers', 'boyo' ),
 			'section' => 'advanced_settings',
 			'type' => 'checkbox',
 		)
 	);
 
+	$wp_customize->add_setting(
+		'donate_url', array(
+			'default' => '',
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control( 'donate_url', array(
+		'label' => __( 'Donate URL', 'boyo' ),
+		'section' => 'advanced_settings',
+		'type' => 'dropdown-pages',
+		'allow_addition' => true,
+	) );
 }
 add_action( 'customize_register', 'boyo_customize_register' );
 

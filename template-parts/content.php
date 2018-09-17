@@ -17,13 +17,15 @@
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
-
+		if(function_exists('boyo_companion_the_subtitle'))
+			boyo_companion_the_subtitle();
 		if ( 'post' === get_post_type() ) :
 			?>
 			<div class="entry-meta">
 				<?php
-				boyo_posted_on();
+				boyo_the_categories();
 				boyo_posted_by();
+				boyo_posted_on();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
