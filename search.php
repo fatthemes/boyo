@@ -8,7 +8,7 @@
  */
 
 get_header();
-boyo_css_loader( 'search' );
+boyo_css_loader( 'archives' );
 ?>
 
 	<section id="primary" class="content-area">

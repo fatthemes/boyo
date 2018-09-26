@@ -1,0 +1,219 @@
+/*!
+* @package Boyo
+*/
+.boyo-themes-links,
+.boyo-themes-testimonials-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.boyo-themes-links-item {
+  border-top: solid 1px #1f2023;
+  font-size: 18px;
+  letter-spacing: .045em;
+  line-height: 24px;
+  padding: 10px;
+}
+
+.boyo-themes-theme-details {
+  background-color: #ffd73e;
+  font-size: 12px;
+  letter-spacing: .32em;
+  margin: 0 -20px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.boyo-themes-theme-details-version,
+.boyo-themes-theme-details-last-updated,
+.boyo-themes-theme-details-changelog-url {
+  display: block;
+  line-height: 27px;
+}
+
+.boyo-themes-theme-details-changelog-url a {
+  border-bottom: solid 2px #1f2023;
+  padding-bottom: 0;
+  text-decoration: none;
+}
+
+.boyo-themes-links-item a {
+  color: #1f2023;
+  text-decoration: none;
+}
+
+.boyo-themes-sections {
+  background-color: #f8f8f8;
+}
+
+.boyo-themes-section-title,
+.boyo-themes-section-content {
+  padding: 0 20px 20px;
+}
+
+.boyo-themes-section-image {
+  margin: 0 -20px;
+}
+
+.boyo-themes-changelog {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.boyo-themes-testimonials-list-item {
+  padding-bottom: 20px;
+}
+
+.boyo-themes-testimonials-list-item:first-of-type {
+  padding-top: 20px;
+}
+
+.boyo-themes-testimonials-list-item-title,
+.boyo-themes-testimonials-list-item-desc {
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0.045em;
+}
+
+.boyo-themes-testimonials-list-item-author {
+  font-size: 15px;
+}
+
+.boyo-themes-testimonials-list-item-title,
+.boyo-themes-testimonials-list-item-author {
+  font-weight: 700;
+}
+
+.boyo-themes-changelog h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.045em;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.boyo-themes-changelog h3 span {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.07em;
+  line-height: 19px;
+  padding: 8px 12px;
+}
+
+.boyo-themes-changelog ul {
+  margin: 0;
+}
+
+.boyo-themes-changelog-added {
+  background-color: #ffd73e;
+}
+
+.boyo-themes-changelog-changed {
+  background-color: #ffffff;
+}
+
+.boyo-themes-changelog-deprecated {
+  background-color: #b7b7b7;
+}
+
+.boyo-themes-changelog-removed {
+  background-color: #ffffff;
+}
+
+.boyo-themes-changelog-security {
+  background-color: #1f2023;
+}
+
+.single-theme .hentry {
+  margin: 0;
+}
+
+.page-template-template-page-themes .entry-header,
+.page-template-template-page-themes .boyo-intro,
+.page-template-template-page-themes .boyo-themes-links-wrapper,
+.page-template-template-page-themes .boyo-themes-counter-wrapper {
+  background-color: #edeef4;
+  padding: 20px;
+}
+
+.boyo-themes-counter {
+  padding: 60px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 1;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.boyo-themes-counter-numbers,
+.boyo-themes-counter-text-1,
+.boyo-themes-counter-text-2,
+.boyo-themes-counter-text-3,
+.boyo-themes-counter-text-4 {
+  margin: 0 auto;
+  max-width: 250px;
+  text-align: center;
+}
+
+.boyo-themes-counter-numbers,
+.boyo-themes-counter-text-2,
+.boyo-themes-counter-text-3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.boyo-themes-counter-text-1,
+.boyo-themes-counter-text-4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boyo-themes-counter-digit {
+  display: inline-block;
+  padding: 15px 10px;
+  background-color: #ffffff;
+  margin: 5px;
+  box-shadow: 0 0 10px #b7b7b7;
+}
+
+.hexagon {
+  margin: auto;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.hexagon,
+.hexagon:before,
+.hexagon:after {
+  height: 440px;
+  width: 254px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hexagon:before {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.hexagon:after {
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+/*# sourceMappingURL=theme-sm.css.map */

@@ -1,7 +1,10 @@
+/*!
+* @package Boyo
+*/
+@import "variables";
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-@import "variables";
 .widget {
 	margin: 0 0 1.5em;
 	/* Make sure select elements fit in widgets. */
@@ -32,23 +35,12 @@
             text-decoration: none;
         }
     } 
-} 
-
-.bc-about-us-title,
-.bc-about-us-subtitle {
-    color: $color_14;
-    font-family: $font_family_headers;
-    letter-spacing: -0.04em;
 }
 
 .bc-about-us-title {
-    font-size: 48px;
+    //font-size: 48px;
     line-height: 55px;
     margin-bottom: 0;
-}
-
-.bc-about-us-subtitle {
-    font-size: 25px;
 }
 
 .bc-about-us-description {

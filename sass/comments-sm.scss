@@ -1,7 +1,10 @@
+/*!
+* @package Boyo
+*/
+@import "variables";
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-@import "variables";
 .comment-content a {
 	word-wrap: break-word;
 }
@@ -9,3 +12,22 @@
 .bypostauthor {
 	display: block;
 }
+
+.form-submit {
+	text-align: center;
+}
+/*
+.comment-form-cookies-consent label {
+	font-weight: normal;
+	font-size: .8em;
+	padding-left: 5px;
+}
+
+
+#author,
+#comment,
+#email,
+#url {
+		width: 100%;
+}
+*/

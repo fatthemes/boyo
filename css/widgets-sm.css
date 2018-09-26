@@ -1,3 +1,6 @@
+/*!
+* @package Boyo
+*/
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -25,6 +28,41 @@
   font-size: 12px;
   letter-spacing: 0.32em;
   text-decoration: none;
+}
+
+.bc-about-us-title {
+  line-height: 55px;
+  margin-bottom: 0;
+}
+
+.bc-about-us-description {
+  color: #181818;
+  font-size: 15px;
+  letter-spacing: 0.045em;
+  line-height: 27px;
+}
+
+.bc-about-us-image-wrapper {
+  margin: 0 -20px;
+}
+
+.bc-recent-posts-widget-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bc-recent-posts-widget-list-item-title {
+  font-size: 1.125rem;
+  line-height: 1.25;
+  letter-spacing: -0.06em;
+  margin-bottom: 0;
+}
+
+.bc-recent-posts-widget-list-item-title a {
+  color: #ffffff;
+  text-decoration: none;
+  color: #dedede;
 }
 
 /* Top Widgets */
@@ -75,53 +113,4 @@
   font-size: 14px;
   letter-spacing: 0.04em;
 }
-
-/* Boyo Companion */
-.bc-about-us-title,
-.bc-about-us-subtitle {
-  color: #181818;
-  font-family: Montserrat, sans-serif;
-  letter-spacing: -0.04em;
-}
-
-.bc-about-us-title {
-  font-size: 48px;
-  line-height: 55px;
-  margin-bottom: 0;
-}
-
-.bc-about-us-subtitle {
-  font-size: 25px;
-}
-
-.bc-about-us-description {
-  color: #181818;
-  font-size: 15px;
-  letter-spacing: 0.045em;
-  line-height: 27px;
-}
-
-.bc-about-us-image-wrapper {
-  margin: 0 -20px;
-}
-
-.bc-recent-posts-widget-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.bc-recent-posts-widget-list-item-title {
-  font-size: 1.125rem;
-  line-height: 1.25;
-  letter-spacing: -0.06em;
-  margin-bottom: 0;
-}
-
-.bc-recent-posts-widget-list-item-title a {
-  color: #ffffff;
-  text-decoration: none;
-  color: #dedede;
-}
-
 /*# sourceMappingURL=widgets-sm.css.map */

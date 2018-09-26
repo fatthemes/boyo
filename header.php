@@ -28,7 +28,7 @@
 		<nav id="site-navigation" class="main-navigation">
 			<?php the_custom_logo(); ?>
 			<?php
-			wp_nav_menu( array(
+			$aaa_menu = wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
 				'container_class'=> 'main-menu'

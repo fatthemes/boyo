@@ -10,7 +10,7 @@
  */
 
 get_header();
-boyo_css_loader( 'page-themes' );
+boyo_css_loader( 'theme' );
 ?>
 
 	<div id="primary" class="content-area">
@@ -23,15 +23,45 @@ boyo_css_loader( 'page-themes' );
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-					<?php if(!empty(boyo_themes_the_main_page_subtitle())) :?>
-					<p class="boyo-themes-main-page-subtitle"><?php boyo_themes_the_main_page_subtitle(); ?></p>
-					<?php endif; ?>
+					<?php // if(function_exists('boyo_themes_the_subtitle')) :
+							boyo_themes_the_subtitle();
+					// endif; ?>
 				</header><!-- .entry-header -->
 
-				<?php boyo_post_thumbnail(); ?>
-
 				<div class="entry-content">
-					<?php the_content(); ?>
+					<div class="boyo-intro">
+						<?php the_content(); ?>
+					</div>
+					<div class="boyo-themes-links-wrapper">
+						<ul class="boyo-themes-links">
+						<?php if(!empty(get_theme_mod( 'donate_url', '' ))) : ?>
+							<li class="boyo-themes-links-item boyo-themes-links-donate-url"><a href="<?php  the_permalink( get_theme_mod( 'donate_url', '' )); ?>"><?php esc_html_e('Make a Contribution', 'boyo') ?></a></li>
+						<?php endif; ?>
+						<?php if(!empty(get_theme_mod( 'donate_url', '' ))) : ?>
+							<li class="boyo-themes-links-item boyo-themes-links-support-url"><a href="<?php  the_permalink( get_theme_mod( 'support_url', '' )); ?>"><?php esc_html_e('Support', 'boyo') ?></a></li>
+						<?php endif; ?>
+						</ul>
+					</div>
+					<div class="boyo-themes-counter-wrapper">
+						<div class="hexagon">
+							<?php boyo_themes_the_counter(); ?>
+						</div>
+						
+					</div>
+					<div class="boyo-themes-featured">
+						<?php
+						if (function_exists('boyo_themes_the_featured_list')) {
+							boyo_themes_the_featured_list();
+						}
+						?>
+					</div>
+					<div class="boyo-themes-testimonials">
+						<?php
+						if (function_exists('boyo_themes_the_testimonials_list')) {
+							boyo_themes_the_testimonials_list();
+						}
+						?>
+					</div>
 				</div><!-- .entry-content -->
 
 				<?php if ( get_edit_post_link() ) : ?>
@@ -57,15 +87,8 @@ boyo_css_loader( 'page-themes' );
 					</footer><!-- .entry-footer -->
 				<?php endif; ?>
 			</article><!-- #post-<?php the_ID(); ?> -->
+
 		<?php
-			if (function_exists('boyo_themes_the_testimonials_list')) {
-				boyo_themes_the_testimonials_list();
-			}
-
-			if (function_exists('boyo_themes_the_featured_list')) {
-				boyo_themes_the_featured_list();
-			}
-
 		endwhile; // End of the loop.
 		?>
 

@@ -14,8 +14,10 @@ if (!function_exists('boyo_posted_on')):
     function boyo_posted_on()
 {
     $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+    $posted_updated = esc_html__('Published on ', 'boyo');
     if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
         $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+        $posted_updated = esc_html__('Updated on ', 'boyo');
     }
     $time_string = sprintf( $time_string,
         esc_attr( get_the_date( DATE_W3C ) ),
@@ -23,14 +25,9 @@ if (!function_exists('boyo_posted_on')):
         esc_attr( get_the_modified_date( DATE_W3C ) ),
         esc_html( get_the_modified_date() )
     );
-    $posted_on = sprintf(
-        /* translators: %s: post date. */
-        esc_html_x( 'Updated on %s', 'post date', '_s' ),
-        '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-    );
+    $posted_on = $posted_updated . '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
     echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
-
-    }
+}
 endif;
 
 if (!function_exists('boyo_posted_by')):
@@ -54,7 +51,7 @@ if (!function_exists('boyo_posted_by')):
             $byline = sprintf(
                 /* translators: %s: post author. */
                 esc_html_x('By %s', 'post author', 'boyo'),
-                '<span class="author vcard">' . get_avatar($coauthor->get('ID')) . '<a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
+                '<span class="author vcard">' . get_avatar($coauthor->get('ID'), 32) . '<a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
             );
         }
 
@@ -71,31 +68,7 @@ if (!function_exists('boyo_entry_footer')):
 {
         // Hide category and tag text for pages.
         if ('post' === get_post_type()) {
-            /* translators: used between list items, there is a space after the comma */
-            $tags_list = boyo_the_tags();
-            if ($tags_list) {
-                /* translators: 1: list of tags. */
-                printf('<span class="tags-links">' . esc_html__('Tagged %1$s', 'boyo') . '</span>', $tags_list); // WPCS: XSS OK.
-            }
-        }
-
-        if (!is_single() && !post_password_required() && (comments_open() || get_comments_number())) {
-            echo '<span class="comments-link">';
-            comments_popup_link(
-                sprintf(
-                    wp_kses(
-                        /* translators: %s: post title */
-                        __('Leave a Comment<span class="screen-reader-text"> on %s</span>', 'boyo'),
-                        array(
-                            'span' => array(
-                                'class' => array(),
-                            ),
-                        )
-                    ),
-                    get_the_title()
-                )
-            );
-            echo '</span>';
+            boyo_the_tags();
         }
 
         edit_post_link(
@@ -183,9 +156,8 @@ if (!function_exists('boyo_the_tags')):
 	{
         $posttags = get_the_tags();
 		if ($posttags) {
-			_e('Tagged:', 'boyo');
 			foreach($posttags as $tag) {
-				echo  ' <a href="' . get_tag_link($tag->term_id) . '">#' . $tag->name . '</a>';
+				echo  ' <a class="tag" href="' . get_tag_link($tag->term_id) . '">#' . $tag->name . '</a>';
 			}
 		}
 	}
@@ -214,7 +186,7 @@ if (!function_exists('boyo_the_authors')):
 			$output .= '<ul class="post-authors-list">';
 			foreach($authors as $author_id) {
 				$output .= '<li class="post-authors-list-item"><div class="post-authors-list-info vcard">';
-				$output .= get_avatar(absint($author_id));
+				$output .= get_avatar(absint($author_id), 64);
 				$output .= '<div class="post-authors-list-name"><p class="fn url"><a href="' . get_the_author_meta('user_url', absint($author_id)) . '">' . get_the_author_meta('display_name', $author_id) . '</a></p>';
 				$output .= '<p class="post-authors-list-bio">' . get_the_author_meta('description', absint($author_id)) . '</p></div>';
 				$output .= '</div></li>';

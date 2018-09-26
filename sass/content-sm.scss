@@ -1,7 +1,10 @@
+/*!
+* @package Boyo
+*/
+@import "variables";
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-@import "variables";
 .alignleft {
 	display: inline;
 	float: left;
@@ -24,6 +27,9 @@
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.content-area {
+    padding: 0 20px 20px;
+}
 .sticky {
 	display: block;
 }
@@ -32,21 +38,46 @@
 	margin: 0 0 1.5em;
 }
 
-.entry-title {
-	font-size: 2.5em;
-}
-
-/* Boyo Companion */
-
 .entry-title,
-.boyo-companion-subtitle {
-  color: #181818;
-  font-family: Montserrat, sans-serif;
-  letter-spacing: -0.04em;
+.previous-article-title,
+.next-article-title {
+	font-size: 2.5em;
+	letter-spacing: -0.04em;
+	line-height: 1.2;
+	color: $color_1;
 }
 
-.boyo-companion-subtitle {
-  font-size: 25px;
+//.entry-title,
+.previous-article,
+.next-article,
+.boyo-companion-subtitle,
+.boyo-themes-subtitle,
+.bc-about-us-title,
+.bc-about-us-subtitle {
+	color: $color_14;
+    font-family: $font_family_headers;
+    letter-spacing: -0.04em;
+}
+
+.previous-article,
+.next-article,
+.boyo-companion-subtitle,
+.boyo-themes-subtitle,
+.bc-about-us-subtitle {
+	font-size: 25px;
+}
+
+.boyo-intro {
+	font-size: 15px;
+	letter-spacing: .045em;
+	line-height: 27px;
+	color: $color_1;
+	a {
+		color: $color_1;
+		border-bottom: 2px solid;
+		padding: 0;
+		text-decoration: none;
+	}
 }
 
 .published {
@@ -60,12 +91,17 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	//margin: 1.5em 0 0;
 }
 
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.nav-previous > a,
+.nav-next > a {
+	text-decoration: none;
 }
 
 /*--------------------------------------------------------------

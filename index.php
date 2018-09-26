@@ -13,6 +13,7 @@
  */
 
 get_header();
+boyo_css_loader( 'archives' );
 ?>
 
 	<div id="primary" class="content-area">
@@ -42,7 +43,9 @@ get_header();
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_pagination( array(
+				'prev_text' => esc_html__( 'Prev', 'boyo' ),
+			) );
 
 		else :
 
