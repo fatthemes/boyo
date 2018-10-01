@@ -36,16 +36,20 @@ while (have_posts()):
 			<?php boyo_post_thumbnail(); ?>
 			<ul class="boyo-themes-links">
 			<?php
-				if (function_exists('boyo_themes_get_demo_url')) {
-					echo '<li class="boyo-themes-links-item boyo-themes-links-demo-url"><a href="' . esc_url(boyo_themes_get_demo_url()) . '">' . esc_html__('Free Download', 'boyo') . '</a></li>';
-				}
-				
 				if (function_exists('boyo_themes_get_download_url')) {
-					echo '<li class="boyo-themes-links-item boyo-themes-links-download-url"><a href="' . esc_url(boyo_themes_get_download_url()) . '">' . esc_html__('Live Demo', 'boyo') . '</a></li>';
+					echo '<li class="boyo-themes-links-item boyo-themes-links-download-url"><a href="' . esc_url(boyo_themes_get_download_url()) . '">' . esc_html__('Free Download', 'boyo') . '</a></li>';
 				}
 
-				if(function_exists('boyo_docs_get_related_doc')) { ?>
-					<li class="boyo-themes-links-item boyo-themes-links-docs-url"><a href="<?php the_permalink(boyo_docs_get_related_doc()); ?>"><?php esc_html_e('Theme Documentation', 'boyo') ?></a></li>
+				if (function_exists('boyo_themes_get_demo_url')) {
+					echo '<li class="boyo-themes-links-item boyo-themes-links-demo-url"><a href="' . esc_url(boyo_themes_get_demo_url()) . '">' . esc_html__('Live Demo', 'boyo') . '</a></li>';
+				}
+
+				if (function_exists('boyo_themes_get_translation_link')) {
+					echo '<li class="boyo-themes-links-item boyo-themes-links-translation-url"><a href="' . esc_url(boyo_themes_get_translation_link()) . '">' . esc_html__('Help Translate', 'boyo') . '</a></li>';
+				}
+
+				if(function_exists('boyo_themes_get_related_doc')) { ?>
+					<li class="boyo-themes-links-item boyo-themes-links-docs-url"><a href="<?php the_permalink(boyo_themes_get_related_doc()); ?>"><?php esc_html_e('Theme Documentation', 'boyo') ?></a></li>
 				<?php }
 
 				if(!empty(get_theme_mod( 'donate_url', '' ))) { ?>

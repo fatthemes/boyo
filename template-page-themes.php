@@ -46,8 +46,14 @@ boyo_css_loader( 'theme' );
 						<div class="hexagon">
 							<?php boyo_themes_the_counter(); ?>
 						</div>
-						
 					</div>
+
+					<?php
+					if (function_exists('boyo_themes_the_featured_list')) {
+						boyo_themes_the_themes();
+					}
+					?>
+
 					<div class="boyo-themes-featured">
 						<?php
 						if (function_exists('boyo_themes_the_featured_list')) {

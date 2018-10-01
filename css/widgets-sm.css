@@ -30,6 +30,11 @@
   text-decoration: none;
 }
 
+.bc-about-us-widget {
+  background-color: #edeef4;
+  padding: 20px;
+}
+
 .bc-about-us-title {
   line-height: 55px;
   margin-bottom: 0;
@@ -67,8 +72,7 @@
 
 /* Top Widgets */
 .top-widget-area {
-  background-color: #edeef4;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 /* Bottom Widgets */

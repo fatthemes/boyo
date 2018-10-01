@@ -221,3 +221,35 @@
 .hexagon:after {
     transform: rotate(240deg);
 }
+
+.boyo-themes-themes {
+    list-style: none;
+    margin:0 0 40px 0;
+    padding: 0;
+    a {
+        text-decoration: none;
+        color: $color_1;
+    }
+}
+
+.boyo-themes-themes-item {
+    display: block;
+    padding: 20px;
+}
+
+/*
+.boyo-themes-themes-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+*/
+
+.boyo-themes-featured-list {
+    list-style: none;
+    margin:0 0 40px 0;
+    padding: 0;
+}
+
+.boyo-themes-featured-list-item {
+    padding: 20px;
+}
