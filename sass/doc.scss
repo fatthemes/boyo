@@ -1,0 +1,48 @@
+/*!
+* @package Boyo
+*/
+@import "variables";
+.boyo-docs-toc-heading {
+    font-weight: 700;
+}
+
+.boyo-docs-link-to-theme {
+    a {
+        color: $color_1;
+        font-weight: 700;
+    }
+}
+
+.boyo-docs-toc-list,
+.boyo-docs-toc-sublist {
+    margin:0;
+    list-style: none;
+    a {
+        color: $color_1;
+    }
+}
+
+.boyo-docs-toc-list {
+    padding: 0;
+}
+
+.boyo-docs-toc-sublist {
+    padding-inline-start: 20px;
+}
+
+.site-main {
+    padding: 20px;
+}
+
+.boyo-docs-list-of-docs {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+.boyo-docs-list-of-docs-item {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 40px auto;
+}

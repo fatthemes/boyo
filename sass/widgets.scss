@@ -37,18 +37,21 @@
     } 
 }
 
-.bc-about-us-widget {
+.bc-about-us-widget,
+.boyo-themes-list-widget {
     background-color: $color_5;
-    padding: 20px;
+    padding: 80px 20px;
 }
 
-.bc-about-us-title {
-    //font-size: 48px;
+.bc-about-us-title,
+.boyo-themes-list-title {
+    font-size: 48px;
     line-height: 55px;
-    margin-bottom: 0;
+    margin: 0;
 }
 
-.bc-about-us-description {
+.bc-about-us-description,
+.boyo-themes-list-description {
     color: $color_14;
     font-size: 15px;
     letter-spacing: 0.045em;
@@ -57,28 +60,36 @@
 
 .bc-about-us-image-wrapper {
     margin: 0 -20px;
+    padding: 0 20px;
 }
 
-.bc-recent-posts-widget-list {
+.bc-recent-posts-widget-list,
+.bc-featured-posts-widget-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.bc-recent-posts-widget-list-item-title {
+.bc-recent-posts-widget-list-item-title,
+.bc-featured-posts-widget-list-item-title {
     font-size: 1.125rem;
     line-height: 1.25;
     letter-spacing: -0.06em;
     margin-bottom: 0;
 }
 
-.bc-recent-posts-widget-list-item-title {
+.bc-recent-posts-widget-list-item-title,
+.bc-featured-posts-widget-list-item-title {
     a {
         color: $color_2;
         text-decoration: none;
         color: $color_12;
     }
-} 
+}
+
+.boyo-themes-list-text-wrapper {
+    padding: 20px;
+}
 
 /* Top Widgets */
 
@@ -96,7 +107,6 @@
 }
 
 .bottom-widget-area {
-    border-bottom: 1px solid $color_8;
     padding: 0 40px;
 }
 
@@ -119,6 +129,12 @@
     }
 }
 
+.bottom-widget-area {
+    .widget {
+        border-bottom: 1px solid $color_8;
+    }
+}
+
 .bottom-widget-area,
 .footer-widget-area {
     .widget-title {
@@ -133,4 +149,52 @@
     color: $color_4;
     font-size: 14px;
     letter-spacing: 0.04em;
+}
+
+@media (min-width: $sm) {
+    .bc-featured-posts-widget-list {
+        display: flex;
+    }
+    .bc-featured-posts-widget-list-item {
+        margin: 0 20px;
+        width: 33.33%;
+    }
+    
+    .bc-featured-posts-widget-list-item:first-of-type {
+        margin-left: 0;
+    }
+    
+    .bc-featured-posts-widget-list-item:last-of-type {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: $md) {
+    .bc-featured-posts-widget-list {
+        display: flex;
+    }
+    .bc-featured-posts-widget-list-item {
+        margin: 0 20px;
+        width: 33.33%;
+    }
+    
+    .bc-featured-posts-widget-list-item:first-of-type {
+        margin-left: 0;
+    }
+    
+    .bc-featured-posts-widget-list-item:last-of-type {
+        margin-right: 0;
+    }
+    
+    .bottom-widget-area,
+    .footer-widget-area {
+        .widget {
+            max-width:960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .bc-about-us-main-image {
+        max-width:125%;
+    }
 }

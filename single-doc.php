@@ -8,7 +8,7 @@
  */
 
 get_header();
-boyo_css_loader( 'single-doc' );
+boyo_css_loader( 'doc' );
 ?>
 
 	<div id="primary" class="content-area">
@@ -19,17 +19,22 @@ while (have_posts()):
     the_post();
 
     if (function_exists('yoast_breadcrumb')) {
-        yoast_breadcrumb('</p><p id="breadcrumbs">', '</p><p>');
+        yoast_breadcrumb('</p><p id="breadcrumbs" class="breadcrumbs">', '</p><p>');
     }
 
-    the_title();
+    the_title('<h1 class="entry-title">', '</h1>');
 
-    if (function_exists('boyo_docs_get_demo_url')) {
+
+    if (function_exists('boyo_docs_get_related_theme')) {
+        echo '<p class="boyo-docs-link-to-theme">' . __('Go to theme: ', 'boyo-docs') . '<a href="' . get_the_permalink(boyo_docs_get_related_theme()) . '">' . get_the_title(boyo_docs_get_related_theme()) . '</a></p>';
+    }
+
+    /*if (function_exists('boyo_docs_get_demo_url')) {
         echo esc_url(boyo_docs_get_demo_url());
     }
     if (function_exists('boyo_docs_get_download_url')) {
         echo esc_url(boyo_docs_get_download_url());
-    }
+    }*/
 
 	if (function_exists('boyo_docs_the_table_of_content')) {
         boyo_docs_the_table_of_content();
@@ -37,13 +42,13 @@ while (have_posts()):
 
     the_content();
 
-    if (function_exists('boyo_docs_the_docs_list')) {
+    /*if (function_exists('boyo_docs_the_docs_list')) {
 		boyo_docs_the_docs_list();
-    }
+    }*/
 
-    if (function_exists('boyo_docs_the_sections')) {
+    /*if (function_exists('boyo_docs_the_sections')) {
 		boyo_docs_the_sections();
-    }
+    }*/
 
 endwhile; // End of the loop.
 ?>

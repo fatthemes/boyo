@@ -2,6 +2,9 @@
 * @package Boyo
 */
 @import "variables";
+.entry-content {
+    padding: 0;
+}
 .boyo-themes-links,
 .boyo-themes-testimonials-list {
     list-style: none;
@@ -9,12 +12,16 @@
     padding: 0;
 }
 
+.boyo-themes-testimonials {
+    padding: 0 20px;
+}
+
 .boyo-themes-links-item {
     border-top: solid 1px $color_1;
     font-size: 18px;
     letter-spacing: .045em;
     line-height: 24px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .boyo-themes-theme-details {
@@ -36,6 +43,7 @@
 .boyo-themes-theme-details-changelog-url {
     a {
         border-bottom: solid 2px $color_1;
+        color: $color_1;
         padding-bottom: 0;
         text-decoration: none;
     }
@@ -50,19 +58,34 @@
 
 .boyo-themes-sections {
     background-color: $color_9;
+    //padding: 40px 0 0;
+    margin: 0 -20px;
 }
+
+.boyo-themes-section {
+    padding: 20px 20px 0;
+}
+
+/*.boyo-themes-section::after {
+    border-bottom: solid 1px $color_7;
+    content: '';
+    width: 100%;
+    display: block;
+    margin-top:20px;
+}*/
 
 .boyo-themes-section-title,
 .boyo-themes-section-content {
-    padding: 0 20px 20px;
+    margin: 20px;
 }
 
 .boyo-themes-section-image {
     margin: 0 -20px;
 }
 .boyo-themes-changelog {
-    padding: 20px;
+    padding: 20px 40px;
     background-color: $color_9;
+    margin: 0 -20px;
 }
 
 .boyo-themes-testimonials-list-item {
@@ -129,8 +152,25 @@
     background-color: $color_1;
 }
 
-.single-theme .hentry {
-    margin: 0;
+.single-theme {
+    .hentry {
+        margin: 0;
+    }
+    .entry-header,
+    .breadcrumbs {
+        padding: 0 20px;
+    }
+
+    .entry-content {
+        //padding: 0;
+        .boyo-intro {
+            padding: 0 20px;
+        }
+    }
+
+    .post-thumbnail {
+        margin: 0 -20px;
+    }
 }
 
 .page-template-template-page-themes {
@@ -138,12 +178,25 @@
     .boyo-intro,
     .boyo-themes-links-wrapper,
     .boyo-themes-counter-wrapper {
-        background-color: $color_5;
+        //background-color: $color_5;
         padding: 20px;
+    }
+    .main-navigation {
+		background-color: $color_5;
+    }
+    .entry-content,
+    .entry-footer,
+    .entry-header {
+        //max-width:none;
+        //background-color: $color_5;
+    }
+    .hentry {
+        background-color: $color_5;
     }
 }
 
 .boyo-themes-counter-wrapper {
+    overflow: hidden;
     //position: relative;
 }
 
@@ -224,7 +277,8 @@
 
 .boyo-themes-themes {
     list-style: none;
-    margin:0 0 40px 0;
+    //margin:0 0 40px 0;
+    margin-bottom: 40px;
     padding: 0;
     a {
         text-decoration: none;
@@ -244,6 +298,11 @@
 }
 */
 
+.boyo-themes-featured {
+    background-color: $color_9;
+    margin: 0 -20px;
+}
+
 .boyo-themes-featured-list {
     list-style: none;
     margin:0 0 40px 0;
@@ -252,4 +311,84 @@
 
 .boyo-themes-featured-list-item {
     padding: 20px;
+}
+
+.boyo-themes-featured-list-item-title,
+.boyo-themes-featured-list-item-desc {
+    padding: 0 20px;
+}
+
+.boyo-themes-testimonials-title {
+    font-size: 40px;
+}
+
+.boyo-themes-testimonials-subtitle {
+    //font-size: 25px;
+    //font-weight: 700;
+}
+
+@media (min-width: $sm) {
+    .boyo-themes-themes {
+        display: flex;
+    }
+    .boyo-themes-themes-item {
+        width: 50%;
+        &:first-of-type {
+            padding: 20px 20px 20px 0;
+        }
+        &:last-of-type {
+            padding: 20px 0 20px 20px;
+        }
+    }
+
+    .boyo-themes-featured-list {
+        display: flex;
+    }
+    .boyo-themes-featured-list-item {
+        width:33.33%;
+        padding: 20px;
+        &:first-of-type {
+            padding: 20px 20px 20px 0;
+        }
+        &:last-of-type {
+            padding: 20px 0 20px 20px;
+        }
+    }
+    .boyo-themes-testimonials-list {
+        //max-width: 520px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media (min-width: $md) {
+    .boyo-themes-featured-list {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .boyo-themes-featured-list-item {
+        padding:0;
+    }
+    .boyo-intro-wrapper {
+        width: 50%;
+        min-height: 520px;
+    }
+    .entry-content {
+        position:relative;
+    }
+    .boyo-themes-counter-wrapper {
+        position: absolute;
+        right: -200px;
+        top: 0;
+        width: 100%;
+    }
+    .boyo-themes-links-item {
+        max-width: 260px;
+    }
+    .boyo-themes-testimonials-list {
+        margin-left: 300px;
+        margin-right: 300px;
+        //max-width: 420px;
+    }
 }

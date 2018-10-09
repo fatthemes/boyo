@@ -1,21 +1,26 @@
 /*!
 * @package Boyo
 */
-@import "variables";
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comments-area {
+  padding: 0 20px;
+}
+
 .comment-content a {
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .bypostauthor {
-	display: block;
+  display: block;
 }
 
 .form-submit {
-	text-align: center;
+  text-align: center;
+  margin: 40px 0 80px;
 }
+
 /*
 .comment-form-cookies-consent label {
 	font-weight: normal;
@@ -31,3 +36,14 @@
 		width: 100%;
 }
 */
+@media (min-width: 601px) {
+  .form-submit {
+    text-align: left;
+  }
+  .comments-area {
+    max-width: 720px;
+    margin: auto;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=comments.css.map */

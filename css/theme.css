@@ -1,6 +1,10 @@
 /*!
 * @package Boyo
 */
+.entry-content {
+  padding: 0;
+}
+
 .boyo-themes-links,
 .boyo-themes-testimonials-list {
   list-style: none;
@@ -8,12 +12,16 @@
   padding: 0;
 }
 
+.boyo-themes-testimonials {
+  padding: 0 20px;
+}
+
 .boyo-themes-links-item {
   border-top: solid 1px #1f2023;
   font-size: 18px;
   letter-spacing: .045em;
   line-height: 24px;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .boyo-themes-theme-details {
@@ -34,6 +42,7 @@
 
 .boyo-themes-theme-details-changelog-url a {
   border-bottom: solid 2px #1f2023;
+  color: #1f2023;
   padding-bottom: 0;
   text-decoration: none;
 }
@@ -45,11 +54,23 @@
 
 .boyo-themes-sections {
   background-color: #f8f8f8;
+  margin: 0 -20px;
 }
 
+.boyo-themes-section {
+  padding: 20px 20px 0;
+}
+
+/*.boyo-themes-section::after {
+    border-bottom: solid 1px $color_7;
+    content: '';
+    width: 100%;
+    display: block;
+    margin-top:20px;
+}*/
 .boyo-themes-section-title,
 .boyo-themes-section-content {
-  padding: 0 20px 20px;
+  margin: 20px;
 }
 
 .boyo-themes-section-image {
@@ -57,8 +78,9 @@
 }
 
 .boyo-themes-changelog {
-  padding: 20px;
+  padding: 20px 40px;
   background-color: #f8f8f8;
+  margin: 0 -20px;
 }
 
 .boyo-themes-testimonials-list-item {
@@ -130,12 +152,36 @@
   margin: 0;
 }
 
+.single-theme .entry-header,
+.single-theme .breadcrumbs {
+  padding: 0 20px;
+}
+
+.single-theme .entry-content .boyo-intro {
+  padding: 0 20px;
+}
+
+.single-theme .post-thumbnail {
+  margin: 0 -20px;
+}
+
 .page-template-template-page-themes .entry-header,
 .page-template-template-page-themes .boyo-intro,
 .page-template-template-page-themes .boyo-themes-links-wrapper,
 .page-template-template-page-themes .boyo-themes-counter-wrapper {
-  background-color: #edeef4;
   padding: 20px;
+}
+
+.page-template-template-page-themes .main-navigation {
+  background-color: #edeef4;
+}
+
+.page-template-template-page-themes .hentry {
+  background-color: #edeef4;
+}
+
+.boyo-themes-counter-wrapper {
+  overflow: hidden;
 }
 
 .boyo-themes-counter {
@@ -219,7 +265,7 @@
 
 .boyo-themes-themes {
   list-style: none;
-  margin: 0 0 40px 0;
+  margin-bottom: 40px;
   padding: 0;
 }
 
@@ -239,6 +285,11 @@
     padding: 20px;
 }
 */
+.boyo-themes-featured {
+  background-color: #f8f8f8;
+  margin: 0 -20px;
+}
+
 .boyo-themes-featured-list {
   list-style: none;
   margin: 0 0 40px 0;
@@ -248,4 +299,76 @@
 .boyo-themes-featured-list-item {
   padding: 20px;
 }
-/*# sourceMappingURL=theme-sm.css.map */
+
+.boyo-themes-featured-list-item-title,
+.boyo-themes-featured-list-item-desc {
+  padding: 0 20px;
+}
+
+.boyo-themes-testimonials-title {
+  font-size: 40px;
+}
+
+@media (min-width: 601px) {
+  .boyo-themes-themes {
+    display: flex;
+  }
+  .boyo-themes-themes-item {
+    width: 50%;
+  }
+  .boyo-themes-themes-item:first-of-type {
+    padding: 20px 20px 20px 0;
+  }
+  .boyo-themes-themes-item:last-of-type {
+    padding: 20px 0 20px 20px;
+  }
+  .boyo-themes-featured-list {
+    display: flex;
+  }
+  .boyo-themes-featured-list-item {
+    width: 33.33%;
+    padding: 20px;
+  }
+  .boyo-themes-featured-list-item:first-of-type {
+    padding: 20px 20px 20px 0;
+  }
+  .boyo-themes-featured-list-item:last-of-type {
+    padding: 20px 0 20px 20px;
+  }
+  .boyo-themes-testimonials-list {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media (min-width: 961px) {
+  .boyo-themes-featured-list {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .boyo-themes-featured-list-item {
+    padding: 0;
+  }
+  .boyo-intro-wrapper {
+    width: 50%;
+    min-height: 520px;
+  }
+  .entry-content {
+    position: relative;
+  }
+  .boyo-themes-counter-wrapper {
+    position: absolute;
+    right: -200px;
+    top: 0;
+    width: 100%;
+  }
+  .boyo-themes-links-item {
+    max-width: 260px;
+  }
+  .boyo-themes-testimonials-list {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+/*# sourceMappingURL=theme.css.map */

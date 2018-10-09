@@ -12,6 +12,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' );
+		if(function_exists('boyo_companion_the_subtitle'))
+			boyo_companion_the_subtitle();
 		
 		if ( 'post' === get_post_type() ) :
 			?>

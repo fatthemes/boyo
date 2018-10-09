@@ -14,10 +14,10 @@ if (!function_exists('boyo_posted_on')):
     function boyo_posted_on()
 {
     $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-    $posted_updated = esc_html__('Published on ', 'boyo');
+    $posted_updated = esc_html__('Published: ', 'boyo');
     if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
         $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-        $posted_updated = esc_html__('Updated on ', 'boyo');
+        $posted_updated = esc_html__('Last Updated: ', 'boyo');
     }
     $time_string = sprintf( $time_string,
         esc_attr( get_the_date( DATE_W3C ) ),
@@ -175,8 +175,9 @@ if (!function_exists('boyo_the_authors')):
 			}
 			$title_string = esc_html__('About authors', 'boyo');
 		}
-		//print_r($authors);
-		if(empty($authors)) {
+        //print_r($authors);
+        
+		if( 2 > count($authors)) {
 			$authors = (array) get_the_author_meta('ID');
 			$title_string = esc_html__('About author', 'boyo');
 		}

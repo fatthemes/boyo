@@ -1,0 +1,143 @@
+/*!
+* @package Boyo
+*/
+.entry-header,
+.entry-content,
+.post-authors-list-title,
+.post-authors-list,
+.post-navigation {
+  padding: 0 20px;
+}
+
+.entry-meta a {
+  color: #1f2023;
+  text-decoration: none;
+}
+
+.entry-meta .byline {
+  margin: 20px 0;
+}
+
+.entry-meta .cat-links {
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+}
+
+.coauthors-list-item {
+  margin: 10px 0;
+}
+
+.coauthors-list-item .url {
+  font-size: 13px;
+  letter-spacing: 0.07em;
+  line-height: 19px;
+  margin-left: 10px;
+}
+
+.single-post-featured-image-caption {
+  padding: 0 10px;
+  font-size: 75%;
+}
+
+.coauthors-list,
+.post-authors-list {
+  list-style: none;
+  margin: 0;
+}
+
+.coauthors-list {
+  padding: 0;
+}
+
+.byline .author {
+  display: flex;
+  align-items: center;
+}
+
+.byline .avatar,
+.post-authors-list-item .avatar {
+  border-radius: 50%;
+}
+
+.post-authors-list-item {
+  margin-bottom: 20px;
+}
+
+.post-authors-list-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.post-authors-list-name {
+  padding-left: 20px;
+}
+
+@media (min-width: 601px) {
+  .coauthors-list-item {
+    margin-right: 20px;
+    display: inline-block;
+  }
+  .post-authors-list {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 961px) {
+  .coauthors-list-item {
+    margin-right: 20px;
+    display: inline-block;
+  }
+  /*.post-authors-list {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+  .post-authors-list-title,
+  .post-navigation {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .entry-header,
+  .entry-content,
+  .post-authors-list-title,
+  .post-authors-list,
+  .post-navigation {
+    padding: 0;
+  }
+  .entry-content .alignnone {
+    max-width: 960px;
+    margin-left: -120px;
+    margin-right: -120px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .post-authors-list-title,
+  .post-navigation {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .entry-content .alignnone {
+    max-width: 1200px;
+    margin-left: -240px;
+    margin-right: -240px;
+  }
+  .entry-header,
+  .post-thumbnail {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /*.entry-meta,
+        .boyo-companion-subtitle {
+            max-width:960px;
+            margin-left: auto;
+            margin-right: auto;
+        }*/
+  }
+}
+/*# sourceMappingURL=single.css.map */

@@ -26,8 +26,11 @@
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.content-area {
-  padding: 0 20px 20px;
+.content-area,
+.entry-header,
+.entry-content,
+.entry-footer {
+  padding: 0 20px;
 }
 
 .sticky {
@@ -35,7 +38,12 @@
 }
 
 .hentry {
+  padding: 40px 0 0;
   margin: 0 0 1.5em;
+}
+
+.breadcrumbs {
+  font-size: .75em;
 }
 
 .entry-title,
@@ -52,7 +60,10 @@
 .boyo-companion-subtitle,
 .boyo-themes-subtitle,
 .bc-about-us-title,
-.bc-about-us-subtitle {
+.bc-about-us-subtitle,
+.boyo-themes-list-title,
+.boyo-themes-list-subtitle,
+.boyo-themes-testimonials-subtitle {
   color: #181818;
   font-family: Montserrat, sans-serif;
   letter-spacing: -0.04em;
@@ -62,7 +73,10 @@
 .next-article,
 .boyo-companion-subtitle,
 .boyo-themes-subtitle,
-.bc-about-us-subtitle {
+.bc-about-us-subtitle,
+.boyo-themes-subtitle,
+.boyo-themes-list-subtitle,
+.boyo-themes-testimonials-subtitle {
   font-size: 25px;
 }
 
@@ -88,6 +102,20 @@
   display: inherit;
 }
 
+.entry-content,
+.entry-footer {
+  max-width: 720px;
+  margin: auto;
+}
+
+.first-letter {
+  font-size: 48px;
+  float: left;
+  line-height: 1;
+  margin-right: 5px;
+  font-weight: 700;
+}
+
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
@@ -96,6 +124,15 @@
 .nav-previous > a,
 .nav-next > a {
   text-decoration: none;
+}
+
+.boyo-companion-bullets {
+  text-align: center;
+}
+
+.boyo-companion-bullet {
+  font-size: 24px;
+  margin: 4px;
 }
 
 /*--------------------------------------------------------------
@@ -208,4 +245,30 @@ object {
 .gallery-caption {
   display: block;
 }
-/*# sourceMappingURL=content-sm.css.map */
+
+@media (min-width: 601px) {
+  .bc-about-us-subtitle,
+  .boyo-themes-list-subtitle,
+  .boyo-themes-subtitle,
+  .boyo-themes-testimonials-subtitle {
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: 961px) {
+  .bc-about-us-subtitle,
+  .boyo-themes-list-subtitle,
+  .boyo-themes-subtitle,
+  .boyo-themes-testimonials-subtitle {
+    margin-left: 300px;
+  }
+  .bc-about-us-text-wrapper,
+  .boyo-themes-list-text-wrapper,
+  .boyo-themes-themes,
+  .boyo-themes-testimonials {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=content.css.map */

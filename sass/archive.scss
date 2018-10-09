@@ -1,0 +1,67 @@
+/*!
+* @package Boyo
+*/
+@import "variables";
+
+.content-area {
+    padding: 20px;
+}
+
+.post {
+    padding-bottom: 20px;
+    background-color: $color_9;
+}
+
+.post .post-thumbnail {
+    display: block;
+    margin: 0 -20px;
+    //padding-bottom: 10px;
+    background-color: $color_2;
+}
+
+.page-header {
+    padding: 0 20px;
+}
+
+.page-title {
+    margin-top: 0;
+}
+
+.entry-title,
+.entry-content,
+.entry-footer {
+    background-color: $color_9;
+    //padding: 0 20px;
+}
+
+.entry-title {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 23px;
+    letter-spacing: .04em;
+    line-height: 29px;
+
+    > a {
+        color: $color_1;
+        text-decoration: none;
+    }
+}
+
+.pagination {
+    //margin: 20px auto;
+}
+
+.nav-links {
+    text-align: center;
+}
+
+.page-numbers {
+    text-decoration: none;
+    border: 1px solid $color_1;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: $color_1;
+    background: transparent;
+    line-height: 1;
+    padding: .4em .8em;
+}

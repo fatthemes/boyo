@@ -30,17 +30,21 @@
   text-decoration: none;
 }
 
-.bc-about-us-widget {
+.bc-about-us-widget,
+.boyo-themes-list-widget {
   background-color: #edeef4;
-  padding: 20px;
+  padding: 80px 20px;
 }
 
-.bc-about-us-title {
+.bc-about-us-title,
+.boyo-themes-list-title {
+  font-size: 48px;
   line-height: 55px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-.bc-about-us-description {
+.bc-about-us-description,
+.boyo-themes-list-description {
   color: #181818;
   font-size: 15px;
   letter-spacing: 0.045em;
@@ -49,25 +53,33 @@
 
 .bc-about-us-image-wrapper {
   margin: 0 -20px;
+  padding: 0 20px;
 }
 
-.bc-recent-posts-widget-list {
+.bc-recent-posts-widget-list,
+.bc-featured-posts-widget-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.bc-recent-posts-widget-list-item-title {
+.bc-recent-posts-widget-list-item-title,
+.bc-featured-posts-widget-list-item-title {
   font-size: 1.125rem;
   line-height: 1.25;
   letter-spacing: -0.06em;
   margin-bottom: 0;
 }
 
-.bc-recent-posts-widget-list-item-title a {
+.bc-recent-posts-widget-list-item-title a,
+.bc-featured-posts-widget-list-item-title a {
   color: #ffffff;
   text-decoration: none;
   color: #dedede;
+}
+
+.boyo-themes-list-text-wrapper {
+  padding: 20px;
 }
 
 /* Top Widgets */
@@ -83,7 +95,6 @@
 }
 
 .bottom-widget-area {
-  border-bottom: 1px solid #4c4c4c;
   padding: 0 40px;
 }
 
@@ -104,6 +115,10 @@
   padding-top: 20px;
 }
 
+.bottom-widget-area .widget {
+  border-bottom: 1px solid #4c4c4c;
+}
+
 .bottom-widget-area .widget-title,
 .footer-widget-area .widget-title {
   color: #dedede;
@@ -117,4 +132,45 @@
   font-size: 14px;
   letter-spacing: 0.04em;
 }
-/*# sourceMappingURL=widgets-sm.css.map */
+
+@media (min-width: 601px) {
+  .bc-featured-posts-widget-list {
+    display: flex;
+  }
+  .bc-featured-posts-widget-list-item {
+    margin: 0 20px;
+    width: 33.33%;
+  }
+  .bc-featured-posts-widget-list-item:first-of-type {
+    margin-left: 0;
+  }
+  .bc-featured-posts-widget-list-item:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 961px) {
+  .bc-featured-posts-widget-list {
+    display: flex;
+  }
+  .bc-featured-posts-widget-list-item {
+    margin: 0 20px;
+    width: 33.33%;
+  }
+  .bc-featured-posts-widget-list-item:first-of-type {
+    margin-left: 0;
+  }
+  .bc-featured-posts-widget-list-item:last-of-type {
+    margin-right: 0;
+  }
+  .bottom-widget-area .widget,
+  .footer-widget-area .widget {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bc-about-us-main-image {
+    max-width: 125%;
+  }
+}
+/*# sourceMappingURL=widgets.css.map */

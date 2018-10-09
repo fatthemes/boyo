@@ -1,26 +1,36 @@
 /*!
 * @package Boyo
 */
-.blog .post {
+.content-area {
+  padding: 20px;
+}
+
+.post {
   padding-bottom: 20px;
   background-color: #f8f8f8;
 }
 
-.blog .post .post-thumbnail {
+.post .post-thumbnail {
   display: block;
   margin: 0 -20px;
-  padding-bottom: 10px;
   background-color: #ffffff;
 }
 
-.blog .entry-header,
-.blog .entry-content,
-.blog .entry-footer {
-  background-color: #f8f8f8;
+.page-header {
   padding: 0 20px;
 }
 
-.blog .entry-title {
+.page-title {
+  margin-top: 0;
+}
+
+.entry-title,
+.entry-content,
+.entry-footer {
+  background-color: #f8f8f8;
+}
+
+.entry-title {
   margin: 0;
   padding-top: 20px;
   font-size: 23px;
@@ -28,7 +38,7 @@
   line-height: 29px;
 }
 
-.blog .entry-title > a {
+.entry-title > a {
   color: #1f2023;
   text-decoration: none;
 }
@@ -47,4 +57,4 @@
   line-height: 1;
   padding: .4em .8em;
 }
-/*# sourceMappingURL=archives-sm.css.map */
+/*# sourceMappingURL=archive.css.map */

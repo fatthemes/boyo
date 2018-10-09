@@ -352,14 +352,15 @@ template {
 --------------------------------------------------------------*/
 body,
 button,
+.button,
 input,
 select,
 optgroup,
 textarea {
 	color: #404040;
 	font-family: $font_family_main;
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 18px;
+	font-size: 1.125rem;
 	line-height: 1.5;
 }
 
@@ -464,7 +465,8 @@ hr {
 }
 
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	//margin: 0 0 1.5em 3em;
+	margin: 0;
 }
 
 ul {
@@ -511,6 +513,8 @@ table {
 # Forms
 --------------------------------------------------------------*/
 button,
+.button,
+a.button:visited,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -522,9 +526,11 @@ input[type="submit"] {
 	background: transparent;
 	line-height: 1;
 	padding: .6em 1em;
+	text-decoration: none;
 }
 
 button:hover,
+.button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
@@ -532,6 +538,7 @@ input[type="submit"]:hover {
 }
 
 button:active, button:focus,
+.button:active, .button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -634,6 +641,7 @@ a:hover, a:active {
 	display: block;
 	//width: 100%;
 	//margin:20px;
+	min-height: 58px;
 }
 
 .main-navigation ul {
@@ -691,8 +699,8 @@ a:hover, a:active {
 }
 
 .main-navigation {
-    background-color: #edeef4;
-    text-align: right;
+    //background-color: #edeef4;
+    text-align: center;
     width: auto;
     transition-duration: .1s;
 }
@@ -700,8 +708,20 @@ a:hover, a:active {
 .menu-toggle,
 .search-toggle {
     border: none;
-    padding: 20px;
-    background-color: transparent;
+	background-color: transparent;
+	float: right;
+}
+
+.menu-toggle {
+	padding: 20px 19px;
+}
+
+.search-toggle {
+	padding: 16px 17px;
+	svg {
+		width: 24px;
+    	height: 24px;
+	}
 }
 
 .hamburger-box {
@@ -806,33 +826,20 @@ a:hover, a:active {
 .main-menu .menu-item a:active,
 .main-menu .menu-item a:hover,
 .main-menu .current-menu-item a {
-    font-weight: 700;
+    //font-weight: 700;
     border-bottom: 2px solid #ffd73e;
 }
 
-@media screen and (min-width: 42.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-	.main-navigation li {
-		padding: 0;
-	}
-	.main-menu .menu-item {
-		display: inline-block;
-	}
-	.main-menu .menu-item > a {
-		padding: 27px 14px;
-		line-height: 1;
+.home {
+	.main-navigation {
+		background-color: #edeef4;
 	}
 }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-	margin: 0 0 1.5em;
+	//margin: 0 0 1.5em;
 	overflow: hidden;
 }
 
@@ -934,4 +941,63 @@ a:hover, a:active {
 
 .site-header {
 	padding: 20px 20px 0;
+}
+
+@media (min-width: $sm) {
+	.site-main {
+		//max-width: 740px;
+		margin:auto;
+	}
+	
+	.comment-navigation .nav-previous,
+	.posts-navigation .nav-previous,
+	.post-navigation .nav-previous {
+		width: 50%;
+	}
+	
+	.comment-navigation .nav-next,
+	.posts-navigation .nav-next,
+	.post-navigation .nav-next {
+		width: 50%;
+	}
+}
+
+@media (min-width: $md) {
+	.menu-toggle {
+		display: none;
+	}
+	
+	.main-navigation ul {
+		display: block;
+	}
+	
+	.main-navigation li {
+		padding: 0;
+	}
+	
+	.main-menu .menu-item {
+		display: inline-block;
+	}
+	
+	.main-menu .menu-item>a {
+		padding: 22px 0 7px;
+		margin: 0 14px;
+		line-height: 1;
+		color: $color_1;
+	}
+	.main-menu {
+		.current-menu-item {
+			a {
+				border-bottom: 2px solid $color_15;
+			}
+		}
+	}
+	
+	.entry-header,
+	.site-info,
+	.breadcrumbs {
+		max-width:960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }

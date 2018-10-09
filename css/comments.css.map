@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;EAEE;AAEF;;gEAEgE;AAChE,AAAA,cAAc,CAAC;EACd,OAAO,EAAE,MAAM;CACf;;AAED,AAAA,gBAAgB,CAAC,CAAC,CAAC;EAClB,SAAS,EAAE,UAAU;CACrB;;AAED,AAAA,aAAa,CAAC;EACb,OAAO,EAAE,KAAK;CACd;;AAED,AAAA,YAAY,CAAC;EACZ,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,WAAW;CACnB;;AACD;;;;;;;;;;;;;;EAcE;AAEF,MAAM,EAAE,SAAS,EAAE,KAAK;EACvB,AAAA,YAAY,CAAC;IACZ,UAAU,EAAE,IAAI;GAChB;EAED,AAAA,cAAc,CAAC;IACd,SAAS,EAAE,KAAK;IAChB,MAAM,EAAE,IAAI;IACZ,OAAO,EAAE,CAAC;GACV",
+    "sources": [
+        "../sass/comments.scss",
+        "../sass/_variables.scss"
+    ],
+    "names": [],
+    "file": "comments.css"
+}

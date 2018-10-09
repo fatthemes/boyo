@@ -1,0 +1,168 @@
+/*!
+* @package Boyo
+*/
+@import "variables";
+.entry-header,
+.entry-content,
+.post-authors-list-title,
+.post-authors-list,
+.post-navigation {
+    padding: 0 20px;
+}
+
+.entry-meta {
+    a {
+        color: $color_1;
+        text-decoration: none;
+    }
+    .byline {
+        margin: 20px 0;
+    }
+
+    .cat-links {
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+    }
+}
+
+.coauthors-list-item {
+    .url {
+        font-size: 13px;
+        letter-spacing: 0.07em;
+        line-height: 19px;
+        margin-left: 10px;
+    }
+    margin: 10px 0;
+}
+
+.post-thumbnail {
+    //margin: 0 -20px;
+}
+
+.single-post-featured-image-caption {
+    padding: 0 10px;
+    font-size: 75%;
+}
+
+.coauthors-list,
+.post-authors-list {
+    list-style: none;
+    margin: 0;
+}
+
+.coauthors-list {
+    padding: 0;
+}
+
+.byline .author {
+    display:flex;
+    align-items: center;
+}
+
+.byline,
+.post-authors-list-item {
+    .avatar {
+        border-radius: 50%;
+    }
+}
+
+.post-authors-list-item {
+    margin-bottom: 20px;
+}
+
+.post-authors-list-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.post-authors-list-name {
+    padding-left: 20px;
+}
+
+@media (min-width: $sm) {
+    .coauthors-list-item {
+        margin-right: 20px;
+        display: inline-block;
+    }
+    
+    .post-authors-list {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    //.entry-header,
+    //.post-authors-list-title,
+    //.post-authors-list,
+    //.post-navigation,
+    .entry-content {
+        //padding: 0;
+    }
+}
+
+@media (min-width: $md) {
+    .coauthors-list-item {
+        margin-right: 20px;
+        display: inline-block;
+    }
+    
+    /*.post-authors-list {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+    
+    .post-authors-list-title,
+    .post-navigation {
+        max-width:960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .entry-header,
+    .entry-content,
+    .post-authors-list-title,
+    .post-authors-list,
+    .post-navigation {
+        padding: 0;
+    }
+    
+    .entry-content {
+        .alignnone {
+            max-width: 960px;
+            margin-left: -120px;
+            margin-right: -120px;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .post-authors-list-title,
+    .post-navigation {
+        max-width:960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .entry-content {
+        .alignnone {
+            max-width: 1200px;
+            margin-left: -240px;
+            margin-right: -240px;
+        }
+    }
+
+    .entry-header,
+    .post-thumbnail {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        /*.entry-meta,
+        .boyo-companion-subtitle {
+            max-width:960px;
+            margin-left: auto;
+            margin-right: auto;
+        }*/
+    }
+}
