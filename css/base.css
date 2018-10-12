@@ -627,7 +627,7 @@ a:hover, a:active {
 .main-navigation {
   clear: both;
   display: block;
-  min-height: 58px;
+  min-height: 68px;
 }
 
 .main-navigation ul {
@@ -698,11 +698,11 @@ a:hover, a:active {
 }
 
 .menu-toggle {
-  padding: 20px 19px;
+  padding: 25px 24px;
 }
 
 .search-toggle {
-  padding: 16px 17px;
+  padding: 21px 22px;
 }
 
 .search-toggle svg {
@@ -780,7 +780,7 @@ a:hover, a:active {
 }
 
 .main-navigation .custom-logo {
-  max-height: 20px;
+  max-height: 30px;
   width: auto;
 }
 
@@ -957,10 +957,14 @@ a:hover, a:active {
     display: inline-block;
   }
   .main-menu .menu-item > a {
-    padding: 22px 0 7px;
+    padding: 27px 0 12px;
     margin: 0 14px;
     line-height: 1;
     color: #1f2023;
+  }
+  .main-menu .menu-item.make-a-contribution > a {
+    border: 2px solid #1f2023;
+    padding: 10px;
   }
   .main-menu .current-menu-item a {
     border-bottom: 2px solid #ffd73e;

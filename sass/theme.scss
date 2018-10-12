@@ -58,21 +58,12 @@
 
 .boyo-themes-sections {
     background-color: $color_9;
-    //padding: 40px 0 0;
     margin: 0 -20px;
 }
 
 .boyo-themes-section {
     padding: 20px 20px 0;
 }
-
-/*.boyo-themes-section::after {
-    border-bottom: solid 1px $color_7;
-    content: '';
-    width: 100%;
-    display: block;
-    margin-top:20px;
-}*/
 
 .boyo-themes-section-title,
 .boyo-themes-section-content {
@@ -162,7 +153,6 @@
     }
 
     .entry-content {
-        //padding: 0;
         .boyo-intro {
             padding: 0 20px;
         }
@@ -174,21 +164,13 @@
 }
 
 .page-template-template-page-themes {
-    .entry-header,
+    //.entry-header,
     .boyo-intro,
-    .boyo-themes-links-wrapper,
-    .boyo-themes-counter-wrapper {
-        //background-color: $color_5;
-        padding: 20px;
+    .boyo-themes-links-wrapper {
+        padding: 0 20px 40px;
     }
     .main-navigation {
 		background-color: $color_5;
-    }
-    .entry-content,
-    .entry-footer,
-    .entry-header {
-        //max-width:none;
-        //background-color: $color_5;
     }
     .hentry {
         background-color: $color_5;
@@ -197,7 +179,7 @@
 
 .boyo-themes-counter-wrapper {
     overflow: hidden;
-    //position: relative;
+    padding: 20px 20px 40px;
 }
 
 .boyo-themes-counter {
@@ -277,7 +259,6 @@
 
 .boyo-themes-themes {
     list-style: none;
-    //margin:0 0 40px 0;
     margin-bottom: 40px;
     padding: 0;
     a {
@@ -290,13 +271,6 @@
     display: block;
     padding: 20px;
 }
-
-/*
-.boyo-themes-themes-item:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    padding: 20px;
-}
-*/
 
 .boyo-themes-featured {
     background-color: $color_9;
@@ -320,11 +294,6 @@
 
 .boyo-themes-testimonials-title {
     font-size: 40px;
-}
-
-.boyo-themes-testimonials-subtitle {
-    //font-size: 25px;
-    //font-weight: 700;
 }
 
 @media (min-width: $sm) {
@@ -355,7 +324,6 @@
         }
     }
     .boyo-themes-testimonials-list {
-        //max-width: 520px;
         margin-left: 200px;
         margin-right: 200px;
     }
@@ -379,9 +347,10 @@
     }
     .boyo-themes-counter-wrapper {
         position: absolute;
-        right: -200px;
-        top: 0;
+        right: -160px;
+        top: -80px;
         width: 100%;
+        max-width: 560px;
     }
     .boyo-themes-links-item {
         max-width: 260px;
@@ -389,6 +358,8 @@
     .boyo-themes-testimonials-list {
         margin-left: 300px;
         margin-right: 300px;
-        //max-width: 420px;
     }
+}
+
+@media (min-width: $lg) {
 }

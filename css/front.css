@@ -32,18 +32,19 @@
 
 .boyo-themes-themes-item .boyo-themes-themes-image-wrapper {
   display: block;
+  margin-top: 60px;
 }
 
 .boyo-themes-themes-title,
 .boyo-themes-themes-excerpt,
-.boyo-themes-list-description,
-.bc-about-us-text-wrapper {
+.boyo-themes-list-description {
   padding: 0 20px;
 }
 
 @media (min-width: 601px) {
   .boyo-themes-themes {
     display: flex;
+    flex-wrap: wrap;
   }
   .boyo-themes-themes-item {
     width: 50%;
@@ -64,10 +65,10 @@
 }
 
 @media (min-width: 961px) {
-  .boyo-themes-themes-item:first-of-type {
+  .boyo-themes-themes-item:nth-of-type(odd) {
     padding: 20px 20px 20px 0;
   }
-  .boyo-themes-themes-item:last-of-type {
+  .boyo-themes-themes-item:nth-of-type(even) {
     padding: 20px 0 20px 20px;
   }
   .bc-about-us-description,

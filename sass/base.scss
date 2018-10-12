@@ -639,9 +639,7 @@ a:hover, a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	//width: 100%;
-	//margin:20px;
-	min-height: 58px;
+	min-height: 68px;
 }
 
 .main-navigation ul {
@@ -699,7 +697,6 @@ a:hover, a:active {
 }
 
 .main-navigation {
-    //background-color: #edeef4;
     text-align: center;
     width: auto;
     transition-duration: .1s;
@@ -713,11 +710,11 @@ a:hover, a:active {
 }
 
 .menu-toggle {
-	padding: 20px 19px;
+	padding: 25px 24px;
 }
 
 .search-toggle {
-	padding: 16px 17px;
+	padding: 21px 22px;
 	svg {
 		width: 24px;
     	height: 24px;
@@ -792,7 +789,7 @@ a:hover, a:active {
 }
 
 .main-navigation .custom-logo {
-    max-height: 20px;
+    max-height: 30px;
     width: auto;
 }
 
@@ -839,7 +836,6 @@ a:hover, a:active {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-	//margin: 0 0 1.5em;
 	overflow: hidden;
 }
 
@@ -847,7 +843,6 @@ a:hover, a:active {
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
 	float: left;
-	//width: 50%;
 }
 
 .comment-navigation .nav-next,
@@ -855,7 +850,6 @@ a:hover, a:active {
 .post-navigation .nav-next {
 	float: right;
 	text-align: right;
-	//width: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -945,7 +939,6 @@ a:hover, a:active {
 
 @media (min-width: $sm) {
 	.site-main {
-		//max-width: 740px;
 		margin:auto;
 	}
 	
@@ -967,24 +960,33 @@ a:hover, a:active {
 		display: none;
 	}
 	
-	.main-navigation ul {
-		display: block;
-	}
-	
-	.main-navigation li {
-		padding: 0;
-	}
-	
-	.main-menu .menu-item {
-		display: inline-block;
-	}
-	
-	.main-menu .menu-item>a {
-		padding: 22px 0 7px;
-		margin: 0 14px;
-		line-height: 1;
-		color: $color_1;
-	}
+	.main-navigation {
+		ul {
+			display: block;
+		}
+		li {
+			padding: 0;
+		}
+	} 
+
+	.main-menu {
+		.menu-item {
+			display: inline-block;
+			> a {
+				padding: 27px 0 12px;
+				margin: 0 14px;
+				line-height: 1;
+				color: $color_1;
+			}
+			&.make-a-contribution {
+				> a {
+					border: 2px solid $color_1;
+					padding: 10px;
+				}
+			} 
+		}
+	} 
+
 	.main-menu {
 		.current-menu-item {
 			a {
