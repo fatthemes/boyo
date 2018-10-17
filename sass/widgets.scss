@@ -93,7 +93,8 @@
 
 /* Top Widgets */
 
-.top-widget-area {
+.top-widget-area,
+.boyo-themes-list-description {
     padding:0 20px;
 }
 
@@ -110,12 +111,14 @@
 }
 
 .footer-widget-area {
-    padding: 20px 40px 0;
+    padding: 30px 40px 0;
+    margin-top: -10px;
 }
 
 .site-footer {
-    padding: 20px 40px 20px;
-    margin-bottom: -20px;
+    padding: 30px 40px 20px;
+    //margin-bottom: -20px;
+    margin-top: -10px;
 }
 
 .bottom-widget-area,
@@ -129,8 +132,9 @@
 }
 
 .bottom-widget-area {
-    .widget {
+    .bc-featured-posts-widget-list {
         border-bottom: 1px solid $color_8;
+        padding-bottom: 60px;
     }
 }
 
@@ -142,9 +146,7 @@
 }
 
 .bottom-widget-area p,
-.footer-widget-area p,
-.site-info,
-.site-info a {
+.footer-widget-area p {
     color: $color_4;
     font-size: 14px;
     letter-spacing: 0.04em;
@@ -185,15 +187,52 @@
         margin-right: 0;
     }
     
-    .bottom-widget-area,
-    .footer-widget-area {
+    .bottom-widget-area {
         .widget {
             max-width:960px;
             margin-left: auto;
             margin-right: auto;
         }
     }
+    .footer-widget-area-wrapper {
+        max-width:960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-widget-area {
+        .widget {
+            width:33.33%;
+            margin:0;
+            display: inline-block;
+        }
+        .widget_custom_html {
+            text-align: right;
+        }
+        
+    }
     .bc-about-us-main-image {
         max-width:125%;
+    }
+
+	.bc-about-us-text-wrapper {
+		padding: 0 20px;
+	}
+	
+    .bc-about-us-description,
+    .bc-about-us-image-wrapper {
+        width: 50%;
+    	//max-width: 420px;
+        display: inline-block;
+    }
+
+    .bc-about-us-description {
+        padding: 0 20px;
+    }
+    
+    .bc-about-us-image-wrapper {
+        display: flex;
+        align-items: flex-start;
+        margin-top: -80px;
+        padding:0;
     }
 }

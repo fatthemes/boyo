@@ -19,12 +19,15 @@ while (have_posts()):
     the_post();
 
     if (function_exists('yoast_breadcrumb')) {
-        yoast_breadcrumb('</p><p id="breadcrumbs" class="breadcrumbs">', '</p><p>');
+        yoast_breadcrumb('<p id="breadcrumbs" class="breadcrumbs">', '</p>');
     }
-
-    the_title('<h1 class="entry-title">', '</h1>');
-
-
+    ?>
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <header class="entry-header">
+			<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+    </header>
+    <div class="entry-content">
+    <?php
     if (function_exists('boyo_docs_get_related_theme')) {
         echo '<p class="boyo-docs-link-to-theme">' . __('Go to theme: ', 'boyo-docs') . '<a href="' . get_the_permalink(boyo_docs_get_related_theme()) . '">' . get_the_title(boyo_docs_get_related_theme()) . '</a></p>';
     }
@@ -40,6 +43,10 @@ while (have_posts()):
         boyo_docs_the_table_of_content();
     }
 
+    if (function_exists('boyo_docs_the_quick_settings')) {
+        boyo_docs_the_quick_settings();
+    }
+
     the_content();
 
     /*if (function_exists('boyo_docs_the_docs_list')) {
@@ -49,7 +56,10 @@ while (have_posts()):
     /*if (function_exists('boyo_docs_the_sections')) {
 		boyo_docs_the_sections();
     }*/
-
+    ?>
+    </div>
+</article>
+    <?php
 endwhile; // End of the loop.
 ?>
 

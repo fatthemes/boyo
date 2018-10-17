@@ -35,7 +35,7 @@
   margin-left: 10px;
 }
 
-.single-post-featured-image-caption {
+figcaption {
   padding: 0 10px;
   font-size: 75%;
 }

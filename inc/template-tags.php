@@ -107,15 +107,17 @@ if (!function_exists('boyo_post_thumbnail')):
         ?>
 
 								<div class="post-thumbnail">
-									<figure class="single-post-featured-image">
-										<?php the_post_thumbnail();?>
-										<figcaption class="single-post-featured-image-caption">
-											<?php boyo_the_featured_image_caption();?>
-										</figcaption>
+									<figure class="featured-image">
+                                        <?php the_post_thumbnail();?>
+                                        <?php if('post' === get_post_type()) : ?>
+                                            <figcaption class="featured-image-caption">
+                                                <?php boyo_the_featured_image_caption();?>
+                                            </figcaption>
+                                        <?php endif; ?>
 									</figure>
 								</div><!-- .post-thumbnail -->
 
-							<?php else: ?>
+		<?php else: ?>
 
 		<a class="post-thumbnail" href="<?php the_permalink();?>" aria-hidden="true" tabindex="-1">
 			<?php

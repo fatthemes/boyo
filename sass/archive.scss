@@ -29,7 +29,7 @@
 .entry-title,
 .entry-content,
 .entry-footer {
-    background-color: $color_9;
+    //background-color: $color_9;
 }
 
 .entry-title {
@@ -61,4 +61,70 @@
     background: transparent;
     line-height: 1;
     padding: .4em .8em;
+}
+
+@media (min-width: $md) {
+    .blog {
+        .site-main,
+        .main-navigation {
+            background-color: $color_9;
+        }
+        .site-main {
+            padding-top:80px;
+        }
+        .content-area {
+            padding-top: 0;
+        }
+        .sticky {
+            background-color: #fff;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 10px;
+
+            .entry-title {
+                text-transform: uppercase;
+                margin-top: -30px;
+                max-width: 420px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: transparent;
+            }
+            .entry-header {
+                background-color: $color_9;
+                max-width: 960px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;
+                display:flex;
+                flex-wrap: wrap;
+                padding:0;
+                margin-bottom:140px;
+            }
+            .entry-header-wrapper,
+            .image-wrapper {
+                width:50%;
+            }
+            
+            .boyo-intro {
+                background-color: $color_2;
+                margin-bottom: -100px;
+                margin-top: 80px;
+                //max-width: 420px;
+                padding: 20px;
+            }
+            .post-thumbnail {
+                background-color: $color_2;
+                margin-top: -80px;
+                padding:20px;
+                figure {
+                    margin:0;
+                }
+            }
+        }
+    }
+
+    .not-sticky {
+        //max-width: 33.33%;
+    }
 }

@@ -23,9 +23,6 @@ boyo_css_loader( 'doc' );
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				<?php if(function_exists('boyo_themes_the_subtitle')) :
-						boyo_themes_the_subtitle();
-				endif; ?>
 			</header><!-- .entry-header -->
 
 			<div class="boyo-intro">

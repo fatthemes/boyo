@@ -1,6 +1,10 @@
 /*!
 * @package Boyo
 */
+.hentry {
+  padding: 0;
+}
+
 .boyo-docs-toc-heading {
   font-weight: 700;
 }
@@ -19,6 +23,8 @@
 .boyo-docs-toc-list a,
 .boyo-docs-toc-sublist a {
   color: #1f2023;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .boyo-docs-toc-list {
@@ -46,4 +52,58 @@
   text-align: center;
   margin: 40px auto;
 }
+
+.single-doc .entry-header,
+.single-doc .entry-content {
+  max-width: 720px;
+  padding: 0;
+}
+
+.single-doc .entry-content {
+  padding-bottom: 20px;
+}
+
+.boyo-docs-quick-settings {
+  background-color: #ffd73e;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.boyo-docs-list-of-docs {
+  max-width: 720px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boyo-docs-toc-list-item a {
+  border-bottom: none;
+}
+
+.page-template-template-page-docs .entry-header {
+  padding: 0;
+}
+
+@media (min-width: 601px) {
+  .boyo-docs-list-of-docs-item {
+    width: 25%;
+  }
+}
+
+/*
+@media (min-width: $lg) {
+    .single-doc {
+        .entry-content {
+            position: relative;
+        }
+        .boyo-docs-toc-wrapper {
+            position: absolute;
+            left: -240px;
+            max-width: 220px;
+            font-size: 1rem;
+            //padding: 20px 0;
+        }
+    }
+}
+*/
 /*# sourceMappingURL=doc.css.map */

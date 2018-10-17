@@ -9,11 +9,16 @@
 .boyo-themes-testimonials-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 
-.boyo-themes-testimonials {
-  padding: 0 20px;
+.boyo-themes-links {
+  max-width: 420px;
+}
+
+.boyo-themes-testimonials-wrapper {
+  padding: 40px 20px;
+  background-color: #fff;
 }
 
 .boyo-themes-links-item {
@@ -28,7 +33,6 @@
   background-color: #ffd73e;
   font-size: 12px;
   letter-spacing: .32em;
-  margin: 0 -20px;
   padding: 40px 20px;
   text-align: center;
 }
@@ -49,11 +53,10 @@
 
 .boyo-themes-links-item a {
   color: #1f2023;
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .boyo-themes-sections {
-  background-color: #f8f8f8;
   margin: 0 -20px;
 }
 
@@ -70,10 +73,10 @@
   margin: 0 -20px;
 }
 
-.boyo-themes-changelog {
-  padding: 20px 40px;
-  background-color: #f8f8f8;
-  margin: 0 -20px;
+.boyo-themes-testimonials-list {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 420px;
 }
 
 .boyo-themes-testimonials-list-item {
@@ -100,6 +103,15 @@
   font-weight: 700;
 }
 
+.boyo-themes-changelog h2,
+.boyo-themes-changelog h3,
+.boyo-themes-changelog ul {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
 .boyo-themes-changelog h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -118,7 +130,7 @@
 }
 
 .boyo-themes-changelog ul {
-  margin: 0;
+  padding-left: 40px;
 }
 
 .boyo-themes-changelog-added {
@@ -150,12 +162,18 @@
   padding: 0 20px;
 }
 
-.single-theme .entry-content .boyo-intro {
-  padding: 0 20px;
+.single-theme .entry-content {
+  background-color: #f8f8f8;
+  max-width: none;
+  margin-bottom: 20px;
 }
 
-.single-theme .post-thumbnail {
-  margin: 0 -20px;
+.single-theme .boyo-themes-links-box {
+  background-color: #ffffff;
+}
+
+.single-theme .boyo-themes-sections {
+  margin: 0;
 }
 
 .page-template-template-page-themes .boyo-intro,
@@ -273,12 +291,12 @@
 
 .boyo-themes-featured {
   background-color: #f8f8f8;
-  margin: 0 -20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .boyo-themes-featured-list {
   list-style: none;
-  margin: 0 0 40px 0;
   padding: 0;
 }
 
@@ -286,16 +304,29 @@
   padding: 20px;
 }
 
-.boyo-themes-featured-list-item-title,
-.boyo-themes-featured-list-item-desc {
-  padding: 0 20px;
-}
-
 .boyo-themes-testimonials-title {
   font-size: 40px;
 }
 
+.boyo-themes-changelog-wrapper {
+  padding: 40px 20px;
+}
+
+@media (min-width: 481px) {
+  .boyo-themes-featured-list-item-title,
+  .boyo-themes-featured-list-item-desc {
+    padding: 0 20px;
+  }
+}
+
 @media (min-width: 601px) {
+  .single-theme .boyo-intro {
+    padding: 0 20px;
+  }
+  .single-theme .entry-content-wrapper {
+    max-width: 720px;
+    margin: auto;
+  }
   .boyo-themes-themes {
     display: flex;
   }
@@ -313,28 +344,17 @@
   }
   .boyo-themes-featured-list-item {
     width: 33.33%;
-    padding: 20px;
   }
-  .boyo-themes-featured-list-item:first-of-type {
-    padding: 20px 20px 20px 0;
-  }
-  .boyo-themes-featured-list-item:last-of-type {
-    padding: 20px 0 20px 20px;
-  }
-  .boyo-themes-testimonials-list {
-    margin-left: 200px;
-    margin-right: 200px;
+  .boyo-themes-featured-list-item-title,
+  .boyo-themes-featured-list-item-desc {
+    padding: 0;
   }
 }
 
 @media (min-width: 961px) {
-  .boyo-themes-featured-list {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .boyo-themes-featured-list-item {
-    padding: 0;
+  .boyo-themes-featured-list-item-title,
+  .boyo-themes-featured-list-item-desc {
+    padding: 0 20px;
   }
   .boyo-intro-wrapper {
     width: 50%;
@@ -353,9 +373,98 @@
   .boyo-themes-links-item {
     max-width: 260px;
   }
-  .boyo-themes-testimonials-list {
-    margin-left: 300px;
-    margin-right: 300px;
+  .single-theme .entry-header {
+    background-color: #f8f8f8;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 140px;
+  }
+  .single-theme .entry-header-wrapper,
+  .single-theme .image-wrapper {
+    width: 50%;
+  }
+  .single-theme .entry-title,
+  .single-theme .boyo-themes-subtitle {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .single-theme .entry-title {
+    text-transform: uppercase;
+    margin-top: -30px;
+  }
+  .single-theme .boyo-themes-subtitle {
+    margin: 40px auto 80px;
+    padding: 0;
+  }
+  .single-theme .boyo-intro {
+    background-color: #ffffff;
+    margin-bottom: -100px;
+    padding: 20px;
+  }
+  .single-theme .post-thumbnail {
+    background-color: #ffffff;
+    margin-top: -100px;
+    padding: 20px;
+  }
+  .single-theme .post-thumbnail figure {
+    margin: 0;
+  }
+  .single-theme .entry-content-wrapper {
+    max-width: 960px;
+  }
+  .single-theme .boyo-themes-links-wrapper {
+    max-width: 960px;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+  .single-theme .boyo-themes-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .single-theme .boyo-themes-section-content-wrapper,
+  .single-theme .boyo-themes-section-image {
+    width: 50%;
+  }
+  .single-theme .boyo-themes-section-content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .single-theme .even .boyo-themes-section-content-wrapper {
+    order: 1;
+    padding: 100px 40px 40px 0;
+  }
+  .single-theme .even .boyo-themes-section-image {
+    order: 2;
+  }
+  .single-theme .odd .boyo-themes-section-content-wrapper {
+    order: 2;
+    padding: 100px 0 40px 40px;
+  }
+  .single-theme .odd .boyo-themes-section-image {
+    order: 1;
+  }
+}
+
+@media (min-width: 1281px) {
+  .single-theme .entry-header,
+  .single-theme .entry-content-wrapper {
+    max-width: 1200px;
+  }
+  .single-theme .boyo-themes-links {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .boyo-themes-changelog-wrapper h1 {
+    padding: 0 20px;
   }
 }
 /*# sourceMappingURL=theme.css.map */
