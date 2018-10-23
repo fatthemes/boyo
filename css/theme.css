@@ -5,19 +5,23 @@
   padding: 0;
 }
 
+.boyo-themes-testimonials {
+  padding: 40px 20px;
+}
+
 .boyo-themes-links,
 .boyo-themes-testimonials-list {
   list-style: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .boyo-themes-links {
-  max-width: 420px;
+  max-width: 380px;
+  margin: auto;
 }
 
 .boyo-themes-testimonials-wrapper {
-  padding: 40px 20px;
   background-color: #fff;
 }
 
@@ -61,7 +65,7 @@
 }
 
 .boyo-themes-section {
-  padding: 20px 20px 0;
+  padding: 40px 0;
 }
 
 .boyo-themes-section-title,
@@ -69,14 +73,10 @@
   margin: 20px;
 }
 
-.boyo-themes-section-image {
-  margin: 0 -20px;
-}
-
 .boyo-themes-testimonials-list {
   margin-left: auto;
   margin-right: auto;
-  max-width: 420px;
+  max-width: 380px;
 }
 
 .boyo-themes-testimonials-list-item {
@@ -109,7 +109,6 @@
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
 }
 
 .boyo-themes-changelog h3 {
@@ -138,11 +137,15 @@
 }
 
 .boyo-themes-changelog-changed {
-  background-color: #ffffff;
+  background-color: #01fde8;
 }
 
 .boyo-themes-changelog-deprecated {
   background-color: #b7b7b7;
+}
+
+.boyo-themes-changelog-fixed {
+  background-color: #fef0f0;
 }
 
 .boyo-themes-changelog-removed {
@@ -165,11 +168,11 @@
 .single-theme .entry-content {
   background-color: #f8f8f8;
   max-width: none;
-  margin-bottom: 20px;
 }
 
 .single-theme .boyo-themes-links-box {
   background-color: #ffffff;
+  padding: 40px 20px;
 }
 
 .single-theme .boyo-themes-sections {
@@ -275,7 +278,7 @@
 
 .boyo-themes-themes {
   list-style: none;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   padding: 0;
 }
 
@@ -286,13 +289,12 @@
 
 .boyo-themes-themes-item {
   display: block;
-  padding: 20px;
 }
 
 .boyo-themes-featured {
   background-color: #f8f8f8;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .boyo-themes-featured-list {
@@ -309,7 +311,12 @@
 }
 
 .boyo-themes-changelog-wrapper {
-  padding: 40px 20px;
+  padding: 80px 20px;
+}
+
+.single-theme .entry-content-wrapper {
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 @media (min-width: 481px) {
@@ -382,7 +389,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 140px;
+    margin-bottom: 120px;
   }
   .single-theme .entry-header-wrapper,
   .single-theme .image-wrapper {
@@ -422,6 +429,12 @@
     max-width: 960px;
     margin: auto;
     padding-bottom: 40px;
+  }
+  .single-theme .boyo-themes-links {
+    margin: 0;
+  }
+  .single-theme .boyo-themes-links-box {
+    padding: 0 20px;
   }
   .single-theme .boyo-themes-section {
     display: flex;

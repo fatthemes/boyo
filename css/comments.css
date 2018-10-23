@@ -4,6 +4,78 @@
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comment-list {
+  list-style: none;
+}
+
+.comment-list .avatar {
+  margin-left: -40px;
+  margin-bottom: -16px;
+  border-radius: 50%;
+}
+
+.comment-list .fn {
+  font-size: 13px;
+  letter-spacing: 0.07em;
+  line-height: 19px;
+  margin-left: 4px;
+}
+
+.comment-list .fn .url {
+  text-decoration: none;
+}
+
+.comment-list .says {
+  display: none;
+}
+
+.comment-list .children {
+  margin-left: -20px;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.comment {
+  margin-bottom: 40px;
+}
+
+.comment-author {
+  line-height: 1;
+}
+
+.comment-metadata {
+  line-height: 1;
+}
+
+.comment-metadata time {
+  font-size: 13px;
+  letter-spacing: 0.07em;
+  line-height: 19px;
+}
+
+.comment-metadata a {
+  text-decoration: none;
+}
+
+.comment-content {
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+}
+
+.comment-content p {
+  margin-bottom: 1em;
+}
+
+.comment-reply-link {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .comments-area {
   padding: 0 20px;
 }

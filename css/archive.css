@@ -1,10 +1,6 @@
 /*!
 * @package Boyo
 */
-.content-area {
-  padding: 20px;
-}
-
 .post {
   padding-bottom: 20px;
   background-color: #f8f8f8;
@@ -52,7 +48,14 @@
   padding: .4em .8em;
 }
 
+.blog .hentry {
+  padding-top: 0;
+}
+
 @media (min-width: 961px) {
+  .blog .hentry {
+    padding-top: 80px;
+  }
   .blog .site-main,
   .blog .main-navigation {
     background-color: #f8f8f8;
@@ -92,6 +95,12 @@
   .blog .sticky .entry-header-wrapper,
   .blog .sticky .image-wrapper {
     width: 50%;
+  }
+  .blog .sticky .entry-header-wrapper {
+    order: 1;
+  }
+  .blog .sticky .image-wrapper {
+    order: 2;
   }
   .blog .sticky .boyo-intro {
     background-color: #ffffff;

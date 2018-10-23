@@ -357,7 +357,8 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	//color: #404040;
+	color: $color_1;
 	font-family: $font_family_main;
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -644,7 +645,8 @@ a:hover, a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	min-height: 68px;
+	min-height: 69px;
+	position: relative;
 }
 
 .main-navigation ul {
@@ -781,9 +783,10 @@ a:hover, a:active {
 }
 
 .main-navigation.toggled .menu-toggle {
-    position:fixed;
-    right:20px;
-    top:20px;
+	color: #fff;
+    position:absolute;
+    right:0;
+    top:0;
     z-index:20;
     transition-duration: .5s;
 }
@@ -796,7 +799,7 @@ a:hover, a:active {
 }
 
 .main-navigation .custom-logo {
-    max-height: 30px;
+    height: 30px;
     width: auto;
 }
 
@@ -838,6 +841,76 @@ a:hover, a:active {
 	.main-navigation {
 		background-color: #edeef4;
 	}
+}
+
+.search-form-wrapper {
+	background-color: $color_9;
+	display:none;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	padding: 16px 20px;
+	input[type="search"] {
+		padding-right: 100px;
+	}
+}
+
+.search-form {
+	margin-right: 100px;
+	position: relative;;
+}
+
+.search-submit {
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+.search-close {
+	border: none;
+	padding: 0;
+	position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.search-close-bars {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.search-close-bar-first,
+.search-close-bar-second {
+    border-bottom: 2px solid #000;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    right: 0;
+    transition-duration: .5s;
+}
+
+.search-form-wrapper.toggled {
+	display: block;
+}
+
+.search-form-wrapper.toggled .search-close-bar-first {
+    transition-duration: .5s;
+    transform: rotate(45deg);
+    //top: 7px;
+    //border-bottom: 2px solid #fff;
+}
+
+.search-form-wrapper.toggled .search-close-bar-second {
+    //border-bottom: 2px solid #fff;
+    transition-duration: .5s;
+    transform: rotate(-45deg);
+    //top: 7px;
+    color: #fff;
 }
 
 .site-main .comment-navigation, .site-main
@@ -941,7 +1014,13 @@ a:hover, a:active {
 }
 
 .site-header {
-	padding: 20px 20px 0;
+	//padding: 20px 20px 0;
+}
+
+.site-footer {
+	background-color: $color_11;
+	padding: 30px 20px 20px;
+	margin-top: -10px;
 }
 
 @media (min-width: $sm) {
@@ -960,6 +1039,12 @@ a:hover, a:active {
 	.post-navigation .nav-next {
 		width: 50%;
 	}
+	.site-header {
+		padding: 20px 20px 0;
+	}
+	.site-footer {
+        padding: 30px 40px 20px;
+    }
 }
 
 @media (min-width: $md) {

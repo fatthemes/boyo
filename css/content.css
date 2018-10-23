@@ -26,25 +26,20 @@
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.content-area,
-.entry-header,
-.entry-content,
-.entry-footer {
-  padding: 0 20px;
-}
-
 .sticky {
   display: block;
 }
 
 .hentry {
   padding: 40px 0 0;
+  margin-bottom: 80px;
 }
 
 .breadcrumbs {
   font-size: .75em;
   margin-top: 40px;
   margin-bottom: 40px;
+  letter-spacing: 0.1em;
 }
 
 .entry-title,
@@ -195,8 +190,9 @@ object {
   margin: 0.8075em 0;
 }
 
-.wp-caption-text {
-  text-align: center;
+figcaption {
+  padding: 0 10px;
+  font-size: 75%;
 }
 
 /*--------------------------------------------------------------
@@ -263,25 +259,32 @@ object {
 .boyo-themes-subtitle,
 .boyo-themes-testimonials-subtitle,
 .boyo-themes-list-description-wrapper,
-.boyo-themes-changelog-wrapper,
 .boyo-themes-featured-list {
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.boyo-themes-list-description-wrapper {
+  padding: 0 20px;
+}
+
+.entry-header,
+.entry-content {
+  padding: 0 20px;
+}
+
 .home .entry-header,
 .home .entry-content {
   margin-bottom: 20px;
-  padding: 0 20px;
+}
+
+.home .entry-content {
+  padding-bottom: 40px;
 }
 
 .home .hentry {
   margin: 0;
-}
-
-.boyo-themes-list-widget {
-  margin: 0 -20px;
 }
 
 .boyo-themes-themes {
@@ -318,7 +321,7 @@ object {
 
 .bc-about-us-cite-wrapper {
   background-color: #fef0f0;
-  margin-bottom: 20px;
+  padding: 40px 0;
 }
 
 .bc-about-us-cite-quote {
@@ -344,11 +347,27 @@ object {
   letter-spacing: 0.04em;
 }
 
-.site-info {
-  text-align: right;
+.bc-about-us-description,
+.boyo-themes-list-description {
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry-footer {
+  padding: 0 20px;
+}
+
+.page-template-template-page-about-us .hentry {
+  margin-bottom: 0;
 }
 
 @media (min-width: 601px) {
+  .content-area,
+  .entry-header,
+  .entry-content {
+    padding: 0 20px;
+  }
   .boyo-companion-subtitle,
   .boyo-themes-list-subtitle,
   .boyo-themes-subtitle,
@@ -369,13 +388,17 @@ object {
     margin-left: auto;
     margin-right: auto;
   }
-  .bc-about-us-description,
-  .boyo-themes-list-description {
-    max-width: 420px;
-  }
   .entry-content {
     font-size: 1.25rem;
     line-height: 2;
+  }
+  .page-template-template-page-about-us .boyo-companion-subtitle {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+  }
+  .bc-about-us-cite-wrapper {
+    margin-bottom: 20px;
   }
 }
 

@@ -42,17 +42,13 @@ if (!function_exists('boyo_posted_by')):
                 $byline = '<ul class="coauthors-list">';
                 foreach($coauthors as $coauthor) {
                     $byline .= '<li class="coauthors-list-item">';
-                    $byline .= '<div class="author vcard">' . get_avatar($coauthor->get('ID'), 32) . '<a class="url fn n" href="' . esc_url(get_author_posts_url($coauthor->get('ID'))) . '">' . esc_html(get_the_author_meta( 'display_name', $coauthor->get('ID') )) . '</a></div>';
+                    $byline .= '<div class="author vcard">' . get_avatar($coauthor->get('ID'), 48) . '<a class="url fn n" href="' . esc_url(get_author_posts_url($coauthor->get('ID'))) . '">' . esc_html(get_the_author_meta( 'display_name', $coauthor->get('ID') )) . '</a></div>';
                     $byline .= '</li>';
                 }
                 $byline .= '</ul>';
             }
         } else {
-            $byline = sprintf(
-                /* translators: %s: post author. */
-                esc_html_x('By %s', 'post author', 'boyo'),
-                '<span class="author vcard">' . get_avatar($coauthor->get('ID'), 32) . '<a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
-            );
+            $byline = '<span class="author vcard">' . get_avatar(get_the_author_meta( 'ID' ), 48) . '<a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>';
         }
 
         echo '<div class="byline"> ' . $byline . '</div>'; // WPCS: XSS OK.

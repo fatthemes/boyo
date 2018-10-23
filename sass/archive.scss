@@ -4,7 +4,7 @@
 @import "variables";
 
 .content-area {
-    padding: 20px;
+    //padding: 20px;
 }
 
 .post {
@@ -63,8 +63,17 @@
     padding: .4em .8em;
 }
 
+.blog {
+    .hentry {
+        padding-top:0;
+    }
+}
+
 @media (min-width: $md) {
     .blog {
+        .hentry {
+            padding-top:80px;
+        }
         .site-main,
         .main-navigation {
             background-color: $color_9;
@@ -104,6 +113,14 @@
             .entry-header-wrapper,
             .image-wrapper {
                 width:50%;
+            }
+
+            .entry-header-wrapper {
+                order:1;
+            }
+
+            .image-wrapper {
+                order:2;
             }
             
             .boyo-intro {

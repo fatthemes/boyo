@@ -19,31 +19,25 @@
 }
 
 .entry-meta .cat-links {
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: -0.01em;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
-.coauthors-list-item {
-  margin: 10px 0;
+.entry-meta .posted-on {
+  font-size: 12px;
+  letter-spacing: 0.2em;
 }
 
-.coauthors-list-item .url {
-  font-size: 13px;
-  letter-spacing: 0.07em;
-  line-height: 19px;
-  margin-left: 10px;
-}
-
-figcaption {
-  padding: 0 10px;
-  font-size: 75%;
+.entry-footer .tag {
+  font-size: 12px;
+  letter-spacing: 0.2em;
 }
 
 .coauthors-list,
 .post-authors-list {
   list-style: none;
-  margin: 0;
+  margin: 0 0 80px;
 }
 
 .coauthors-list {
@@ -53,6 +47,14 @@ figcaption {
 .byline .author {
   display: flex;
   align-items: center;
+  margin: 0 0 10px;
+}
+
+.byline .author .url {
+  font-size: 13px;
+  letter-spacing: 0.07em;
+  line-height: 19px;
+  margin-left: 10px;
 }
 
 .byline .avatar,
@@ -71,6 +73,29 @@ figcaption {
 
 .post-authors-list-name {
   padding-left: 20px;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.07em;
+}
+
+.post-authors-list-name .post-authors-list-bio {
+  margin: 0;
+}
+
+.post-authors-list-name .url {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.post-authors-list-name .url a {
+  text-decoration: none;
+}
+
+.boyo-companion-subtitle {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
 }
 
 @media (min-width: 601px) {

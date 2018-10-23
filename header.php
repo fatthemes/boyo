@@ -42,7 +42,7 @@
 					<span class="hamburger-bar-third"></span>
 				</span>
 			</button>
-			<button class="search-toggle">
+			<button id="search-toggle" class="search-toggle" aria-controls="search-form-wrapper" aria-expanded="false">
 				<span class="screen-reader-text"><?php esc_html_e( 'Search', 'boyo' ); ?></span>
 				<span class="search-button"><svg version="1.1" id="search_icon" x="0px"
 	 y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
@@ -53,6 +53,16 @@
 	C16.405,14.239,13.687,16.959,10.345,16.959z"/>
 </svg></span>
 			</button>
+			<div id="search-form-wrapper" class="search-form-wrapper" aria-expanded="false">
+				<?php get_search_form(); ?>
+				<button id="search-close" class="search-close">
+				<span class="screen-reader-text"><?php esc_html_e( 'Search', 'boyo' ); ?></span>
+				<span class="search-close-bars">
+					<span class="search-close-bar-first"></span>
+					<span class="search-close-bar-second"></span>
+				</span>
+			</button>
+			</div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
