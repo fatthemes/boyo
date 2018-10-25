@@ -77,6 +77,20 @@ function boyo_customize_register( $wp_customize ) {
 		'type' => 'dropdown-pages',
 		'allow_addition' => true,
 	) );
+
+	$wp_customize->add_setting(
+		'customization_url', array(
+			'default' => '',
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control( 'customization_url', array(
+		'label' => __( 'Customization Page', 'boyo' ),
+		'section' => 'advanced_settings',
+		'type' => 'dropdown-pages',
+		'allow_addition' => true,
+	) );
 }
 add_action( 'customize_register', 'boyo_customize_register' );
 

@@ -35,8 +35,11 @@ boyo_css_loader( 'theme' );
 					</div>
 					<div class="boyo-themes-links-wrapper">
 						<ul class="boyo-themes-links">
+						<?php if(!empty(get_theme_mod( 'customization_url', '' ))) : ?>
+							<li class="boyo-themes-links-item boyo-themes-links-customization-url"><a href="<?php  the_permalink( get_theme_mod( 'customization_url', '' )); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/cog.svg" alt=""><?php esc_html_e('Theme Customization', 'boyo') ?></a></li>
+						<?php endif; ?>
 						<?php if(!empty(get_theme_mod( 'donate_url', '' ))) : ?>
-							<li class="boyo-themes-links-item boyo-themes-links-donate-url"><a href="<?php  the_permalink( get_theme_mod( 'donate_url', '' )); ?>"><?php esc_html_e('Make a Contribution', 'boyo') ?></a></li>
+							<li class="boyo-themes-links-item boyo-themes-links-donate-url"><a href="<?php  the_permalink( get_theme_mod( 'donate_url', '' )); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/heart.svg" alt=""><?php esc_html_e('Make a Contribution', 'boyo') ?></a></li>
 						<?php endif; ?>
 						<?php if(!empty(get_theme_mod( 'support_url', '' ))) : ?>
 							<li class="boyo-themes-links-item boyo-themes-links-support-url"><a href="<?php  the_permalink( get_theme_mod( 'support_url', '' )); ?>"><?php esc_html_e('Support', 'boyo') ?></a></li>

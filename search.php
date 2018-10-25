@@ -35,11 +35,13 @@ boyo_css_loader( 'archive' );
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'search' );
+				get_template_part( 'template-parts/content' );
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_pagination( array(
+				'prev_text' => esc_html__( 'Prev', 'boyo' ),
+			) );
 
 		else :
 

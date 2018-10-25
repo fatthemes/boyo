@@ -81,7 +81,15 @@ if ( ! function_exists( 'boyo_setup' ) ) :
 		) );
 
 		// Add custom image sizes.
-		add_image_size( 'boyo-sm', 440 ); // 440 pixels wide (and unlimited height);
+		add_image_size( 'boyo-200', 200 ); // 200 pixels wide (and unlimited height);
+		add_image_size( 'boyo-320', 320 ); // 320 pixels wide (and unlimited height);
+		add_image_size( 'boyo-384', 384 ); // 384 pixels wide (and unlimited height);
+		add_image_size( 'boyo-480', 480 ); // 480 pixels wide (and unlimited height);
+		add_image_size( 'boyo-560', 560 ); // 560 pixels wide (and unlimited height);
+		add_image_size( 'boyo-600', 600 ); // 600 pixels wide (and unlimited height);
+		add_image_size( 'boyo-720', 720 ); // 720 pixels wide (and unlimited height);
+		add_image_size( 'boyo-880', 880 ); // 880 pixels wide (and unlimited height);
+		add_image_size( 'boyo-1200', 1200 ); // 1200 pixels wide (and unlimited height);
 
 		}
 endif;

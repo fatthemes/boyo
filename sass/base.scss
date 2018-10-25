@@ -833,8 +833,13 @@ a:hover, a:active {
 .main-menu .menu-item a:active,
 .main-menu .menu-item a:hover,
 .main-menu .current-menu-item a {
-    //font-weight: 700;
-    border-bottom: 2px solid #ffd73e;
+	//font-weight: 700;
+	&::after {
+		border-bottom: 4px solid #ffd73e;
+		display: block;
+		margin: 3px 5px 0 0;
+		content: '';
+	}
 }
 
 .home {
@@ -1074,6 +1079,9 @@ a:hover, a:active {
 				> a {
 					border: 2px solid $color_1;
 					padding: 10px;
+					&::after {
+						display: none;
+					}
 				}
 			} 
 		}
@@ -1082,7 +1090,12 @@ a:hover, a:active {
 	.main-menu {
 		.current-menu-item {
 			a {
-				border-bottom: 2px solid $color_15;
+				&::after {
+					border-bottom: 4px solid #ffd73e;
+					display: block;
+					margin: 3px 5px 0 0;
+					content: '';
+				}
 			}
 		}
 	}

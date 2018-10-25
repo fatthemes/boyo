@@ -819,10 +819,13 @@ a:hover, a:active {
   display: inline-block;
 }
 
-.main-menu .menu-item a:active,
-.main-menu .menu-item a:hover,
-.main-menu .current-menu-item a {
-  border-bottom: 2px solid #ffd73e;
+.main-menu .menu-item a:active::after,
+.main-menu .menu-item a:hover::after,
+.main-menu .current-menu-item a::after {
+  border-bottom: 4px solid #ffd73e;
+  display: block;
+  margin: 3px 5px 0 0;
+  content: '';
 }
 
 .home .main-navigation {
@@ -1051,8 +1054,14 @@ a:hover, a:active {
     border: 2px solid #1f2023;
     padding: 10px;
   }
-  .main-menu .current-menu-item a {
-    border-bottom: 2px solid #ffd73e;
+  .main-menu .menu-item.make-a-contribution > a::after {
+    display: none;
+  }
+  .main-menu .current-menu-item a::after {
+    border-bottom: 4px solid #ffd73e;
+    display: block;
+    margin: 3px 5px 0 0;
+    content: '';
   }
 }
 /*# sourceMappingURL=base.css.map */

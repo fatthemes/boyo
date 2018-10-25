@@ -396,6 +396,32 @@ figcaption {
 	}
 }
 
+.error404 {
+	.site-main {
+		max-width: 720px;
+		padding: 0 20px;
+	}
+	.error-404 {
+		.search-form {
+			margin: 40px auto 80px;
+			//max-width: 420px;
+		}
+	}
+	.error404-content {
+		color: $color_4;
+		font-family: $font_family_headers;
+		font-size: 160px;
+		font-weight: 700;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+.codeable-form {
+	margin: 0 -20px -90px -40px;
+    //overflow: hidden;
+}
+
 @media (min-width: $sm) {
 	.content-area,
 		.entry-header,
@@ -470,6 +496,7 @@ figcaption {
 	
 	.bc-about-us-description-box,
 	.entry-header,
+	.page-header,
 	.site-info,
 	.breadcrumbs,
 	.post-thumbnail,
@@ -516,6 +543,7 @@ figcaption {
 	}
 	
 	.entry-header,
+	.page-header,
 	//.site-info,
 	.breadcrumbs,
 	.post-thumbnail,
