@@ -6,7 +6,7 @@
 }
 
 .boyo-themes-testimonials {
-  padding: 40px 20px;
+  padding: 80px 20px;
 }
 
 .boyo-themes-testimonials-wrapper {
@@ -300,8 +300,8 @@
 
 .boyo-themes-featured {
   background-color: #f8f8f8;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .boyo-themes-featured-list {
@@ -439,6 +439,9 @@
   }
   .single-theme .boyo-themes-links {
     margin: 0;
+    -webkit-columns: 2;
+            columns: 2;
+    max-width: none;
   }
   .single-theme .boyo-themes-links-box {
     padding: 0 20px;

@@ -101,40 +101,45 @@
 
 .bottom-widget-area,
 .footer-widget-area {
-    background-color: $color_11;    
-}
-
-.bottom-widget-area {
-    padding: 20px 20px 0;
-}
-
-.footer-widget-area {
-    padding: 30px 20px 0;
-    margin-top: -10px;
-}
-
-.bottom-widget-area,
-.footer-widget-area {
+    background-color: $color_11;
     .widget {
         color: $color_4;
         margin: 0;
         padding-bottom: 20px;
         padding-top: 20px;
     }
+    .widget-title {
+        color: #dedede;
+    }
 }
 
 .bottom-widget-area {
+    padding: 20px 20px 0;
     .bc-featured-posts-widget-list {
         border-bottom: 1px solid $color_8;
         padding-bottom: 60px;
     }
+    .widget_tag_cloud {
+        a {
+            color: $color_4;
+            text-decoration: none;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $color_4;
+                text-decoration: underline;
+            }
+        }
+        .tagcloud {
+            border-bottom: 1px solid $color_8;
+            padding-bottom: 80px;
+        }
+    }
 }
 
-.bottom-widget-area,
 .footer-widget-area {
-    .widget-title {
-        color: #dedede;
-    }
+    padding: 30px 20px 0;
+    margin-top: -10px;
 }
 
 .bottom-widget-area p,

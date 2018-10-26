@@ -53,16 +53,26 @@ while (have_posts()):
 							echo '<li class="boyo-themes-links-item boyo-themes-links-demo-url"><a href="' . esc_url(boyo_themes_get_demo_url()) . '"><img src="' . get_template_directory_uri() . '/img/eye.svg" alt="">' . esc_html__('Live Demo', 'boyo') . '</a></li>';
 						}
 
+						if(function_exists('boyo_themes_get_related_doc')) { ?>
+							<li class="boyo-themes-links-item boyo-themes-links-docs-url"><a href="<?php the_permalink(boyo_themes_get_related_doc()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/docs.svg" alt=""><?php esc_html_e('Theme Documentation', 'boyo') ?></a></li>
+						<?php }
+
+						if(function_exists('boyo_themes_get_support_forum_link')) { ?>
+							<li class="boyo-themes-links-item boyo-themes-links-support-url"><a href="<?php echo esc_url(boyo_themes_get_support_forum_link()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/docs.svg" alt=""><?php esc_html_e('Support Forum', 'boyo') ?></a></li>
+						<?php }
+
 						if (function_exists('boyo_themes_get_translation_link')) {
 							echo '<li class="boyo-themes-links-item boyo-themes-links-translation-url"><a href="' . esc_url(boyo_themes_get_translation_link()) . '"><img src="' . get_template_directory_uri() . '/img/bulb.svg" alt="">' . esc_html__('Help Translate', 'boyo') . '</a></li>';
 						}
 
-						if(function_exists('boyo_themes_get_related_doc')) { ?>
-							<li class="boyo-themes-links-item boyo-themes-links-docs-url"><a href="<?php the_permalink(boyo_themes_get_related_doc()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/docs.svg" alt=""><?php esc_html_e('Theme Documentation', 'boyo') ?></a></li>
+						if(function_exists('boyo_themes_get_leave_a_review_link')) { ?>
+							<li class="boyo-themes-links-item boyo-themes-links-review-url"><a href="<?php echo esc_url(boyo_themes_get_leave_a_review_link()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/docs.svg" alt=""><?php esc_html_e('Leave a Review', 'boyo') ?></a></li>
 						<?php }
+
 						if(!empty(get_theme_mod( 'customization_url', '' ))) { ?>
-							<li class="boyo-themes-links-item boyo-themes-links-customization-url"><a href="<?php  the_permalink( get_theme_mod( 'customization_url', '' )); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/cog.svg" alt=""><?php esc_html_e('Theme Customization', 'boyo') ?></a></li>
+							<li class="boyo-themes-links-item boyo-themes-links-customization-url"><a href="<?php the_permalink( get_theme_mod( 'customization_url', '' )); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/cog.svg" alt=""><?php esc_html_e('Theme Customization', 'boyo') ?></a></li>
 						<?php }
+
 						if(!empty(get_theme_mod( 'donate_url', '' ))) { ?>
 							<li class="boyo-themes-links-item boyo-themes-links-donate-url"><a href="<?php  the_permalink( get_theme_mod( 'donate_url', '' )); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/heart.svg" alt=""><?php esc_html_e('Make a Contribution', 'boyo') ?></a></li>
 						<?php }

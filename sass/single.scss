@@ -49,7 +49,7 @@
 .coauthors-list,
 .post-authors-list {
     list-style: none;
-    margin: 0 0 80px;
+    margin: 0 0 40px;
 }
 
 .coauthors-list {
@@ -84,6 +84,9 @@
 .post-authors-list-info {
     display: flex;
     align-items: flex-start;
+    .avatar {
+        min-width: 64px;
+    }
 }
 
 .post-authors-list-name {

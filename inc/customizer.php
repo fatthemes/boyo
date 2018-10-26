@@ -65,20 +65,6 @@ function boyo_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_setting(
-		'support_url', array(
-			'default' => '',
-			'sanitize_callback' => 'absint',
-		)
-	);
-
-	$wp_customize->add_control( 'support_url', array(
-		'label' => __( 'Support Page', 'boyo' ),
-		'section' => 'advanced_settings',
-		'type' => 'dropdown-pages',
-		'allow_addition' => true,
-	) );
-
-	$wp_customize->add_setting(
 		'customization_url', array(
 			'default' => '',
 			'sanitize_callback' => 'absint',
