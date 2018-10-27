@@ -827,7 +827,8 @@ a:hover, a:active {
     font-size: 14px;
     letter-spacing: .32em;
     color: #fff;
-    display: inline-block;
+	display: inline-block;
+	position: relative;
 }
 
 .main-menu .menu-item a:active,
@@ -839,6 +840,9 @@ a:hover, a:active {
 		display: block;
 		margin: 3px 5px 0 0;
 		content: '';
+		position: absolute;
+		left:0;
+		right:0;
 	}
 }
 
