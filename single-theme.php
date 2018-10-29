@@ -58,7 +58,7 @@ while (have_posts()):
 						<?php }
 
 						if(function_exists('boyo_themes_get_support_forum_link')) { ?>
-							<li class="boyo-themes-links-item boyo-themes-links-support-url"><a href="<?php echo esc_url(boyo_themes_get_support_forum_link()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/docs.svg" alt=""><?php esc_html_e('Support Forum', 'boyo') ?></a></li>
+							<li class="boyo-themes-links-item boyo-themes-links-support-url"><a href="<?php echo esc_url(boyo_themes_get_support_forum_link()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/support.svg" alt=""><?php esc_html_e('Support Forum', 'boyo') ?></a></li>
 						<?php }
 
 						if (function_exists('boyo_themes_get_translation_link')) {
@@ -66,7 +66,7 @@ while (have_posts()):
 						}
 
 						if(function_exists('boyo_themes_get_leave_a_review_link')) { ?>
-							<li class="boyo-themes-links-item boyo-themes-links-review-url"><a href="<?php echo esc_url(boyo_themes_get_leave_a_review_link()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/docs.svg" alt=""><?php esc_html_e('Leave a Review', 'boyo') ?></a></li>
+							<li class="boyo-themes-links-item boyo-themes-links-review-url"><a href="<?php echo esc_url(boyo_themes_get_leave_a_review_link()); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/star.svg" alt=""><?php esc_html_e('Leave a Review', 'boyo') ?></a></li>
 						<?php }
 
 						if(!empty(get_theme_mod( 'customization_url', '' ))) { ?>
