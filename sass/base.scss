@@ -784,7 +784,7 @@ a:hover, a:active {
 
 .main-navigation.toggled .menu-toggle {
 	color: #fff;
-    position:absolute;
+    position:fixed;
     right:0;
     top:0;
     z-index:20;
