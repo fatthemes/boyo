@@ -9,26 +9,6 @@
   padding: 0 20px;
 }
 
-.entry-meta a {
-  color: #1f2023;
-  text-decoration: none;
-}
-
-.entry-meta .byline {
-  margin: 20px 0;
-}
-
-.entry-meta .cat-links {
-  font-size: 12px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.entry-meta .posted-on {
-  font-size: 12px;
-  letter-spacing: 0.2em;
-}
-
 .entry-footer .tag {
   font-size: 12px;
   letter-spacing: 0.2em;

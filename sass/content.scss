@@ -60,34 +60,18 @@
 
 //.entry-title,
 .previous-article,
-.next-article,
-.boyo-companion-subtitle,
-.boyo-themes-subtitle,
-.bc-about-us-title,
-.bc-about-us-subtitle,
-.boyo-themes-list-title,
-.boyo-themes-list-subtitle,
-.boyo-themes-testimonials-subtitle,
-.bc-about-us-cite-content {
+.next-article {
 	color: $color_14;
     font-family: $font_family_headers;
     letter-spacing: -0.04em;
 }
 
 .previous-article,
-.next-article,
-.boyo-companion-subtitle,
-.boyo-themes-subtitle,
-.bc-about-us-subtitle,
-.boyo-themes-subtitle,
-.boyo-themes-list-subtitle,
-.boyo-themes-testimonials-subtitle {
+.next-article {
 	font-size: 25px;
 }
 
-.boyo-intro,
-.bc-about-us-extra-info-content,
-.boyo-docs-quick-settings {
+.boyo-intro {
 	font-size: 15px;
 	letter-spacing: .045em;
 	line-height: 27px;
@@ -118,6 +102,27 @@
 .entry-footer {
 	max-width: 720px;
     margin: auto;
+}
+
+.entry-meta {
+    a {
+        color: $color_1;
+        text-decoration: none;
+    }
+    .byline {
+        margin: 20px 0;
+    }
+
+    .cat-links {
+        font-size: 12px;
+        //line-height: 36px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+    .posted-on {
+        font-size: 12px;
+        letter-spacing: 0.2em;
+    }
 }
 
 .first-letter {
@@ -262,31 +267,20 @@ figcaption {
 	display: block;
 }
 
-.entry-content,
-.bc-about-us-description-box {
+blockquote {
+	font-family: Montserrat;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.entry-content {
 	a {
 		color: $color_1;
 		border-bottom: 2px solid;
 		padding: 0;
 		text-decoration: none;
 	}
-}
-
-.bc-about-us-subtitle,
-.boyo-companion-subtitle,
-.boyo-themes-list-subtitle,
-.boyo-themes-subtitle,
-.boyo-themes-testimonials-subtitle,
-.boyo-themes-list-description-wrapper,
-//.boyo-themes-changelog-wrapper,
-.boyo-themes-featured-list {
-	max-width: 720px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.boyo-themes-list-description-wrapper {
-	padding: 0 20px;
 }
 
 .entry-header,
@@ -309,82 +303,11 @@ figcaption {
     }
 }
 
-.boyo-themes-list-widget {
-    //margin: 0 -20px;
-}
-
-.boyo-themes-themes {
-    list-style: none;
-    margin-bottom:40px;
-    padding: 0;
-    a {
-        text-decoration: none;
-        color: $color_1;
-    }
-}
-
-.boyo-themes-themes-item {
-    display: block;
-    .boyo-themes-themes-image-wrapper {
-        display: block;
-        margin-top: 60px;
-    }
-}
-
-.boyo-themes-themes-title,
-.boyo-themes-themes-excerpt {
-    padding: 0 20px;
-}
-
-.bc-about-us-extra-info-title {
-	border-top: 2px solid #000;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding-top: 20px;
-}
-
-.bc-about-us-cite-wrapper {
-	background-color: $color_10; 
-	//position: relative;
-	//min-height: 300px;
-	padding: 40px 0;
-}
-.bc-about-us-cite-quote {
-	color: $color_5;
-	//position: absolute;
-	//top:0;
-	font-size: 300px;
-	line-height: 1;
-	//margin-left: -40px;
-    padding: 50px 0;
-	//z-index: -1;
-}
-.bc-about-us-cite-content {
-	//position: absolute;
-	padding: 80px 20px 80px 60px;
-	color: $color_1;
-	font-size: 40px;
-	line-height: 1.2;
-	margin: -300px 0 0;
-	max-width: 600px;
-}
-
 .site-info,
 .site-info a {
     color: $color_4;
     font-size: 14px;
     letter-spacing: 0.04em;
-}
-
-.site-info {
-	//text-align: right;
-}
-
-.bc-about-us-description,
-.boyo-themes-list-description {
-	max-width: 380px;
-	margin-left: auto;
-    margin-right: auto;
 }
 
 .entry-footer {
@@ -428,150 +351,35 @@ figcaption {
 		.entry-content {
 			padding: 0 20px;
 		}
-		
-    .boyo-companion-subtitle,
-	.boyo-themes-list-subtitle,
-	.boyo-themes-subtitle,
-	.boyo-themes-testimonials-subtitle,
-	.bc-about-us-subtitle {
-		padding: 0 20px;
-	}
-	.boyo-themes-themes {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .boyo-themes-themes-item {
-        width: 50%;
-        padding: 20px;
-    }
-    .bc-about-us-image-wrapper,
-	.bc-about-us-description {
-        //max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-	}
 	
 	.entry-content {
 		font-size: 1.25rem;
 		line-height: 2;
 	}
-	.page-template-template-page-about-us {
-		.boyo-companion-subtitle {
-			padding: 0;
-			max-width: none;
-			margin: 0;
-		}
-	}
-	.bc-about-us-cite-wrapper {
-		margin-bottom: 20px;
-	}
 }
 
 @media (min-width: $md) {
-	.bc-about-us-text-wrapper,
-	.boyo-themes-list-text-wrapper,
-	.boyo-themes-themes,
-	.boyo-themes-testimonials,
-	.boyo-themes-changelog-wrapper,
-	.boyo-themes-featured-list {
-        max-width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-	}
-	.boyo-themes-themes-item {
-        &:nth-of-type(odd) {
-            padding: 20px 20px 20px 0;
-        }
-        &:nth-of-type(even) {
-            padding: 20px 0 20px 20px;
-        }
-    }
-
-    .bc-about-us-description-box {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 20px;
-	}
-	
-	.bc-about-us-description-box,
 	.entry-header,
 	.page-header,
 	.site-info,
 	.breadcrumbs,
-	.post-thumbnail,
-	.bc-about-us-cite {
+	.post-thumbnail {
 		max-width:960px;
 		margin-left: auto;
         margin-right: auto;
 	}
-
-	.page-template-template-page-about-us {
-		.entry-content {
-			max-width: 960px;
-			padding: 0;
-		}
-		.bc-about-us-extra-info {
-			max-width: 320px;
-			display: inline-block;
-			vertical-align: top;
-			padding: 60px 20px 20px;
-		}
-		.about-us-content {
-			display: inline-block;
-			margin:0;
-			max-width: 580px;
-			margin-left: 54px;
-			padding: 20px;
-		}
-		.bc-about-us-cite-quote {
-			margin-left: -40px;
-		}
-		.bc-about-us-cite-content {
-			padding: 80px 20px;
-		}
-	}
 }
 
 @media (min-width: $lg) {
-    .bc-about-us-image-wrapper {
-        //margin-top: -160px;
-	}
-	
-	.bc-about-us-description-box {
-        //max-width: 960px;
-	}
-	
 	.entry-header,
 	.page-header,
 	//.site-info,
 	.breadcrumbs,
-	.post-thumbnail,
-	.bc-about-us-text-wrapper,
-	.boyo-themes-list-text-wrapper,
-	.boyo-themes-themes,
-	.boyo-themes-testimonials,
-	.boyo-themes-changelog-wrapper,
-	.bc-about-us-cite,
-	.boyo-themes-featured-list {
+	.post-thumbnail {
         max-width: 1200px;
 	}
 
-	.entry-title,
-	.bc-about-us-title,
-	.boyo-themes-list-title {
+	.entry-title {
 		max-width: 50%;
-	}
-
-	.page-template-template-page-about-us {
-		.entry-content {
-			max-width: 1200px;
-		}
-		.bc-about-us-extra-info {
-			max-width: 420px;
-		}
-		.about-us-content {
-			max-width: 720px;
-		}
 	}
 }

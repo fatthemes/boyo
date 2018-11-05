@@ -13,7 +13,7 @@
  */
 
 get_header();
-boyo_css_loader( 'page' );
+//boyo_css_loader( 'page' );
 //if( is_front_page() ) {
 //	boyo_css_loader( 'front' );
 //}

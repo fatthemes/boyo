@@ -13,6 +13,9 @@
 	<header class="entry-header">
 		<?php boyo_post_thumbnail(); ?>
 		<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+		<div class="entry-meta">
+			<?php boyo_the_categories(); ?>
+		</div>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php
