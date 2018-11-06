@@ -14,5 +14,7 @@ boyo_css_loader( 'widgets' );
 ?>
 
 		<aside id="bottom" class="widget-area bottom-widget-area">
-			<?php dynamic_sidebar( 'sidebar-3' ); ?>
+			<div class="bottom-widget-area-wrapper">
+				<?php dynamic_sidebar( 'sidebar-3' ); ?>
+			</div>
 		</aside><!-- #bottom -->

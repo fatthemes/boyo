@@ -53,6 +53,9 @@
 
 .bottom-widget-area {
     padding: 20px 20px 0;
+    .bottom-widget-area-wrapper {
+        border-bottom: 2px solid $color_8;
+    }
     .widget_tag_cloud {
         a {
             color: $color_4;
@@ -65,15 +68,16 @@
             }
         }
         .tagcloud {
-            border-bottom: 1px solid $color_8;
+            //border-bottom: 1px solid $color_8;
             padding-bottom: 80px;
+            line-height: 1.2;
         }
     }
 }
 
 .footer-widget-area {
     padding: 30px 20px 0;
-    margin-top: -10px;
+    //margin-top: -10px;
 }
 
 .bottom-widget-area p,
@@ -97,10 +101,29 @@
 
 @media (min-width: $md) {
     .bottom-widget-area {
-        .widget {
+        .bottom-widget-area-wrapper {
             max-width:960px;
             margin-left: auto;
             margin-right: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .widget {
+            &:nth-of-type(1),
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+                width: 33.33%;
+            }
+            &:nth-of-type(1) {
+                padding-right: 20px;
+            }
+            &:nth-of-type(2) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            &:nth-of-type(3) {
+                padding-left: 20px;
+            }
         }
     }
     .footer-widget-area-wrapper {

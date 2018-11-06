@@ -52,6 +52,10 @@
   padding: 20px 20px 0;
 }
 
+.bottom-widget-area .bottom-widget-area-wrapper {
+  border-bottom: 2px solid #4c4c4c;
+}
+
 .bottom-widget-area .widget_tag_cloud a {
   color: #b7b7b7;
   text-decoration: none;
@@ -63,13 +67,12 @@
 }
 
 .bottom-widget-area .widget_tag_cloud .tagcloud {
-  border-bottom: 1px solid #4c4c4c;
   padding-bottom: 80px;
+  line-height: 1.2;
 }
 
 .footer-widget-area {
   padding: 30px 20px 0;
-  margin-top: -10px;
 }
 
 .bottom-widget-area p,
@@ -92,10 +95,25 @@
 }
 
 @media (min-width: 961px) {
-  .bottom-widget-area .widget {
+  .bottom-widget-area .bottom-widget-area-wrapper {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bottom-widget-area .widget:nth-of-type(1), .bottom-widget-area .widget:nth-of-type(2), .bottom-widget-area .widget:nth-of-type(3) {
+    width: 33.33%;
+  }
+  .bottom-widget-area .widget:nth-of-type(1) {
+    padding-right: 20px;
+  }
+  .bottom-widget-area .widget:nth-of-type(2) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bottom-widget-area .widget:nth-of-type(3) {
+    padding-left: 20px;
   }
   .footer-widget-area-wrapper {
     max-width: 960px;

@@ -268,10 +268,29 @@ figcaption {
 }
 
 blockquote {
-	font-family: Montserrat;
-	font-size: 30px;
+	font-family: $font_family_headers;
+	font-size: 24px;
 	font-weight: 700;
 	line-height: 1.2;
+	margin-left: 20px;
+	padding-left: 40px;
+	position: relative;
+	&::before {
+		content: "\201D";
+		font-family: $font_family_main;
+		font-size: 100px;
+		position: absolute;
+		left: -10px;
+		top: -22px;
+		color: $color_5;
+		z-index: -1;
+	}
+}
+
+code {
+	padding: 20px;
+	display: block;
+	background-color: $color_9;
 }
 
 .entry-content {
@@ -367,6 +386,9 @@ blockquote {
 		max-width:960px;
 		margin-left: auto;
         margin-right: auto;
+	}
+	.site-info {
+		text-align: right;
 	}
 }
 
