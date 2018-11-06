@@ -2,11 +2,6 @@
 * @package Boyo
 */
 @import "variables";
-
-.content-area {
-    //padding: 20px;
-}
-
 .post {
     padding-bottom: 20px;
     background-color: $color_9;
@@ -24,12 +19,6 @@
 
 .page-title {
     margin-top: 0;
-}
-
-.entry-title,
-.entry-content,
-.entry-footer {
-    //background-color: $color_9;
 }
 
 .entry-title {
@@ -173,9 +162,5 @@
                 }
             }
         }
-    }
-
-    .not-sticky {
-        //max-width: 33.33%;
     }
 }
