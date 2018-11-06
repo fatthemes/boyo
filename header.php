@@ -67,5 +67,5 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-<?php get_sidebar( 'top' );
+<?php get_sidebar();
 boyo_css_loader( 'content' );

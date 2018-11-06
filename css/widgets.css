@@ -56,17 +56,17 @@
   border-bottom: 2px solid #4c4c4c;
 }
 
-.bottom-widget-area .widget_tag_cloud a {
+.bottom-widget-area .widget a {
   color: #b7b7b7;
   text-decoration: none;
 }
 
-.bottom-widget-area .widget_tag_cloud a:hover, .bottom-widget-area .widget_tag_cloud a:focus, .bottom-widget-area .widget_tag_cloud a:active {
+.bottom-widget-area .widget a:hover, .bottom-widget-area .widget a:focus, .bottom-widget-area .widget a:active {
   color: #b7b7b7;
   text-decoration: underline;
 }
 
-.bottom-widget-area .widget_tag_cloud .tagcloud {
+.bottom-widget-area .widget .tagcloud {
   padding-bottom: 80px;
   line-height: 1.2;
 }

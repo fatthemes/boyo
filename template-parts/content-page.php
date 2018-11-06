@@ -29,7 +29,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<?php get_sidebar('page-below-content'); ?>
+	<?php ('page-below-content'); ?>
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

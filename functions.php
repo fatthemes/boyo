@@ -117,15 +117,6 @@ add_action( 'after_setup_theme', 'boyo_content_width', 0 );
  */
 function boyo_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'boyo' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
 		'name'          => esc_html__( 'Top', 'boyo' ),
 		'id'            => 'sidebar-2',
 		'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
@@ -146,15 +137,6 @@ function boyo_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer', 'boyo' ),
 		'id'            => 'sidebar-4',
-		'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'Page - below content', 'boyo' ),
-		'id'            => 'sidebar-5',
 		'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',

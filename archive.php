@@ -52,5 +52,4 @@ boyo_css_loader( 'archive' );
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
