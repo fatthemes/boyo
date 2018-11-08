@@ -39,5 +39,4 @@ boyo_css_loader( 'single' );
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

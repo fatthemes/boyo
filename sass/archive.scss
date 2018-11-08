@@ -64,6 +64,20 @@
     .hentry {
         padding-top:0;
     }
+    .entry-meta {
+        margin-top: 20px;
+    }
+    .format-image {
+        .entry-header {
+            padding:10px;
+            background-color: $color_2;
+            a {
+                display: block;
+                line-height: 0;
+            }
+        }
+    }
+
 }
 
 .search-no-results {

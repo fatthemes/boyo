@@ -282,10 +282,16 @@ code {
 
 .entry-content {
 	a {
-		color: $color_1;
-		border-bottom: 2px solid;
+		//color: $color_1;
+		border-bottom: 2px solid $color_1;
 		padding: 0;
 		text-decoration: none;
+	}
+	a[href$=".jpg"],
+	a[href$=".jpeg"],
+	a[href$=".png"],
+	a[href$=".gif"] {
+		border-bottom: none;
 	}
 }
 

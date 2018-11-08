@@ -64,6 +64,26 @@
   padding-top: 0;
 }
 
+.blog .entry-meta,
+.archive .entry-meta,
+.search .entry-meta {
+  margin-top: 20px;
+}
+
+.blog .format-image .entry-header,
+.archive .format-image .entry-header,
+.search .format-image .entry-header {
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.blog .format-image .entry-header a,
+.archive .format-image .entry-header a,
+.search .format-image .entry-header a {
+  display: block;
+  line-height: 0;
+}
+
 .search-no-results .no-results {
   max-width: 720px;
   margin: 0 auto 20px;

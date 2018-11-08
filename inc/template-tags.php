@@ -87,46 +87,56 @@ if (!function_exists('boyo_entry_footer')):
 endif;
 
 if (!function_exists('boyo_post_thumbnail')):
-    /**
-     * Displays an optional post thumbnail.
-     *
-     * Wraps the post thumbnail in an anchor element on index views, or a div
-     * element when on single views.
-     */
-    function boyo_post_thumbnail()
+/**
+ * Displays an optional post thumbnail.
+ *
+ * Wraps the post thumbnail in an anchor element on index views, or a div
+ * element when on single views.
+ */
+function boyo_post_thumbnail()
 {
-        if (post_password_required() || is_attachment() || !has_post_thumbnail()) {
-            return;
-        }
+    if (post_password_required() || is_attachment()) {
+        return;
+    }
 
-        if (is_singular()):
-        ?>
+    if (is_singular()) : ?>
 
-								<div class="post-thumbnail">
-									<figure class="featured-image">
-                                        <?php the_post_thumbnail();?>
-                                        <?php if('post' === get_post_type()) : ?>
-                                            <figcaption class="featured-image-caption">
-                                                <?php boyo_the_featured_image_caption();?>
-                                            </figcaption>
-                                        <?php endif; ?>
-									</figure>
-								</div><!-- .post-thumbnail -->
-
-		<?php else: ?>
-
-		<a class="post-thumbnail" href="<?php the_permalink();?>" aria-hidden="true" tabindex="-1">
-			<?php
-the_post_thumbnail('post-thumbnail', array(
-        'alt' => the_title_attribute(array(
-            'echo' => false,
-        )),
-    ));
-    ?>
-		</a>
-
-		<?php
-endif; // End is_singular().
+							<div class="post-thumbnail">
+								<figure class="featured-image">
+                                    <?php if(has_post_thumbnail())
+                                        the_post_thumbnail(); ?>
+                                    <?php if('post' === get_post_type()) : ?>
+                                        <figcaption class="featured-image-caption">
+                                            <?php boyo_the_featured_image_caption();?>
+                                        </figcaption>
+                                    <?php endif; ?>
+							    </figure>
+							</div><!-- .post-thumbnail -->
+	<?php else : ?>
+            <?php
+                
+            if ( has_post_thumbnail() ) { ?>
+                <a class="post-thumbnail" href="<?php the_permalink();?>" aria-hidden="true" tabindex="-1">
+                <?php
+                the_post_thumbnail('post-thumbnail', array(
+                    'alt' => the_title_attribute(array(
+                        'echo' => false,
+                    )),
+                )); ?>
+                </a>
+            <?php
+            } else {
+                if( 'image' === get_post_format() && function_exists('get_the_image') ) {
+                    get_the_image(
+                        array(
+                            'scan' => true,
+                            'scan_raw' => true,
+                            'size' => 'full',
+                        )
+                    );
+                }
+            }
+    endif; // End is_singular().
 }
 endif;
 
@@ -173,7 +183,6 @@ if (!function_exists('boyo_the_authors')):
 			}
 			$title_string = esc_html__('About authors', 'boyo');
 		}
-        //print_r($authors);
         
 		if( 2 > count($authors)) {
 			$authors = (array) get_the_author_meta('ID');

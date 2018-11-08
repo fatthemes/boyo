@@ -65,6 +65,23 @@ if ( ! function_exists( 'boyo_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
+		/*
+		 * Enable support for Post Formats.
+		 * See https://developer.wordpress.org/themes/functionality/post-formats/
+		 */
+		add_theme_support(
+			'post-formats',
+			array(
+				'audio',
+				'video',
+				'gallery',
+				'quote',
+				'link',
+				'aside',
+				'image',
+			)
+		);
+
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -74,8 +91,8 @@ if ( ! function_exists( 'boyo_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 30,
+			'width'       => 150,
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
@@ -217,6 +234,16 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Hybrid Media Grabber for getting media from posts.
+ */
+require get_template_directory() . '/inc/class-media-grabber.php';
+
+/**
+ * Get The Image for getting images from posts.
+ */
+require get_template_directory() . '/inc/get-the-image.php';
 
 /**
  * Customizer additions.
