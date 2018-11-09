@@ -26,6 +26,37 @@ function boyo_customize_register( $wp_customize ) {
 		) );
 	}
 
+	// Section Blog & Archive Pages.
+	$wp_customize->add_section(
+		'blog_and_archive_pages',
+		array(
+			'title' => esc_html__( 'Blog & Archive Pages', 'boyo' ),
+			'priority' => 1000,
+			'description' => esc_html__( 'Blog & Archive Pages Settings', 'boyo' ),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'blog_and_archive_pages_layout',
+		array(
+			'default' => '',
+			'sanitize_callback' => 'boyo_sanitize_blog_and_archive_pages_layout',
+		)
+	);
+
+	$wp_customize->add_control(
+		'blog_and_archive_pages_layout',
+		array(
+			'label' => esc_html__( 'Blog & Archive Pages Layout', 'boyo' ),
+			'section' => 'blog_and_archive_pages',
+			'type' => 'select',
+			'choices' => array(
+				'' => esc_html__( 'One column', 'boyo' ),
+				'three' => esc_html__( 'Three columns', 'boyo' ),
+			),
+		)
+	);
+
 	// Section - "Advanced settings".
 	$wp_customize->add_section(
 		'advanced_settings', array(
@@ -50,33 +81,7 @@ function boyo_customize_register( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting(
-		'donate_url', array(
-			'default' => '',
-			'sanitize_callback' => 'absint',
-		)
-	);
 
-	$wp_customize->add_control( 'donate_url', array(
-		'label' => __( 'Donate Page', 'boyo' ),
-		'section' => 'advanced_settings',
-		'type' => 'dropdown-pages',
-		'allow_addition' => true,
-	) );
-
-	$wp_customize->add_setting(
-		'customization_url', array(
-			'default' => '',
-			'sanitize_callback' => 'absint',
-		)
-	);
-
-	$wp_customize->add_control( 'customization_url', array(
-		'label' => __( 'Customization Page', 'boyo' ),
-		'section' => 'advanced_settings',
-		'type' => 'dropdown-pages',
-		'allow_addition' => true,
-	) );
 }
 add_action( 'customize_register', 'boyo_customize_register' );
 
@@ -105,3 +110,13 @@ function boyo_customize_preview_js() {
 	wp_enqueue_script( 'boyo-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'boyo_customize_preview_js' );
+
+/**
+ * Sanitize the blog_and_archive_pages_layout setting.
+ */
+function boyo_sanitize_blog_and_archive_pages_layout($value) {
+	if (in_array( $value, array( '', 'three' ), true)) {
+		return $value;
+	}
+	return '';
+}

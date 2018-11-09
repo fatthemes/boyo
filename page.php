@@ -13,10 +13,7 @@
  */
 
 get_header();
-//boyo_css_loader( 'page' );
-//if( is_front_page() ) {
-//	boyo_css_loader( 'front' );
-//}
+boyo_css_loader( 'singular' );
 ?>
 
 	<div id="primary" class="content-area">

@@ -508,6 +508,9 @@ figure {
 	margin: 1em 0;
 	max-width: 100%;
 	/* Extra wide images within figure tags don't overflow the content area. */
+	a {
+		border-bottom: none;
+	}
 }
 
 table {

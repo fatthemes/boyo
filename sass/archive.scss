@@ -14,7 +14,7 @@
 }
 
 .page-header {
-    padding: 0 20px;
+    padding: 0 20px 40px;
 }
 
 .page-title {
@@ -35,8 +35,8 @@
 }
 
 .pagination {
-    margin: 20px auto;
-    padding-bottom: 40px;
+    //margin: 20px auto;
+    padding: 20px 0 60px;
 }
 
 .nav-links {
@@ -62,22 +62,61 @@
 .archive,
 .search {
     .hentry {
-        padding-top:0;
+        //padding-top:0;
+        margin-bottom: 0;
     }
     .entry-meta {
         margin-top: 20px;
     }
     .format-image {
         .entry-header {
-            padding:10px;
-            background-color: $color_2;
+            //padding:4px;
+            //background-color: $color_2;
             a {
                 display: block;
-                line-height: 0;
+                //margin: 0 -20px;
+                //line-height: 0;
             }
         }
     }
-
+    .format-aside {
+        .entry-content {
+            padding: 0;
+            max-width: initial;
+        }
+        .aside-content-wrapper {
+            background-color: $color_17;
+            padding: 20px 40px;
+        }
+    }
+    .format-quote {
+        blockquote {
+            margin-right: 20px;
+            padding-right: 40px;
+            &::after {
+                content: "\201D";
+                font-family: $font_family_main;
+                font-size: 100px;
+                line-height: 1;
+                position: absolute;
+                right: -10px;
+                bottom: -60px;
+                color: $color_5;
+                //z-index: -1;
+            }
+        }
+        cite {
+            font-family: $font_family_main;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: initial;
+            margin-top: 40px;
+            display: inline-block;
+            a {
+                border-bottom: none;
+            }
+        }
+    }
 }
 
 .search-no-results {
@@ -173,6 +212,17 @@
                 padding:20px;
                 figure {
                     margin:0;
+                }
+            }
+        }
+        .format-image {
+            .entry-header {
+                //padding:4px;
+                //background-color: $color_2;
+                a {
+                    //display: block;
+                    //margin: 0 -20px;
+                    //line-height: 0;
                 }
             }
         }

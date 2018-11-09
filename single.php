@@ -8,7 +8,7 @@
  */
 
 get_header();
-boyo_css_loader( 'single' );
+boyo_css_loader( 'singular' );
 ?>
 
 	<div id="primary" class="content-area">

@@ -35,7 +35,7 @@
 .hentry {
 	padding: 40px 0 0;
 	//margin: 0 0 1.5em;
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 
 .breadcrumbs {
@@ -131,15 +131,6 @@
 .nav-previous > a,
 .nav-next > a {
 	text-decoration: none;
-}
-
-.boyo-companion-bullets {
-	text-align: center;
-}
-
-.boyo-companion-bullet {
-	font-size: 24px;
-	margin:4px;
 }
 
 /*--------------------------------------------------------------
@@ -259,19 +250,7 @@ blockquote {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 1.2;
-	margin-left: 20px;
-	padding-left: 40px;
 	position: relative;
-	&::before {
-		content: "\201D";
-		font-family: $font_family_main;
-		font-size: 100px;
-		position: absolute;
-		left: -10px;
-		top: -22px;
-		color: $color_5;
-		z-index: -1;
-	}
 }
 
 code {
@@ -382,6 +361,9 @@ code {
 	}
 	.site-info {
 		text-align: right;
+	}
+	.hentry {
+		margin-bottom: 80px;
 	}
 }
 

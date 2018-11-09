@@ -17,9 +17,9 @@ function boyo_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
-	// Adds a class of no-sidebar when there is no sidebar present.
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-		$classes[] = 'no-sidebar';
+	// Adds a class of three-columns-layout when such settings chosen.
+	if ( 'three' === get_theme_mod('blog_and_archive_pages_layout', '') && ( is_archive() || is_search() || is_home() ) ) {
+		$classes[] = 'three-columns-layout';
 	}
 
 	return $classes;

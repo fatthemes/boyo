@@ -13,7 +13,7 @@
 }
 
 .page-header {
-  padding: 0 20px;
+  padding: 0 20px 40px;
 }
 
 .page-title {
@@ -34,8 +34,7 @@
 }
 
 .pagination {
-  margin: 20px auto;
-  padding-bottom: 40px;
+  padding: 20px 0 60px;
 }
 
 .nav-links {
@@ -61,7 +60,7 @@
 .blog .hentry,
 .archive .hentry,
 .search .hentry {
-  padding-top: 0;
+  margin-bottom: 0;
 }
 
 .blog .entry-meta,
@@ -70,18 +69,61 @@
   margin-top: 20px;
 }
 
-.blog .format-image .entry-header,
-.archive .format-image .entry-header,
-.search .format-image .entry-header {
-  padding: 10px;
-  background-color: #ffffff;
-}
-
 .blog .format-image .entry-header a,
 .archive .format-image .entry-header a,
 .search .format-image .entry-header a {
   display: block;
-  line-height: 0;
+}
+
+.blog .format-aside .entry-content,
+.archive .format-aside .entry-content,
+.search .format-aside .entry-content {
+  padding: 0;
+  max-width: initial;
+}
+
+.blog .format-aside .aside-content-wrapper,
+.archive .format-aside .aside-content-wrapper,
+.search .format-aside .aside-content-wrapper {
+  background-color: #c1e4de;
+  padding: 20px 40px;
+}
+
+.blog .format-quote blockquote,
+.archive .format-quote blockquote,
+.search .format-quote blockquote {
+  margin-right: 20px;
+  padding-right: 40px;
+}
+
+.blog .format-quote blockquote::after,
+.archive .format-quote blockquote::after,
+.search .format-quote blockquote::after {
+  content: "\201D";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  line-height: 1;
+  position: absolute;
+  right: -10px;
+  bottom: -60px;
+  color: #edeef4;
+}
+
+.blog .format-quote cite,
+.archive .format-quote cite,
+.search .format-quote cite {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: initial;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.blog .format-quote cite a,
+.archive .format-quote cite a,
+.search .format-quote cite a {
+  border-bottom: none;
 }
 
 .search-no-results .no-results {

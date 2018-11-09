@@ -112,9 +112,7 @@ function boyo_post_thumbnail()
                                     <?php endif; ?>
 							    </figure>
 							</div><!-- .post-thumbnail -->
-	<?php else : ?>
-            <?php
-                
+	<?php else :                
             if ( has_post_thumbnail() ) { ?>
                 <a class="post-thumbnail" href="<?php the_permalink();?>" aria-hidden="true" tabindex="-1">
                 <?php
@@ -127,13 +125,20 @@ function boyo_post_thumbnail()
             <?php
             } else {
                 if( 'image' === get_post_format() && function_exists('get_the_image') ) {
-                    get_the_image(
+                    $image = get_the_image(
                         array(
                             'scan' => true,
                             'scan_raw' => true,
                             'size' => 'full',
+                            'link' => false,
+                            'echo' => false
                         )
                     );
+                ?>
+                <a class="post-thumbnail" href="<?php the_permalink();?>" aria-hidden="true" tabindex="-1">
+                    <?php echo apply_filters( 'bj_lazy_load_html', $image ); ?>
+                </a>
+                <?php
                 }
             }
     endif; // End is_singular().

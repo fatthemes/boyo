@@ -11,6 +11,7 @@
 }
 
 .entry-footer {
+    padding: 0 20px;
     .tag {
         font-size: 12px;
         letter-spacing: 0.2em;
@@ -77,11 +78,19 @@
     }
 }
 
-.boyo-companion-subtitle {
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-    max-width: none;
+blockquote {
+    margin-left: 20px;
+    padding-left: 40px;
+    &::before {
+        content: "\201D";
+        font-family: $font_family_main;
+        font-size: 100px;
+        position: absolute;
+        left: -10px;
+        top: -22px;
+        color: $color_5;
+        //z-index: -1;
+    }
 }
 
 @media (min-width: $sm) {

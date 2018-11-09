@@ -13,25 +13,4 @@
 	<header class="entry-header">
 		<?php boyo_post_thumbnail(); ?>
 	</header><!-- .entry-header -->
-	<div class="entry-content">
-		<?php
-		the_excerpt( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'boyo' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'boyo' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->
