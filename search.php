@@ -13,7 +13,6 @@ boyo_css_loader( 'archive' );
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
-
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -24,7 +23,7 @@ boyo_css_loader( 'archive' );
 					?>
 				</h1>
 			</header><!-- .page-header -->
-
+			<div id="articles-wrapper" class="articles-wrapper">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -35,10 +34,12 @@ boyo_css_loader( 'archive' );
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content' );
+				get_template_part( 'template-parts/content', get_post_format() );
 
 			endwhile;
-
+			?>
+			</div><!-- #articles-wrapper -->
+			<?php
 			the_posts_pagination( array(
 				'prev_text' => esc_html__( 'Prev', 'boyo' ),
 			) );
@@ -47,9 +48,7 @@ boyo_css_loader( 'archive' );
 
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
-
+		endif; ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 

@@ -1,38 +1,31 @@
 === Boyo ===
-
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-Requires at least: 4.5
-Tested up to: 4.8
-Stable tag: 1.0.0
+Contributors: limestreet, moniula
+Requires at least: 4.9
+Tested up to: 4.9.8
 License: GNU General Public License v2 or later
-License URI: LICENSE
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: three-columns, grid-layout, custom-background, custom-colors, custom-menu, custom-logo, featured-images, full-width-template, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog, news
 
-A starter theme called Boyo.
+ Boyo WordPress Theme, Copyright 2018 Patryk Kachel, Monika Dziedzic
+ Boyo is distributed under the terms of the GNU GPL v2 or later
 
 == Description ==
-
-Description
+Description - personal blog theme
 
 == Installation ==
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
+2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-== Frequently Asked Questions ==
+== Resources ==
 
-= Does this theme support any plugins? =
-
-Boyo includes support for Infinite Scroll in Jetpack.
+* Underscores - (C) 2012-2018 Automattic, Inc. License: GPL-2.0+
+* Hybrid Media Grabber - Copyright (c) 2008 - 2015, Justin Tadlock. License - GPL v2
+* Screenshot images. Source: https://pixabay.com/- license CC0. Links:
+  - https://pixabay.com/pl/wiosna-tulipany-%C5%82adna-kobieta-2298279/
+* Montserrat Font - Copyright 2011 The Montserrat Project Authors (https://github.com/JulietaUla/Montserrat) SIL Open Font License, 1.1
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
-* Initial release
-
-== Credits ==
-
-* Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
+Please see CHANGELOG.md

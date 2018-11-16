@@ -357,7 +357,6 @@ input,
 select,
 optgroup,
 textarea {
-	//color: #404040;
 	color: $color_1;
 	font-family: $font_family_main;
 	font-size: 18px;
@@ -393,7 +392,6 @@ h4 {
 
 h5 {
 	font-size: 18px;
-	//line-height: 1.5;
 }
 
 p {
@@ -471,7 +469,6 @@ hr {
 }
 
 ul, ol {
-	//margin: 0 0 1.5em 3em;
 	margin: 0;
 }
 
@@ -576,7 +573,6 @@ input[type="color"],
 textarea {
 	color: #666;
 	border: 1px solid #ccc;
-	//border-radius: 3px;
 	padding: 3px;
 	width: 100%;
 }
@@ -837,7 +833,6 @@ a:hover, a:active {
 .main-menu .menu-item a:active,
 .main-menu .menu-item a:hover,
 .main-menu .current-menu-item a {
-	//font-weight: 700;
 	&::after {
 		border-bottom: 4px solid #ffd73e;
 		display: block;
@@ -913,15 +908,11 @@ a:hover, a:active {
 .search-form-wrapper.toggled .search-close-bar-first {
     transition-duration: .5s;
     transform: rotate(45deg);
-    //top: 7px;
-    //border-bottom: 2px solid #fff;
 }
 
 .search-form-wrapper.toggled .search-close-bar-second {
-    //border-bottom: 2px solid #fff;
     transition-duration: .5s;
     transform: rotate(-45deg);
-    //top: 7px;
     color: #fff;
 }
 

@@ -45,6 +45,10 @@
         margin: 0;
         padding-bottom: 20px;
         padding-top: 20px;
+        ul,
+        ol {
+            padding: 0 0 0 20px;
+        }
     }
     .widget-title {
         color: #dedede;
@@ -55,6 +59,7 @@
     padding: 20px 20px 0;
     .bottom-widget-area-wrapper {
         border-bottom: 2px solid $color_8;
+        padding-bottom: 80px;
     }
     .widget {
         a {
@@ -68,8 +73,6 @@
             }
         }
         .tagcloud {
-            //border-bottom: 1px solid $color_8;
-            padding-bottom: 80px;
             line-height: 1.2;
         }
     }
@@ -77,7 +80,6 @@
 
 .footer-widget-area {
     padding: 30px 20px 0;
-    //margin-top: -10px;
 }
 
 .bottom-widget-area p,
@@ -85,6 +87,10 @@
     color: $color_4;
     font-size: 14px;
     letter-spacing: 0.04em;
+}
+
+.top-widget-area {
+    padding:20px 20px 0;
 }
 
 @media (min-width: $sm) {
@@ -95,7 +101,7 @@
         padding: 30px 40px 0;
     }
     .top-widget-area {
-        padding:0 20px;
+        //padding:0 20px;
     }
 }
 

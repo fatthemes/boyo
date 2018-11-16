@@ -27,6 +27,21 @@ function boyo_body_classes( $classes ) {
 add_filter( 'body_class', 'boyo_body_classes' );
 
 /**
+ * Adds custom classes to the array of post classes.
+ *
+ * @param array $classes Classes for the post/article element.
+ * @return array
+ */
+function boyo_post_classes( $classes ) {
+	// Adds a class of not-sticky to the not sticky posts.
+	if ( !in_array( 'sticky', $classes ) ) {
+		$classes[] = 'not-sticky';
+	}
+	return $classes;
+}
+add_filter( 'post_class', 'boyo_post_classes', 100 );
+
+/**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
 function boyo_pingback_header() {
@@ -44,6 +59,6 @@ add_filter('excerpt_more', 'boyo_excerpt_more', 100);
 
 function boyo_excerpt_length($length)
 {
-    return 20;
+    return get_theme_mod( 'excerpt_length', 20 );
 }
 add_filter('excerpt_length', 'boyo_excerpt_length', 100);

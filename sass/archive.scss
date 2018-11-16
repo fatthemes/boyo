@@ -35,7 +35,6 @@
 }
 
 .pagination {
-    //margin: 20px auto;
     padding: 20px 0 60px;
 }
 
@@ -62,7 +61,6 @@
 .archive,
 .search {
     .hentry {
-        //padding-top:0;
         margin-bottom: 0;
     }
     .entry-meta {
@@ -70,19 +68,16 @@
     }
     .format-image {
         .entry-header {
-            //padding:4px;
-            //background-color: $color_2;
             a {
                 display: block;
-                //margin: 0 -20px;
-                //line-height: 0;
             }
         }
     }
     .format-aside {
         .entry-content {
-            padding: 0;
-            max-width: initial;
+            padding: 4px;
+            background-color: #fff;
+            max-width: 720px;
         }
         .aside-content-wrapper {
             background-color: $color_17;
@@ -91,8 +86,6 @@
     }
     .format-quote {
         blockquote {
-            margin-right: 20px;
-            padding-right: 40px;
             &::after {
                 content: "\201D";
                 font-family: $font_family_main;
@@ -117,6 +110,68 @@
             }
         }
     }
+    .site-main,
+    .main-navigation {
+        background-color: $color_9;
+    }
+    .post-thumbnail,
+    .no-post-thumbnail {
+        position: relative;
+    }
+    .audio-post-format-icon,
+    .video-post-format-icon,
+    .gallery-post-format-icon {
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .link-post-format-icon {
+        display: block;
+        line-height: 0;
+        text-align: right;
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .link-post-format-wrapper,
+    .quote-post-format-wrapper {
+        background-color: $color_2;
+        padding: 4px;
+        max-width: 720px;
+        margin: auto;
+        .entry-content {
+            p {
+                margin-bottom: 20px;
+            }
+            word-break: break-all;
+        }
+    }
+    .link-post-format-wrapper {
+        .entry-header,
+        .entry-content {
+            background-color: $color_18;
+        }
+        .entry-header {
+            padding: 40px 40px 0;
+        }
+        .entry-content {
+            padding: 0 40px 40px;
+        }
+    }
+    .quote-post-format-wrapper {
+        .entry-header,
+        .entry-content {
+            background-color: $color_10;
+            padding: 20px 40px;
+        }
+    }
 }
 
 .search-no-results {
@@ -132,15 +187,6 @@
     }
 }
 
-.blog,
-.archive,
-.search {
-    .site-main,
-    .main-navigation {
-        background-color: $color_9;
-    }
-}
-
 @media (min-width: $md) {
     .blog,
     .archive,
@@ -152,16 +198,13 @@
         .site-main {
             padding-top:80px;
         }
-        .content-area {
-            padding-top: 0;
-        }
         .sticky {
             background-color: #fff;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
             padding-bottom: 10px;
-
+            margin-bottom: 60px;
             .entry-title,
             .entry-meta {
                 max-width: 420px;
@@ -215,14 +258,38 @@
                 }
             }
         }
-        .format-image {
-            .entry-header {
-                //padding:4px;
-                //background-color: $color_2;
-                a {
-                    //display: block;
-                    //margin: 0 -20px;
-                    //line-height: 0;
+        
+        &.three-columns-layout {
+            .articles-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+                .not-sticky {
+                    width: 33.33%;
+                    padding: 20px 0;
+                    .post-thumbnail {
+                        padding:4px;
+                        line-height: 0;
+                        margin: 0;
+                    }
+                    &.format-aside,
+                    &.format-quote,
+                    &.format-link {
+                        padding: 20px;
+                    }
+                    .entry-title {
+                        max-width: 100%;
+                    }
+                    .boyo-intro {
+                        font-size: 1.25rem;
+                        line-height: 2;
+                        letter-spacing: initial;
+                    }
+                }
+                .sticky {
+                    width:100%;
                 }
             }
         }

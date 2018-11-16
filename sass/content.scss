@@ -34,7 +34,6 @@
 
 .hentry {
 	padding: 40px 0 0;
-	//margin: 0 0 1.5em;
 	margin-bottom: 40px;
 }
 
@@ -54,7 +53,6 @@
 	color: $color_1;
 }
 
-//.entry-title,
 .previous-article,
 .next-article {
 	color: $color_14;
@@ -105,7 +103,6 @@
 
     .cat-links {
         font-size: 12px;
-        //line-height: 36px;
         letter-spacing: 0.2em;
         text-transform: uppercase;
     }
@@ -261,7 +258,6 @@ code {
 
 .entry-content {
 	a {
-		//color: $color_1;
 		border-bottom: 2px solid $color_1;
 		padding: 0;
 		text-decoration: none;
@@ -276,22 +272,7 @@ code {
 
 .entry-header,
 .entry-content {
-    //margin-bottom: 20px;
     padding: 0 20px;
-}
-
-.home {
-    .entry-header,
-    .entry-content {
-        margin-bottom: 20px;
-        //padding: 0 20px;
-	}
-	.entry-content {
-		padding-bottom: 40px;
-	}
-    .hentry {
-        margin: 0;
-    }
 }
 
 .site-info,
@@ -301,9 +282,6 @@ code {
     letter-spacing: 0.04em;
 }
 
-.entry-footer {
-	//padding: 0 20px;
-}
 .page-template-template-page-about-us {
 	.hentry {
 		margin-bottom: 0;
@@ -318,7 +296,6 @@ code {
 	.error-404 {
 		.search-form {
 			margin: 40px auto 80px;
-			//max-width: 420px;
 		}
 	}
 	.error404-content {
@@ -329,11 +306,6 @@ code {
 		margin: auto;
 		text-align: center;
 	}
-}
-
-.codeable-form {
-	margin: 0 -20px -90px -40px;
-    //overflow: hidden;
 }
 
 @media (min-width: $sm) {
@@ -370,7 +342,6 @@ code {
 @media (min-width: $lg) {
 	.entry-header,
 	.page-header,
-	//.site-info,
 	.breadcrumbs,
 	.post-thumbnail {
         max-width: 1200px;

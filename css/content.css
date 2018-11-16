@@ -272,19 +272,6 @@ code {
   padding: 0 20px;
 }
 
-.home .entry-header,
-.home .entry-content {
-  margin-bottom: 20px;
-}
-
-.home .entry-content {
-  padding-bottom: 40px;
-}
-
-.home .hentry {
-  margin: 0;
-}
-
 .site-info,
 .site-info a {
   color: #b7b7b7;
@@ -312,10 +299,6 @@ code {
   font-weight: 700;
   margin: auto;
   text-align: center;
-}
-
-.codeable-form {
-  margin: 0 -20px -90px -40px;
 }
 
 @media (min-width: 601px) {

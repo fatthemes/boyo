@@ -43,6 +43,13 @@
   padding-top: 20px;
 }
 
+.bottom-widget-area .widget ul,
+.bottom-widget-area .widget ol,
+.footer-widget-area .widget ul,
+.footer-widget-area .widget ol {
+  padding: 0 0 0 20px;
+}
+
 .bottom-widget-area .widget-title,
 .footer-widget-area .widget-title {
   color: #dedede;
@@ -54,6 +61,7 @@
 
 .bottom-widget-area .bottom-widget-area-wrapper {
   border-bottom: 2px solid #4c4c4c;
+  padding-bottom: 80px;
 }
 
 .bottom-widget-area .widget a {
@@ -67,7 +75,6 @@
 }
 
 .bottom-widget-area .widget .tagcloud {
-  padding-bottom: 80px;
   line-height: 1.2;
 }
 
@@ -82,15 +89,16 @@
   letter-spacing: 0.04em;
 }
 
+.top-widget-area {
+  padding: 20px 20px 0;
+}
+
 @media (min-width: 601px) {
   .bottom-widget-area {
     padding: 20px 40px 0;
   }
   .footer-widget-area {
     padding: 30px 40px 0;
-  }
-  .top-widget-area {
-    padding: 0 20px;
   }
 }
 

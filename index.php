@@ -18,8 +18,9 @@ boyo_css_loader( 'archive' );
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-		<?php
-		if ( have_posts() ) :
+		<?php if ( have_posts() ) : ?>
+			<div id="articles-wrapper" class="articles-wrapper">
+			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -36,7 +37,9 @@ boyo_css_loader( 'archive' );
 
 				endif;
 			endwhile;
-
+			?>
+			</div><!-- #articles-wrapper -->
+			<?php
 			the_posts_pagination( array(
 				'prev_text' => esc_html__( 'Prev', 'boyo' ),
 			) );
@@ -45,8 +48,7 @@ boyo_css_loader( 'archive' );
 
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
+		endif; ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
