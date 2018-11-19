@@ -41,7 +41,7 @@
 			search.setAttribute( 'aria-expanded', 'true' );
 			input.focus();
 		}
-	}
+	};
 
 	button_close.onclick = function() {
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
