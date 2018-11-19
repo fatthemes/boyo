@@ -16,7 +16,7 @@
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php boyo_the_post_format_icon(get_post_format()); ?>
+		<?php boyo_the_post_format_icon( get_post_format() ); ?>
 	</div><!-- .entry-content -->
 </div>
 </article><!-- #post-<?php the_ID(); ?> -->

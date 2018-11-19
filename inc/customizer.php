@@ -16,14 +16,20 @@ function boyo_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
-		$wp_customize->selective_refresh->add_partial( 'blogname', array(
-			'selector'        => '.site-title a',
-			'render_callback' => 'boyo_customize_partial_blogname',
-		) );
-		$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
-			'selector'        => '.site-description',
-			'render_callback' => 'boyo_customize_partial_blogdescription',
-		) );
+		$wp_customize->selective_refresh->add_partial(
+			'blogname',
+			array(
+				'selector'        => '.site-title a',
+				'render_callback' => 'boyo_customize_partial_blogname',
+			)
+		);
+		$wp_customize->selective_refresh->add_partial(
+			'blogdescription',
+			array(
+				'selector'        => '.site-description',
+				'render_callback' => 'boyo_customize_partial_blogdescription',
+			)
+		);
 	}
 
 	// Section Blog & Archive Pages.
@@ -58,14 +64,16 @@ function boyo_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'show_excerpt', array(
+		'show_excerpt',
+		array(
 			'default' => 1,
 			'sanitize_callback' => 'wp_validate_boolean',
 		)
 	);
 
 	$wp_customize->add_control(
-		'show_excerpt', array(
+		'show_excerpt',
+		array(
 			'label' => esc_html__( 'Show excerpt on blog archive pages', 'boyo' ),
 			'description' => esc_html__( 'Excerpt is always displayed for Sticky Posts', 'boyo' ),
 			'section' => 'blog_and_archive_pages',
@@ -98,7 +106,8 @@ function boyo_customize_register( $wp_customize ) {
 
 	// Section - "Advanced settings".
 	$wp_customize->add_section(
-		'advanced_settings', array(
+		'advanced_settings',
+		array(
 			'title' => esc_html__( 'Advanced', 'boyo' ),
 			'priority' => 1050,
 			'description' => esc_html__( 'Advanced Settings', 'boyo' ),
@@ -106,20 +115,21 @@ function boyo_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'load_google_fonts_from_google', array(
+		'load_google_fonts_from_google',
+		array(
 			'default' => 1,
 			'sanitize_callback' => 'wp_validate_boolean',
 		)
 	);
 
 	$wp_customize->add_control(
-		'load_google_fonts_from_google', array(
+		'load_google_fonts_from_google',
+		array(
 			'label' => esc_html__( 'Load fonts from Google servers', 'boyo' ),
 			'section' => 'advanced_settings',
 			'type' => 'checkbox',
 		)
 	);
-
 
 }
 add_action( 'customize_register', 'boyo_customize_register' );
@@ -152,9 +162,12 @@ add_action( 'customize_preview_init', 'boyo_customize_preview_js' );
 
 /**
  * Sanitize the blog_and_archive_pages_layout setting.
+ *
+ * @param string $value layout variation.
+ * @return string
  */
-function boyo_sanitize_blog_and_archive_pages_layout($value) {
-	if (in_array( $value, array( '', 'three' ), true)) {
+function boyo_sanitize_blog_and_archive_pages_layout( $value ) {
+	if ( in_array( $value, array( '', 'three' ), true ) ) {
 		return $value;
 	}
 	return '';
