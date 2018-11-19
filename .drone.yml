@@ -29,9 +29,9 @@ pipeline:
     environment:
       - PHPCS_DIR=/tmp/phpcs
       - WPCS_DIR=/tmp/sniffs/WordPress-Coding-Standards
-      - PHPCompatibility = /tmp/sniffs/PHPCompatibility
-      - PHPCompatibilityWP = /tmp/sniffs/PHPCompatibilityWP
-      - PHPCompatibilityParagonie = /tmp/sniffs/PHPCompatibilityParagonie
+      - PHPCompatibility=/tmp/sniffs/PHPCompatibility
+      - PHPCompatibilityWP=/tmp/sniffs/PHPCompatibilityWP
+      - PHPCompatibilityParagonie=/tmp/sniffs/PHPCompatibilityParagonie
     commands:
       - git clone -b master --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git $PHPCS_DIR
       - git clone -b master --depth 1 https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git $WPCS_DIR
