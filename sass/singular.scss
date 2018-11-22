@@ -78,6 +78,10 @@
     }
 }
 
+.post-edit-link {
+    display: block;
+}
+
 blockquote {
     margin-left: 20px;
     padding-left: 40px;
@@ -90,6 +94,14 @@ blockquote {
         top: -22px;
         color: $color_5;
     }
+}
+
+cite {
+    display: block;
+    font-size: 1rem;
+    text-align: right;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 @media (min-width: $sm) {

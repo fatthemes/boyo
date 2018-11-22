@@ -32,6 +32,90 @@ function boyo_customize_register( $wp_customize ) {
 		);
 	}
 
+	$wp_customize->add_setting(
+		'main_home_content_bg_color',
+		array(
+			'type' => 'theme_mod',
+			'default' => '#f8f8f8',
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+		$wp_customize,
+			'main_home_content_bg_color',
+			array(
+				'label' => esc_html__( 'Main Content Background Color', 'boyo' ),
+				'section' => 'colors',
+				'priority' => 100,
+			)
+		)
+	);
+
+	$wp_customize->add_setting(
+		'aside_format_bg_color',
+		array(
+			'type' => 'theme_mod',
+			'default' => '#c1e4de',
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+		$wp_customize,
+			'aside_format_bg_color',
+			array(
+				'label' => esc_html__( 'Aside Post Format Background Color', 'boyo' ),
+				'section' => 'colors',
+				'priority' => 110,
+			)
+		)
+	);
+
+	$wp_customize->add_setting(
+		'quote_format_bg_color',
+		array(
+			'type' => 'theme_mod',
+			'default' => '#fef0f0',
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+		$wp_customize,
+			'quote_format_bg_color',
+			array(
+				'label' => esc_html__( 'Quote Post Format Background Color', 'boyo' ),
+				'section' => 'colors',
+				'priority' => 120,
+			)
+		)
+	);
+
+	$wp_customize->add_setting(
+		'link_format_bg_color',
+		array(
+			'type' => 'theme_mod',
+			'default' => '#edf7fa',
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+		$wp_customize,
+			'link_format_bg_color',
+			array(
+				'label' => esc_html__( 'Link Post Format Background Color', 'boyo' ),
+				'section' => 'colors',
+				'priority' => 130,
+			)
+		)
+	);
+
 	// Section Blog & Archive Pages.
 	$wp_customize->add_section(
 		'blog_and_archive_pages',

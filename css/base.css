@@ -648,8 +648,6 @@ a:hover, a:active {
 
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
   top: 100%;
   left: -999em;
   z-index: 99999;
@@ -663,10 +661,6 @@ a:hover, a:active {
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
   left: 100%;
-}
-
-.main-navigation ul ul a {
-  width: 200px;
 }
 
 .main-navigation ul li:hover > ul,
@@ -805,6 +799,7 @@ a:hover, a:active {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   background-color: #000;
   padding: 60px 40px;
   z-index: 10;
@@ -824,9 +819,9 @@ a:hover, a:active {
   position: relative;
 }
 
-.main-menu .menu-item a:active::after,
-.main-menu .menu-item a:hover::after,
-.main-menu .current-menu-item a::after {
+.main-menu .menu-item > a:active::after,
+.main-menu .menu-item > a:hover::after,
+.main-menu .current-menu-item > a::after {
   border-bottom: 4px solid #ffd73e;
   display: block;
   margin: 3px 5px 0 0;
@@ -834,10 +829,6 @@ a:hover, a:active {
   position: absolute;
   left: 0;
   right: 0;
-}
-
-.home .main-navigation {
-  background-color: #edeef4;
 }
 
 .search-form-wrapper {
@@ -1007,10 +998,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.underlined {
-  border-bottom: 4px solid #ffd73e;
-}
-
 .site-footer {
   background-color: #1f1f1f;
   padding: 30px 20px 20px;
@@ -1020,6 +1007,10 @@ a:hover, a:active {
 @media (min-width: 601px) {
   .site-main {
     margin: auto;
+  }
+  .main-navigation.toggled .menu-toggle {
+    top: 20px;
+    right: 20px;
   }
   .comment-navigation .nav-previous,
   .posts-navigation .nav-previous,
@@ -1046,8 +1037,19 @@ a:hover, a:active {
   .main-navigation ul {
     display: block;
   }
+  .main-navigation ul ul {
+    float: left;
+    position: absolute;
+  }
+  .main-navigation ul ul li {
+    width: 240px;
+  }
   .main-navigation li {
     padding: 0;
+  }
+  .main-navigation .sub-menu {
+    padding-bottom: 20px;
+    background-color: #ffffff;
   }
   .main-menu .menu-item {
     display: inline-block;
@@ -1065,11 +1067,26 @@ a:hover, a:active {
   .main-menu .menu-item.make-a-contribution > a::after {
     display: none;
   }
-  .main-menu .current-menu-item a::after {
+  .main-menu .current-menu-ancestor > a::after {
     border-bottom: 4px solid #ffd73e;
     display: block;
     margin: 3px 5px 0 0;
     content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
   }
+  /*	.main-menu {
+		.current-menu-item {
+			a {
+				&::after {
+					border-bottom: 4px solid #ffd73e;
+					display: block;
+					margin: 3px 5px 0 0;
+					content: '';
+				}
+			}
+		}
+	}*/
 }
 /*# sourceMappingURL=base.css.map */

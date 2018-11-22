@@ -256,16 +256,6 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/template-functions.php';
 
 /**
- * Hybrid Media Grabber for getting media from posts.
- */
-require get_template_directory() . '/inc/class-media-grabber.php';
-
-/**
- * Get The Image for getting images from posts.
- */
-require get_template_directory() . '/inc/get-the-image.php';
-
-/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';

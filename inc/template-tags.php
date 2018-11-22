@@ -96,14 +96,11 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 			return;
 		}
 
-		if ( is_singular() ) : ?>
-
+		if ( is_singular() ) :
+			if( has_post_thumbnail() && ('' === get_post_format() || is_page() )) : ?>
 							<div class="post-thumbnail">
 								<figure class="featured-image">
-									<?php
-									if ( has_post_thumbnail() ) {
-										the_post_thumbnail();}
-									?>
+									<?php the_post_thumbnail();	?>
 										<?php if ( 'post' === get_post_type() ) : ?>
 										<figcaption class="featured-image-caption">
 											<?php boyo_the_featured_image_caption(); ?>
@@ -112,6 +109,7 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 								</figure>
 							</div><!-- .post-thumbnail -->
 			<?php
+			endif;
 	else :
 		if ( has_post_thumbnail() ) {
 			?>
@@ -129,24 +127,6 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 			);
 			?>
 			<?php boyo_the_post_format_icon( get_post_format() ); ?>
-				</a>
-				<?php
-		} elseif ( 'image' === get_post_format() && function_exists( 'get_the_image' ) ) {
-			$image = get_the_image(
-				array(
-					'scan' => true,
-					'scan_raw' => true,
-					'size' => 'full',
-					'link' => false,
-					'echo' => false,
-				)
-			);
-			?>
-				<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-				<?php // phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound 
-				echo apply_filters( 'bj_lazy_load_html', $image ); // WPCS: XSS OK.
-				// phpcs:enable
-				?>
 				</a>
 				<?php
 		} else {
@@ -313,4 +293,23 @@ if ( ! function_exists( 'boyo_the_authors' ) ) :
 		}
 		echo $output; // WPCS: XSS OK.
 	}
+endif;
+
+if ( ! function_exists( 'boyo_customize_css' ) ) :
+
+	/**
+	 * Custom css header output
+	 */
+	function boyo_customize_css() {
+		$archive_css = '.site-main, .main-navigation { background-color: ' . esc_attr( get_theme_mod( 'main_home_content_bg_color', '#f8f8f8' ) ) . '; }';
+		$archive_css .= '@media (min-width: 961px) { .sticky .entry-header { background-color: ' . esc_attr( get_theme_mod( 'main_home_content_bg_color', '#f8f8f8' ) ) . '; }}';
+		$archive_css .= '.link-post-format-wrapper .entry-header, .link-post-format-wrapper .entry-content { background-color: ' . esc_attr( get_theme_mod( 'link_format_bg_color', '#edf7fa' ) ) . '; }';
+		$archive_css .= '.quote-post-format-wrapper .entry-header, .quote-post-format-wrapper .entry-content { background-color: ' . esc_attr( get_theme_mod( 'quote_format_bg_color', '#fef0f0' ) ) . '; }';
+		$archive_css .= '.format-aside .aside-content-wrapper { background-color: ' . esc_attr( get_theme_mod( 'aside_format_bg_color', '#c1e4de' ) ) . '; }';
+
+		wp_add_inline_style( 'boyo-archive', $archive_css );
+		}
+
+	add_action( 'wp_enqueue_scripts', 'boyo_customize_css' );
+
 endif;
