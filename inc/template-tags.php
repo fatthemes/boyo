@@ -95,9 +95,9 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 		if ( post_password_required() || is_attachment() ) {
 			return;
 		}
-//var_dump(get_post_format());
+
 		if ( is_singular() ) :
-			if ( has_post_thumbnail() && !get_post_format() ) : ?>
+			if ( has_post_thumbnail() && ! get_post_format() ) : ?>
 							<div class="post-thumbnail">
 								<figure class="featured-image">
 									<?php the_post_thumbnail(); ?>
