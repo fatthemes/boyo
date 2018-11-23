@@ -95,9 +95,9 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 		if ( post_password_required() || is_attachment() ) {
 			return;
 		}
-
+//var_dump(get_post_format());
 		if ( is_singular() ) :
-			if ( has_post_thumbnail() && ( '' === get_post_format() || is_page() ) ) : ?>
+			if ( has_post_thumbnail() && !get_post_format() ) : ?>
 							<div class="post-thumbnail">
 								<figure class="featured-image">
 									<?php the_post_thumbnail(); ?>
@@ -110,32 +110,32 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 							</div><!-- .post-thumbnail -->
 				<?php
 			endif;
-	else :
-		if ( has_post_thumbnail() ) {
-			?>
-				<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
-			<?php
-			the_post_thumbnail(
-				'post-thumbnail',
-				array(
-					'alt' => the_title_attribute(
-						array(
-							'echo' => false,
-						)
-					),
-				)
-			);
-			?>
-			<?php boyo_the_post_format_icon( get_post_format() ); ?>
-				</a>
+		else :
+			if ( has_post_thumbnail() ) {
+				?>
+					<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
-		} else {
-			?>
-				<a class="no-post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+				the_post_thumbnail(
+					'post-thumbnail',
+					array(
+						'alt' => the_title_attribute(
+							array(
+								'echo' => false,
+							)
+						),
+					)
+				);
+				?>
 				<?php boyo_the_post_format_icon( get_post_format() ); ?>
-				</a>
-				<?php
-		}
+					</a>
+					<?php
+			} else {
+				?>
+					<a class="no-post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+					<?php boyo_the_post_format_icon( get_post_format() ); ?>
+					</a>
+					<?php
+			}
 		endif; // End is_singular().
 	}
 endif;
