@@ -237,10 +237,10 @@ if ( ! function_exists( 'boyo_the_categories' ) ) :
 	 */
 	function boyo_the_categories() {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'boyo' ) );
-		if ( $categories_list ) {
+		$category_list = get_the_category_list( esc_html__( ', ', 'boyo' ) );
+		if ( $category_list ) {
 			/* translators: 1: list of categories. */
-			echo '<span class="cat-links">' . $categories_list . '</span><br/>'; // WPCS: XSS OK.
+			echo '<span class="cat-links">' . $category_list . '</span><br/>'; // WPCS: XSS OK.
 		}
 	}
 endif;
@@ -253,7 +253,7 @@ if ( ! function_exists( 'boyo_the_tags' ) ) :
 		$posttags = get_the_tags();
 		if ( $posttags ) {
 			foreach ( $posttags as $tag ) {
-				echo ' <a class="tag" href="' . esc_html( get_tag_link( $tag->term_id ) ) . '">#' . esc_html( $tag->name ) . '</a>';
+				echo ' <a class="tag" href="' . esc_url( get_tag_link( $tag->term_id ) ) . '">#' . esc_html( $tag->name ) . '</a>';
 			}
 		}
 	}
@@ -280,13 +280,13 @@ if ( ! function_exists( 'boyo_the_authors' ) ) :
 		}
 		$output = '';
 		if ( ! empty( $authors ) ) {
-			$output .= '<h3 class="post-authors-list-title">' . esc_html( $title_string ) . '</h3>';
+			$output .= '<h3 class="post-authors-list-title">' . $title_string . '</h3>';
 			$output .= '<ul class="post-authors-list">';
 			foreach ( $authors as $author_id ) {
 				$output .= '<li class="post-authors-list-item"><div class="post-authors-list-info vcard">';
-				$output .= get_avatar( absint( $author_id ), 64 );
-				$output .= '<div class="post-authors-list-name"><p class="fn url"><a href="' . get_the_author_meta( 'user_url', absint( $author_id ) ) . '">' . get_the_author_meta( 'display_name', $author_id ) . '</a></p>';
-				$output .= '<p class="post-authors-list-bio">' . get_the_author_meta( 'description', absint( $author_id ) ) . '</p></div>';
+				$output .= get_avatar( $author_id, 64 );
+				$output .= '<div class="post-authors-list-name"><p class="fn url"><a href="' . get_the_author_meta( 'user_url', $author_id ) . '">' . get_the_author_meta( 'display_name', $author_id ) . '</a></p>';
+				$output .= '<p class="post-authors-list-bio">' . esc_html( get_the_author_meta( 'description', $author_id ) ) . '</p></div>';
 				$output .= '</div></li>';
 			}
 			$output .= '</ul>';
