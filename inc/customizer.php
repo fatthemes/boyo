@@ -43,7 +43,7 @@ function boyo_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-		$wp_customize,
+			$wp_customize,
 			'main_home_content_bg_color',
 			array(
 				'label' => esc_html__( 'Main Content Background Color', 'boyo' ),
@@ -64,7 +64,7 @@ function boyo_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-		$wp_customize,
+			$wp_customize,
 			'aside_format_bg_color',
 			array(
 				'label' => esc_html__( 'Aside Post Format Background Color', 'boyo' ),
@@ -85,7 +85,7 @@ function boyo_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-		$wp_customize,
+			$wp_customize,
 			'quote_format_bg_color',
 			array(
 				'label' => esc_html__( 'Quote Post Format Background Color', 'boyo' ),
@@ -106,7 +106,7 @@ function boyo_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-		$wp_customize,
+			$wp_customize,
 			'link_format_bg_color',
 			array(
 				'label' => esc_html__( 'Link Post Format Background Color', 'boyo' ),
@@ -127,7 +127,7 @@ function boyo_customize_register( $wp_customize ) {
 
 	$wp_customize->add_control(
 		new WP_Customize_Color_Control(
-		$wp_customize,
+			$wp_customize,
 			'menu_underline_color',
 			array(
 				'label' => esc_html__( 'Active Menu Underline Color', 'boyo' ),

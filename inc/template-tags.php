@@ -97,10 +97,10 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 		}
 
 		if ( is_singular() ) :
-			if( has_post_thumbnail() && ('' === get_post_format() || is_page() )) : ?>
+			if ( has_post_thumbnail() && ( '' === get_post_format() || is_page() ) ) : ?>
 							<div class="post-thumbnail">
 								<figure class="featured-image">
-									<?php the_post_thumbnail();	?>
+									<?php the_post_thumbnail(); ?>
 										<?php if ( 'post' === get_post_type() ) : ?>
 										<figcaption class="featured-image-caption">
 											<?php boyo_the_featured_image_caption(); ?>
@@ -108,7 +108,7 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 									<?php endif; ?>
 								</figure>
 							</div><!-- .post-thumbnail -->
-			<?php
+				<?php
 			endif;
 	else :
 		if ( has_post_thumbnail() ) {
