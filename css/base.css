@@ -822,7 +822,6 @@ a:hover, a:active {
 .main-menu .menu-item > a:active::after,
 .main-menu .menu-item > a:hover::after,
 .main-menu .current-menu-item > a::after {
-  border-bottom: 4px solid #ffd73e;
   display: block;
   margin: 3px 5px 0 0;
   content: '';
@@ -1068,7 +1067,6 @@ a:hover, a:active {
     display: none;
   }
   .main-menu .current-menu-ancestor > a::after {
-    border-bottom: 4px solid #ffd73e;
     display: block;
     margin: 3px 5px 0 0;
     content: '';
@@ -1076,17 +1074,5 @@ a:hover, a:active {
     left: 0;
     right: 0;
   }
-  /*	.main-menu {
-		.current-menu-item {
-			a {
-				&::after {
-					border-bottom: 4px solid #ffd73e;
-					display: block;
-					margin: 3px 5px 0 0;
-					content: '';
-				}
-			}
-		}
-	}*/
 }
 /*# sourceMappingURL=base.css.map */

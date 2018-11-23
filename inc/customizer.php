@@ -116,6 +116,27 @@ function boyo_customize_register( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_setting(
+		'menu_underline_color',
+		array(
+			'type' => 'theme_mod',
+			'default' => '#ffd73e',
+			'sanitize_callback' => 'sanitize_hex_color',
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+		$wp_customize,
+			'menu_underline_color',
+			array(
+				'label' => esc_html__( 'Active Menu Underline Color', 'boyo' ),
+				'section' => 'colors',
+				'priority' => 140,
+			)
+		)
+	);
+
 	// Section Blog & Archive Pages.
 	$wp_customize->add_section(
 		'blog_and_archive_pages',
