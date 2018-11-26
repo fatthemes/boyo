@@ -657,8 +657,6 @@ a:hover, a:active {
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	//float: left;
-	//position: absolute;
 	top: 100%;
 	left: -999em;
 	z-index: 99999;
@@ -831,7 +829,6 @@ a:hover, a:active {
 .main-menu .menu-item > a:hover,
 .main-menu .current-menu-item > a {
 	&::after {
-		//border-bottom: 4px solid $color_15;
 		display: block;
 		margin: 3px 5px 0 0;
 		content: '';
@@ -1084,7 +1081,6 @@ a:hover, a:active {
 		}
 		.current-menu-ancestor > a {
 			&::after {
-				//border-bottom: 4px solid $color_15;
 				display: block;
 				margin: 3px 5px 0 0;
 				content: '';
