@@ -35,17 +35,19 @@ boyo_css_loader( 'comments' );
 				esc_html( _nx( '%1$s comment', '%1$s comments', $boyo_comment_count, 'comments title', 'boyo' ) ),
 				number_format_i18n( $boyo_comment_count )
 			);
-		?>
+			?>
 		</h2><!-- .comments-title -->
 
 		<?php the_comments_navigation(); ?>
 
 		<ol class="comment-list">
 			<?php
-			wp_list_comments( array(
-				'style'      => 'ol',
-				'short_ping' => true,
-			) );
+			wp_list_comments(
+				array(
+					'style'      => 'ol',
+					'short_ping' => true,
+				)
+			);
 			?>
 		</ol><!-- .comment-list -->
 

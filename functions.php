@@ -43,27 +43,38 @@ if ( ! function_exists( 'boyo_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'boyo' ),
-		) );
+		register_nav_menus(
+			array(
+				'menu-1' => esc_html__( 'Primary', 'boyo' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'boyo_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'boyo_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
 		/*
 		 * Enable support for Post Formats.
@@ -90,12 +101,15 @@ if ( ! function_exists( 'boyo_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 30,
-			'width'       => 150,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 30,
+				'width'       => 150,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
 
 		// Add custom image sizes.
 		add_image_size( 'boyo-200', 200 ); // 200 pixels wide (and unlimited height);
@@ -108,7 +122,7 @@ if ( ! function_exists( 'boyo_setup' ) ) :
 		add_image_size( 'boyo-880', 880 ); // 880 pixels wide (and unlimited height);
 		add_image_size( 'boyo-1200', 1200 ); // 1200 pixels wide (and unlimited height);
 
-		}
+	}
 endif;
 add_action( 'after_setup_theme', 'boyo_setup' );
 
@@ -133,33 +147,39 @@ add_action( 'after_setup_theme', 'boyo_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function boyo_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Top', 'boyo' ),
-		'id'            => 'sidebar-2',
-		'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'Bottom', 'boyo' ),
-		'id'            => 'sidebar-3',
-		'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer', 'boyo' ),
-		'id'            => 'sidebar-4',
-		'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Top', 'boyo' ),
+			'id'            => 'sidebar-2',
+			'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Bottom', 'boyo' ),
+			'id'            => 'sidebar-3',
+			'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer', 'boyo' ),
+			'id'            => 'sidebar-4',
+			'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'boyo_widgets_init' );
 
@@ -172,7 +192,7 @@ if ( ! function_exists( 'boyo_fonts_url' ) ) :
 	 * @return string Google fonts URL for the theme.
 	 */
 	function boyo_fonts_url() {
-	
+
 		if ( ! get_theme_mod( 'load_google_fonts_from_google', 1 ) ) {
 			return get_template_directory_uri() . '/fonts/fonts.css';
 		}
@@ -185,20 +205,20 @@ if ( ! function_exists( 'boyo_fonts_url' ) ) :
 		 * into your own language.
 		 */
 		$montserrat = _x( 'on', 'Montserrat font: on or off', 'boyo' );
-	
+
 		if ( 'off' !== $montserrat ) {
 			$font_families = array();
-	
+
 			$font_families[] = 'Montserrat:700';
-	
+
 			$query_args = array(
 				'family' => urlencode( implode( '|', $font_families ) ),
 				'subset' => urlencode( 'latin' ),
 			);
-	
+
 			$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
 		}
-	
+
 		return esc_url_raw( $fonts_url );
 	}
 	endif;
@@ -209,7 +229,7 @@ if ( ! function_exists( 'boyo_fonts_url' ) ) :
 function boyo_scripts() {
 
 	// Add custom fonts, used in the main stylesheet.
-	wp_enqueue_style( 'boyo-fonts', boyo_fonts_url(), array(), null );
+	wp_enqueue_style( 'boyo-fonts', boyo_fonts_url(), array(), '1.0' );
 
 	boyo_register_stylesheets();
 
@@ -234,16 +254,6 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Hybrid Media Grabber for getting media from posts.
- */
-require get_template_directory() . '/inc/class-media-grabber.php';
-
-/**
- * Get The Image for getting images from posts.
- */
-require get_template_directory() . '/inc/get-the-image.php';
 
 /**
  * Customizer additions.

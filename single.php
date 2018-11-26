@@ -27,10 +27,12 @@ boyo_css_loader( 'singular' );
 				comments_template();
 			endif;
 
-			the_post_navigation(array(
-				'prev_text'          => '<span class="previous-article">' . esc_html__('Previous article', 'boyo') . '</span><h3 class="previous-article-title"> %title</h3>',
-        		'next_text'          => '<span class="next-article">' . esc_html__('Next article', 'boyo') . '</span><br><h3 class="next-article-title"> %title</h3>',
-			));
+			the_post_navigation(
+				array(
+					'prev_text'          => '<span class="previous-article">' . esc_html__( 'Previous article', 'boyo' ) . '</span><h3 class="previous-article-title"> %title</h3>',
+					'next_text'          => '<span class="next-article">' . esc_html__( 'Next article', 'boyo' ) . '</span><br><h3 class="next-article-title"> %title</h3>',
+				)
+			);
 
 		endwhile; // End of the loop.
 		?>

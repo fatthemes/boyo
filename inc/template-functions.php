@@ -18,7 +18,7 @@ function boyo_body_classes( $classes ) {
 	}
 
 	// Adds a class of three-columns-layout when such settings chosen.
-	if ( 'three' === get_theme_mod('blog_and_archive_pages_layout', '') && ( is_archive() || is_search() || is_home() ) ) {
+	if ( 'three' === get_theme_mod( 'blog_and_archive_pages_layout', '' ) && ( is_archive() || is_search() || is_home() ) ) {
 		$classes[] = 'three-columns-layout';
 	}
 
@@ -34,7 +34,7 @@ add_filter( 'body_class', 'boyo_body_classes' );
  */
 function boyo_post_classes( $classes ) {
 	// Adds a class of not-sticky to the not sticky posts.
-	if ( !in_array( 'sticky', $classes ) ) {
+	if ( ! in_array( 'sticky', $classes ) ) {
 		$classes[] = 'not-sticky';
 	}
 	return $classes;
@@ -51,14 +51,21 @@ function boyo_pingback_header() {
 }
 add_action( 'wp_head', 'boyo_pingback_header' );
 
-function boyo_excerpt_more()
-{
-    return '';
+/**
+ * Removes "more" text from excerpt.
+ */
+function boyo_excerpt_more() {
+	return '';
 }
-add_filter('excerpt_more', 'boyo_excerpt_more', 100);
+add_filter( 'excerpt_more', 'boyo_excerpt_more', 100 );
 
-function boyo_excerpt_length($length)
-{
-    return get_theme_mod( 'excerpt_length', 20 );
+/**
+ * Modifies excerpt length.
+ *
+ * @param int $length excerpt length.
+ * @return int
+ */
+function boyo_excerpt_length( $length ) {
+	return get_theme_mod( 'excerpt_length', 20 );
 }
-add_filter('excerpt_length', 'boyo_excerpt_length', 100);
+add_filter( 'excerpt_length', 'boyo_excerpt_length', 100 );

@@ -63,19 +63,6 @@
   font-size: 25px;
 }
 
-.boyo-intro {
-  font-size: 15px;
-  letter-spacing: .045em;
-  line-height: 27px;
-  color: #1f2023;
-}
-
-.boyo-intro {
-  max-width: 420px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .published {
   display: none;
 }

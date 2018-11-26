@@ -25,7 +25,7 @@ boyo_css_loader( 'archive' );
 			while ( have_posts() ) :
 				the_post();
 
-				if(is_sticky()) :
+				if ( is_sticky() ) :
 					get_template_part( 'template-parts/content', 'sticky' );
 				else :
 					/*
@@ -40,15 +40,18 @@ boyo_css_loader( 'archive' );
 			?>
 			</div><!-- #articles-wrapper -->
 			<?php
-			the_posts_pagination( array(
-				'prev_text' => esc_html__( 'Prev', 'boyo' ),
-			) );
+			the_posts_pagination(
+				array(
+					'prev_text' => esc_html__( 'Prev', 'boyo' ),
+				)
+			);
 
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif; ?>
+		endif;
+		?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

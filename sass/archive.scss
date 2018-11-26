@@ -2,9 +2,9 @@
 * @package Boyo
 */
 @import "variables";
+
 .post {
     padding-bottom: 20px;
-    background-color: $color_9;
 }
 
 .post .post-thumbnail {
@@ -28,7 +28,7 @@
     letter-spacing: .04em;
     line-height: 29px;
 
-    > a {
+    >a {
         color: $color_1;
         text-decoration: none;
     }
@@ -51,246 +51,273 @@
     background: transparent;
     line-height: 1;
     padding: .4em .8em;
+
     &.current {
         background-color: $color_1;
         color: $color_2;
     }
 }
 
-.blog,
-.archive,
-.search {
-    .hentry {
-        margin-bottom: 0;
-    }
-    .entry-meta {
-        margin-top: 20px;
-    }
-    .format-image {
-        .entry-header {
-            a {
-                display: block;
-            }
-        }
-    }
-    .format-aside {
-        .entry-content {
-            padding: 4px;
-            background-color: #fff;
-            max-width: 720px;
-        }
-        .aside-content-wrapper {
-            background-color: $color_17;
-            padding: 20px 40px;
-        }
-    }
-    .format-quote {
-        blockquote {
-            &::after {
-                content: "\201D";
-                font-family: $font_family_main;
-                font-size: 100px;
-                line-height: 1;
-                position: absolute;
-                right: -10px;
-                bottom: -60px;
-                color: $color_5;
-                //z-index: -1;
-            }
-        }
-        cite {
-            font-family: $font_family_main;
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: initial;
-            margin-top: 40px;
-            display: inline-block;
-            a {
-                border-bottom: none;
-            }
-        }
-    }
-    .site-main,
-    .main-navigation {
-        background-color: $color_9;
-    }
-    .post-thumbnail,
-    .no-post-thumbnail {
-        position: relative;
-    }
-    .audio-post-format-icon,
-    .video-post-format-icon,
-    .gallery-post-format-icon {
-        padding: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-    .link-post-format-icon {
-        display: block;
-        line-height: 0;
-        text-align: right;
-        svg {
-            width: 40px;
-            height: 40px;
-        }
-    }
-    .link-post-format-wrapper,
-    .quote-post-format-wrapper {
-        background-color: $color_2;
-        padding: 4px;
-        max-width: 720px;
-        margin: auto;
-        .entry-content {
-            p {
-                margin-bottom: 20px;
-            }
-            word-break: break-all;
-        }
-    }
-    .link-post-format-wrapper {
-        .entry-header,
-        .entry-content {
-            background-color: $color_18;
-        }
-        .entry-header {
-            padding: 40px 40px 0;
-        }
-        .entry-content {
-            padding: 0 40px 40px;
-        }
-    }
-    .quote-post-format-wrapper {
-        .entry-header,
-        .entry-content {
-            background-color: $color_10;
-            padding: 20px 40px;
+.hentry {
+    margin-bottom: 0;
+}
+
+.entry-meta {
+    margin-top: 20px;
+}
+
+.format-image {
+    .entry-header {
+        a {
+            display: block;
         }
     }
 }
 
-.search-no-results {
-	.no-results {
+.format-aside {
+    .entry-content {
+        padding: 4px;
+        background-color: $color_2;
         max-width: 720px;
-        margin: 0 auto 20px;
-        .search-form {
-            margin:auto;
+    }
+
+    .aside-content-wrapper {
+        background-color: $color_17;
+        padding: 20px 40px;
+    }
+}
+
+.format-quote {
+    blockquote {
+        &::after {
+            content: "\201D";
+            font-family: $font_family_main;
+            font-size: 100px;
+            line-height: 1;
+            position: absolute;
+            right: -10px;
+            bottom: -60px;
+            color: $color_5;
         }
     }
+
+    cite {
+        font-family: $font_family_main;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: initial;
+        margin-top: 40px;
+        display: inline-block;
+
+        a {
+            border-bottom: none;
+        }
+    }
+}
+
+.post-thumbnail,
+.no-post-thumbnail {
+    position: relative;
+}
+
+.audio-post-format-icon,
+.video-post-format-icon,
+.gallery-post-format-icon {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.link-post-format-icon {
+    display: block;
+    line-height: 0;
+    text-align: right;
+
+    svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.link-post-format-wrapper,
+.quote-post-format-wrapper {
+    background-color: $color_2;
+    padding: 4px;
+    max-width: 720px;
+    margin: auto;
+
+    .entry-content {
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.link-post-format-wrapper {
+    .entry-header {
+        padding: 40px 40px 0;
+    }
+
+    .entry-content {
+        padding: 0 40px 40px;
+    }
+}
+
+.quote-post-format-wrapper {
+
+    .entry-header,
+    .entry-content {
+        background-color: $color_10;
+        padding: 20px 40px;
+    }
+}
+
+.search-no-results {
+    .no-results {
+        max-width: 720px;
+        margin: 0 auto 20px;
+
+        .search-form {
+            margin: auto;
+        }
+    }
+
     .page-content {
         padding: 40px 20px 80px;
     }
 }
 
+
+.boyo-intro {
+    font-size: 15px;
+    letter-spacing: .045em;
+    line-height: 27px;
+    color: $color_1;
+}
+
+.boyo-intro {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.not-sticky {
+    .boyo-intro {
+        max-width: 720px;
+        font-size: 1.25rem;
+        line-height: 2;
+        letter-spacing: initial;
+        padding: 0 20px;
+    }
+}
+
 @media (min-width: $md) {
-    .blog,
-    .archive,
-    .search {
-        .hentry {
-            padding-top:80px;
+    .hentry {
+        padding-top: 80px;
+    }
+
+    .site-main {
+        padding-top: 80px;
+    }
+
+    .sticky {
+        background-color: #fff;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        margin-bottom: 60px;
+
+        .entry-title,
+        .entry-meta {
+            max-width: 420px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        
-        .site-main {
-            padding-top:80px;
+
+        .entry-title {
+            text-transform: uppercase;
+            margin-top: -30px;
+            background-color: transparent;
         }
-        .sticky {
-            background-color: #fff;
+
+        .entry-header {
+            max-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin-bottom: 140px;
+        }
+
+        .entry-header-wrapper,
+        .image-wrapper {
+            width: 50%;
+        }
+
+        .entry-header-wrapper {
+            order: 1;
+        }
+
+        .image-wrapper {
+            order: 2;
+        }
+
+        .boyo-intro {
+            background-color: $color_2;
+            margin-bottom: -100px;
+            margin-top: 80px;
+            padding: 20px;
+        }
+
+        .post-thumbnail {
+            background-color: $color_2;
+            margin-top: -80px;
+            padding: 20px;
+
+            figure {
+                margin: 0;
+            }
+        }
+    }
+
+    &.three-columns-layout {
+        .articles-wrapper {
+            display: flex;
+            flex-wrap: wrap;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
-            padding-bottom: 10px;
-            margin-bottom: 60px;
-            .entry-title,
-            .entry-meta {
-                max-width: 420px;
-                margin-left: auto;
-                margin-right: auto;
-            }
 
-            .entry-title {
-                text-transform: uppercase;
-                margin-top: -30px;
-                background-color: transparent;
-            }
+            .not-sticky {
+                width: 33.33%;
+                .post-thumbnail {
+                    padding: 4px;
+                    line-height: 0;
+                    margin: 0;
+                }
 
-            .entry-header {
-                background-color: $color_9;
-                max-width: 960px;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 40px;
-                display:flex;
-                flex-wrap: wrap;
-                padding:0;
-                margin-bottom:140px;
-            }
-            .entry-header-wrapper,
-            .image-wrapper {
-                width:50%;
-            }
+                &.format-aside,
+                &.format-quote,
+                &.format-link {
+                    padding: 20px;
+                }
 
-            .entry-header-wrapper {
-                order:1;
-            }
-
-            .image-wrapper {
-                order:2;
-            }
-            
-            .boyo-intro {
-                background-color: $color_2;
-                margin-bottom: -100px;
-                margin-top: 80px;
-                //max-width: 420px;
-                padding: 20px;
-            }
-            .post-thumbnail {
-                background-color: $color_2;
-                margin-top: -80px;
-                padding:20px;
-                figure {
-                    margin:0;
+                .entry-title {
+                    max-width: 100%;
                 }
             }
-        }
-        
-        &.three-columns-layout {
-            .articles-wrapper {
-                display: flex;
-                flex-wrap: wrap;
-                max-width: 1200px;
-                margin-left: auto;
-                margin-right: auto;
-                .not-sticky {
-                    width: 33.33%;
-                    padding: 20px 0;
-                    .post-thumbnail {
-                        padding:4px;
-                        line-height: 0;
-                        margin: 0;
-                    }
-                    &.format-aside,
-                    &.format-quote,
-                    &.format-link {
-                        padding: 20px;
-                    }
-                    .entry-title {
-                        max-width: 100%;
-                    }
-                    .boyo-intro {
-                        font-size: 1.25rem;
-                        line-height: 2;
-                        letter-spacing: initial;
-                    }
-                }
-                .sticky {
-                    width:100%;
-                }
+
+            .sticky {
+                width: 100%;
             }
         }
     }
