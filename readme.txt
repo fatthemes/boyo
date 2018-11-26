@@ -22,8 +22,7 @@ Description - personal blog theme
 
 * Underscores - (C) 2012-2018 Automattic, Inc. License: GPL-2.0+
 * Hybrid Media Grabber - Copyright (c) 2008 - 2015, Justin Tadlock. License - GPL v2
-* Screenshot images. Source: https://pixabay.com/- license CC0. Links:
-  - https://pixabay.com/pl/wiosna-tulipany-%C5%82adna-kobieta-2298279/
+* Screenshot (and all images from the screenshot) - Copyright 2018 Monika Dziedzic  - license CC0.
 * Montserrat Font - Copyright 2011 The Montserrat Project Authors (https://github.com/JulietaUla/Montserrat) SIL Open Font License, 1.1
 
 == Changelog ==
