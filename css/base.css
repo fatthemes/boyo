@@ -814,7 +814,7 @@ a:hover, a:active {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: .32em;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   position: relative;
 }
@@ -831,7 +831,7 @@ a:hover, a:active {
 }
 
 .search-form-wrapper {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   display: none;
   position: absolute;
   top: 0;
