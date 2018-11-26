@@ -270,7 +270,7 @@
     margin: 0;
   }
   .three-columns-layout .articles-wrapper .not-sticky.format-aside, .three-columns-layout .articles-wrapper .not-sticky.format-quote, .three-columns-layout .articles-wrapper .not-sticky.format-link {
-    padding: 20px;
+    padding: 80px 20px 20px;
   }
   .three-columns-layout .articles-wrapper .not-sticky .entry-title {
     max-width: 100%;
