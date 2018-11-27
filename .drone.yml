@@ -81,9 +81,9 @@ pipeline:
     when:
       event: push
 
-  performancetest:
-    image: limestreet/apache-php-7
-    commands:
+#  performancetest:
+#    image: limestreet/apache-php-7
+#    commands:
       #- ls -la
       #- printenv
 #      - THEME_SLUG=$DRONE_REPO_NAME
@@ -119,9 +119,9 @@ pipeline:
       #- pa11y --ignore "warning;notice" http://$THEME_LOW.dev.limestreet.pl/tag/template/
 #      - grunt pagespeed
 #      - grunt perfbudget
-    secrets: [ WEBPAGETEST_API_KEY, PAGESPEED_API_KEY ]
-    when:
-      event: push
+#    secrets: [ WEBPAGETEST_API_KEY, PAGESPEED_API_KEY ]
+#    when:
+#      event: push
 
   version_check_and_build:
     image: limestreet/apache-php-7
