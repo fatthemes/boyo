@@ -146,7 +146,7 @@ pipeline:
       - apt-get update && apt-get install -y zip
       - npm install --silent
       - grunt
-      - rm -rf *.yml .drone.yml .g* .j* .n* scss sass node_modules vendor tests Gruntfile.js casper-tests.js package.json *.ruleset.xml nbproject *.rb *.tmp *.map *.log Dockerfile
+      - rm -rf *.yml .drone.yml .g* .j* .n* .v* scss sass node_modules vendor tests Gruntfile.js casper-tests.js package.json *.ruleset.xml nbproject *.rb *.tmp *.map *.log Dockerfile
       - cd ..
       - zip -FSr $DRONE_REPO_NAME.zip $DRONE_REPO_NAME
       - mkdir -p $DRONE_REPO_NAME/dist
