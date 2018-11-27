@@ -160,16 +160,22 @@
   padding: 20px 40px;
 }
 
-.search-no-results .no-results {
+.author-hidden .no-results,
+.date-hidden .no-results,
+.categories-hidden .no-results {
   max-width: 720px;
   margin: 0 auto 20px;
 }
 
-.search-no-results .no-results .search-form {
+.author-hidden .no-results .search-form,
+.date-hidden .no-results .search-form,
+.categories-hidden .no-results .search-form {
   margin: auto;
 }
 
-.search-no-results .page-content {
+.author-hidden .page-content,
+.date-hidden .page-content,
+.categories-hidden .page-content {
   padding: 40px 20px 80px;
 }
 
@@ -184,14 +190,6 @@
   max-width: 420px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.not-sticky .boyo-intro {
-  max-width: 720px;
-  font-size: 1.25rem;
-  line-height: 2;
-  letter-spacing: initial;
-  padding: 0 20px;
 }
 
 @media (min-width: 961px) {
