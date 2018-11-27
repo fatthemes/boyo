@@ -25,7 +25,7 @@ boyo_css_loader( 'archive' );
 			while ( have_posts() ) :
 				the_post();
 
-				if ( is_sticky() && !is_paged() ) :
+				if ( is_sticky() && ! is_paged() ) :
 					get_template_part( 'template-parts/content', 'sticky' );
 				else :
 					/*

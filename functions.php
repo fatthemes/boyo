@@ -272,3 +272,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Load TGMPA recommended plugins.
+ */
+require_once get_template_directory() . '/inc/tgmpa-plugins.php';
+
+/**
+ * Demo import.
+ */
+require_once get_template_directory() . '/inc/demo-import.php';
