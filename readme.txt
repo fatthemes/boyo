@@ -10,7 +10,7 @@ Tags: three-columns, grid-layout, custom-background, custom-colors, custom-menu,
  Boyo is distributed under the terms of the GNU GPL v2 or later
 
 == Description ==
-Description - personal blog theme
+BOYO is another WordPress theme by BlogOnYourOwn.com. Clear, readable, fully adapted to be a blog template. Minimalist and clean style makes your content and photos look beautiful. Light, fast and SEO optimized. Try the BOYO theme and enjoy its beauty.
 
 == Installation ==
 
@@ -21,8 +21,7 @@ Description - personal blog theme
 == Resources ==
 
 * Underscores - (C) 2012-2018 Automattic, Inc. License: GPL-2.0+
-* Hybrid Media Grabber - Copyright (c) 2008 - 2015, Justin Tadlock. License - GPL v2
-* Screenshot (and all images from the screenshot) - Copyright 2018 Monika Dziedzic  - license CC0.
+* Screenshots (main screenshot and demo import images) - Copyright 2018 Monika Dziedzic  - license CC0.
 * Montserrat Font - Copyright 2011 The Montserrat Project Authors (https://github.com/JulietaUla/Montserrat) SIL Open Font License, 1.1
 
 == Changelog ==
