@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.8" created="2018-11-27 14:39" -->
+<!-- generator="WordPress/4.9.8" created="2018-11-28 08:26" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Boyo 1</title>
 	<link>http://boyo1.blogonyourown.com</link>
 	<description>Just another FatThemes Sites site</description>
-	<pubDate>Tue, 27 Nov 2018 14:39:41 +0000</pubDate>
+	<pubDate>Wed, 28 Nov 2018 08:26:24 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://blogonyourown.com/</wp:base_site_url>
@@ -1080,41 +1080,6 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>boyo_xs</title>
-		<link>http://boyo1.blogonyourown.com/boyo_xs/</link>
-		<pubDate>Thu, 22 Nov 2018 10:23:24 +0000</pubDate>
-		<dc:creator><![CDATA[jacobroy]]></dc:creator>
-		<guid isPermaLink="false">http://boyo1.blogonyourown.com/wp-content/uploads/sites/51/2018/11/boyo_xs.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>3045</wp:post_id>
-		<wp:post_date><![CDATA[2018-11-22 10:23:24]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-11-22 10:23:24]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[boyo_xs]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo1.blogonyourown.com/wp-content/uploads/sites/51/2018/11/boyo_xs.png]]></wp:attachment_url>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018/11/boyo_xs.png]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:124;s:6:"height";i:51;s:4:"file";s:19:"2018/11/boyo_xs.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[3]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>favicon_yellow</title>
 		<link>http://boyo1.blogonyourown.com/favicon_yellow/</link>
 		<pubDate>Thu, 22 Nov 2018 10:25:29 +0000</pubDate>
@@ -1190,6 +1155,41 @@
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_oembed_a2ce3d9c24440616d111486f9217d9d7]]></wp:meta_key>
 			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>boyo</title>
+		<link>http://boyo1.blogonyourown.com/boyo/</link>
+		<pubDate>Tue, 27 Nov 2018 18:37:13 +0000</pubDate>
+		<dc:creator><![CDATA[jacobroy]]></dc:creator>
+		<guid isPermaLink="false">http://boyo1.blogonyourown.com/wp-content/uploads/sites/51/2018/11/boyo.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>3078</wp:post_id>
+		<wp:post_date><![CDATA[2018-11-27 18:37:13]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-11-27 18:37:13]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[boyo]]></wp:post_name>
+		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url><![CDATA[http://boyo1.blogonyourown.com/wp-content/uploads/sites/51/2018/11/boyo.png]]></wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2018/11/boyo.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:124;s:6:"height";i:51;s:4:"file";s:16:"2018/11/boyo.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[3]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2558,8 +2558,6 @@ Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qu
 <span class="first-letter">L</span>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
 Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-
-[gallery size="large" link="file" ids="1792,1791"]
 
 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
 
