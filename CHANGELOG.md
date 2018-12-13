@@ -1,5 +1,17 @@
 # Changes to Boyo
 
+## [1.0.3] - 2018-12-13
+
+### Changed
+
+- Tested up to 5.0.1
+- simplified archive.css content
+
+### Fixed
+
+- demo import xml file
+- archive layout when nothing found
+
 ## [1.0.2] - 2018-11-30
 
 ### Changed

@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.8" created="2018-11-28 08:30" -->
+<!-- generator="WordPress/5.0" created="2018-12-13 14:28" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -28,62 +28,20 @@
 <channel>
 	<title>Boyo 2</title>
 	<link>http://boyo2.blogonyourown.com</link>
-	<description>Just another FatThemes Sites site</description>
-	<pubDate>Wed, 28 Nov 2018 08:30:24 +0000</pubDate>
+	<description>Just another BlogOnYourOwn site</description>
+	<pubDate>Thu, 13 Dec 2018 14:28:40 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://blogonyourown.com/</wp:base_site_url>
 	<wp:base_blog_url>http://boyo2.blogonyourown.com</wp:base_blog_url>
 
-<wp:author><wp:author_id>24</wp:author_id><wp:author_login><![CDATA[jacobroy]]></wp:author_login><wp:author_email><![CDATA[jacobroy@blogonyourown.com]]></wp:author_email><wp:author_display_name><![CDATA[Jacob Roy]]></wp:author_display_name><wp:author_first_name><![CDATA[Jacob]]></wp:author_first_name><wp:author_last_name><![CDATA[Roy]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>24</wp:author_id><wp:author_login><![CDATA[jacobroy]]></wp:author_login><wp:author_email><![CDATA[jacobroy@blogonyourown.com]]></wp:author_email><wp:author_display_name><![CDATA[Jacob Roy]]></wp:author_display_name><wp:author_first_name><![CDATA[Jacob]]></wp:author_first_name><wp:author_last_name><![CDATA[Roy]]></wp:author_last_name></wp:author>
 	
-	<wp:category>
-		<wp:term_id>2</wp:term_id>
-		<wp:category_nicename><![CDATA[business]]></wp:category_nicename>
-		<wp:category_parent><![CDATA[]]></wp:category_parent>
-		<wp:cat_name><![CDATA[BUSINESS]]></wp:cat_name>
-	</wp:category>
 	<wp:category>
 		<wp:term_id>3</wp:term_id>
 		<wp:category_nicename><![CDATA[design]]></wp:category_nicename>
 		<wp:category_parent><![CDATA[]]></wp:category_parent>
 		<wp:cat_name><![CDATA[DESIGN]]></wp:cat_name>
-	</wp:category>
-	<wp:category>
-		<wp:term_id>4</wp:term_id>
-		<wp:category_nicename><![CDATA[docs]]></wp:category_nicename>
-		<wp:category_parent><![CDATA[]]></wp:category_parent>
-		<wp:cat_name><![CDATA[Docs]]></wp:cat_name>
-	</wp:category>
-	<wp:category>
-		<wp:term_id>5</wp:term_id>
-		<wp:category_nicename><![CDATA[entertainment]]></wp:category_nicename>
-		<wp:category_parent><![CDATA[]]></wp:category_parent>
-		<wp:cat_name><![CDATA[ENTERTAINMENT]]></wp:cat_name>
-	</wp:category>
-	<wp:category>
-		<wp:term_id>6</wp:term_id>
-		<wp:category_nicename><![CDATA[free]]></wp:category_nicename>
-		<wp:category_parent><![CDATA[]]></wp:category_parent>
-		<wp:cat_name><![CDATA[Free]]></wp:cat_name>
-	</wp:category>
-	<wp:category>
-		<wp:term_id>7</wp:term_id>
-		<wp:category_nicename><![CDATA[loose]]></wp:category_nicename>
-		<wp:category_parent><![CDATA[docs]]></wp:category_parent>
-		<wp:cat_name><![CDATA[Loose]]></wp:cat_name>
-	</wp:category>
-	<wp:category>
-		<wp:term_id>8</wp:term_id>
-		<wp:category_nicename><![CDATA[news]]></wp:category_nicename>
-		<wp:category_parent><![CDATA[]]></wp:category_parent>
-		<wp:cat_name><![CDATA[NEWS]]></wp:cat_name>
-	</wp:category>
-	<wp:category>
-		<wp:term_id>9</wp:term_id>
-		<wp:category_nicename><![CDATA[pencil-docs]]></wp:category_nicename>
-		<wp:category_parent><![CDATA[docs]]></wp:category_parent>
-		<wp:cat_name><![CDATA[Pencil]]></wp:cat_name>
 	</wp:category>
 	<wp:category>
 		<wp:term_id>10</wp:term_id>
@@ -93,15 +51,9 @@
 <wp:category_description><![CDATA[Posts in this category test post formats.]]></wp:category_description>
 	</wp:category>
 	<wp:category>
-		<wp:term_id>11</wp:term_id>
-		<wp:category_nicename><![CDATA[sports]]></wp:category_nicename>
-		<wp:category_parent><![CDATA[]]></wp:category_parent>
-		<wp:cat_name><![CDATA[SPORTS]]></wp:cat_name>
-	</wp:category>
-	<wp:category>
 		<wp:term_id>12</wp:term_id>
 		<wp:category_nicename><![CDATA[tech]]></wp:category_nicename>
-		<wp:category_parent><![CDATA[business]]></wp:category_parent>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
 		<wp:cat_name><![CDATA[TECHNOLOGY]]></wp:cat_name>
 	</wp:category>
 	<wp:category>
@@ -109,12 +61,6 @@
 		<wp:category_nicename><![CDATA[uncategorized]]></wp:category_nicename>
 		<wp:category_parent><![CDATA[]]></wp:category_parent>
 		<wp:cat_name><![CDATA[Uncategorized]]></wp:cat_name>
-	</wp:category>
-	<wp:category>
-		<wp:term_id>13</wp:term_id>
-		<wp:category_nicename><![CDATA[wordpress]]></wp:category_nicename>
-		<wp:category_parent><![CDATA[]]></wp:category_parent>
-		<wp:cat_name><![CDATA[WordPress]]></wp:cat_name>
 	</wp:category>
 	<wp:category>
 		<wp:term_id>14</wp:term_id>
@@ -202,13 +148,6 @@
 		<wp:term_name><![CDATA[Audio]]></wp:term_name>
 	</wp:term>
 	<wp:term>
-		<wp:term_id><![CDATA[2]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[business]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[BUSINESS]]></wp:term_name>
-	</wp:term>
-	<wp:term>
 		<wp:term_id><![CDATA[15]]></wp:term_id>
 		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[css]]></wp:term_slug>
@@ -223,32 +162,11 @@
 		<wp:term_name><![CDATA[DESIGN]]></wp:term_name>
 	</wp:term>
 	<wp:term>
-		<wp:term_id><![CDATA[4]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[docs]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Docs]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[5]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[entertainment]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[ENTERTAINMENT]]></wp:term_name>
-	</wp:term>
-	<wp:term>
 		<wp:term_id><![CDATA[29]]></wp:term_id>
 		<wp:term_taxonomy><![CDATA[nav_menu]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[footer-menu]]></wp:term_slug>
 		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[Footer menu]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[6]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[free]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Free]]></wp:term_name>
 	</wp:term>
 	<wp:term>
 		<wp:term_id><![CDATA[16]]></wp:term_id>
@@ -301,13 +219,6 @@
 		<wp:term_name><![CDATA[Link]]></wp:term_name>
 	</wp:term>
 	<wp:term>
-		<wp:term_id><![CDATA[7]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[loose]]></wp:term_slug>
-		<wp:term_parent><![CDATA[docs]]></wp:term_parent>
-		<wp:term_name><![CDATA[Loose]]></wp:term_name>
-	</wp:term>
-	<wp:term>
 		<wp:term_id><![CDATA[20]]></wp:term_id>
 		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[love]]></wp:term_slug>
@@ -329,20 +240,6 @@
 		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[Must Read]]></wp:term_name>
 		<wp:term_description><![CDATA[Tags posts about articles you must read.]]></wp:term_description>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[8]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[news]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[NEWS]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[9]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[pencil-docs]]></wp:term_slug>
-		<wp:term_parent><![CDATA[docs]]></wp:term_parent>
-		<wp:term_name><![CDATA[Pencil]]></wp:term_name>
 	</wp:term>
 	<wp:term>
 		<wp:term_id><![CDATA[22]]></wp:term_id>
@@ -381,13 +278,6 @@
 		<wp:term_name><![CDATA[Short menu]]></wp:term_name>
 	</wp:term>
 	<wp:term>
-		<wp:term_id><![CDATA[11]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[sports]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[SPORTS]]></wp:term_name>
-	</wp:term>
-	<wp:term>
 		<wp:term_id><![CDATA[24]]></wp:term_id>
 		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[success]]></wp:term_slug>
@@ -399,7 +289,7 @@
 		<wp:term_id><![CDATA[12]]></wp:term_id>
 		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[tech]]></wp:term_slug>
-		<wp:term_parent><![CDATA[business]]></wp:term_parent>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[TECHNOLOGY]]></wp:term_name>
 	</wp:term>
 	<wp:term>
@@ -424,13 +314,6 @@
 		<wp:term_name><![CDATA[Video]]></wp:term_name>
 	</wp:term>
 	<wp:term>
-		<wp:term_id><![CDATA[13]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[wordpress]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[WordPress]]></wp:term_name>
-	</wp:term>
-	<wp:term>
 		<wp:term_id><![CDATA[26]]></wp:term_id>
 		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[wordpress]]></wp:term_slug>
@@ -452,7 +335,7 @@
 	<wp:term><wp:term_id>40</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[short-menu]]></wp:term_slug><wp:term_name><![CDATA[Short menu]]></wp:term_name>
 </wp:term>
 
-	<generator>https://wordpress.org/?v=4.9.8</generator>
+	<generator>https://wordpress.org/?v=5.0</generator>
 
 <image>
 	<url>http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/cropped-favicon_red-32x32.jpg</url>
