@@ -14,7 +14,7 @@
 }
 
 .page-header {
-    padding: 0 20px 40px;
+    padding: 20px 20px 40px;
 }
 
 .page-title {
@@ -178,9 +178,8 @@
     }
 }
 
-.author-hidden,
-.date-hidden,
-.categories-hidden {
+.search,
+.archive {
     .no-results {
         max-width: 720px;
         margin: 0 auto 20px;

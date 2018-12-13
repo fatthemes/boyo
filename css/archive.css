@@ -12,7 +12,7 @@
 }
 
 .page-header {
-  padding: 0 20px 40px;
+  padding: 20px 20px 40px;
 }
 
 .page-title {
@@ -160,22 +160,19 @@
   padding: 20px 40px;
 }
 
-.author-hidden .no-results,
-.date-hidden .no-results,
-.categories-hidden .no-results {
+.search .no-results,
+.archive .no-results {
   max-width: 720px;
   margin: 0 auto 20px;
 }
 
-.author-hidden .no-results .search-form,
-.date-hidden .no-results .search-form,
-.categories-hidden .no-results .search-form {
+.search .no-results .search-form,
+.archive .no-results .search-form {
   margin: auto;
 }
 
-.author-hidden .page-content,
-.date-hidden .page-content,
-.categories-hidden .page-content {
+.search .page-content,
+.archive .page-content {
   padding: 40px 20px 80px;
 }
 
