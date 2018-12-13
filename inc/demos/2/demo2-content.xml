@@ -35,10 +35,8 @@
 	<wp:base_site_url>http://blogonyourown.com/</wp:base_site_url>
 	<wp:base_blog_url>http://boyo2.blogonyourown.com</wp:base_blog_url>
 
-	<wp:author><wp:author_id>3</wp:author_id><wp:author_login><![CDATA[monika]]></wp:author_login><wp:author_email><![CDATA[monika.dziedzic@limestreet.pl]]></wp:author_email><wp:author_display_name><![CDATA[Monika]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
-	<wp:author><wp:author_id>24</wp:author_id><wp:author_login><![CDATA[jacobroy]]></wp:author_login><wp:author_email><![CDATA[jacobroy@blogonyourown.com]]></wp:author_email><wp:author_display_name><![CDATA[Jacob Roy]]></wp:author_display_name><wp:author_first_name><![CDATA[Jacob]]></wp:author_first_name><wp:author_last_name><![CDATA[Roy]]></wp:author_last_name></wp:author>
-	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[patryk]]></wp:author_login><wp:author_email><![CDATA[admin@limestreet.pl]]></wp:author_email><wp:author_display_name><![CDATA[Patryk]]></wp:author_display_name><wp:author_first_name><![CDATA[Patryk]]></wp:author_first_name><wp:author_last_name><![CDATA[Nazwisko]]></wp:author_last_name></wp:author>
-
+<wp:author><wp:author_id>24</wp:author_id><wp:author_login><![CDATA[jacobroy]]></wp:author_login><wp:author_email><![CDATA[jacobroy@blogonyourown.com]]></wp:author_email><wp:author_display_name><![CDATA[Jacob Roy]]></wp:author_display_name><wp:author_first_name><![CDATA[Jacob]]></wp:author_first_name><wp:author_last_name><![CDATA[Roy]]></wp:author_last_name></wp:author>
+	
 	<wp:category>
 		<wp:term_id>2</wp:term_id>
 		<wp:category_nicename><![CDATA[business]]></wp:category_nicename>
