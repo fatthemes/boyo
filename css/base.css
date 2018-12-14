@@ -805,6 +805,11 @@ a:hover, a:active {
   z-index: 10;
 }
 
+.main-navigation.toggled .main-menu .menu {
+  overflow-y: scroll;
+  height: 100%;
+}
+
 .main-menu .menu-item {
   display: block;
   text-align: left;

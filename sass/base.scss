@@ -808,7 +808,11 @@ a:hover, a:active {
 	bottom: 0;
     background-color: #000;
     padding: 60px 40px;
-    z-index:10;
+	z-index:10;
+	.menu {
+		overflow-y: scroll;
+		height: 100%;
+	}
 }
 
 .main-menu .menu-item {
