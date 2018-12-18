@@ -111,6 +111,17 @@ if ( ! function_exists( 'boyo_setup' ) ) :
 			)
 		);
 
+		// Add support for full and wide align images.
+		add_theme_support('align-wide');
+		
+		// Add support for responsive embeds.
+		add_theme_support('responsive-embeds');
+
+		// Add support for editor styles.
+		add_theme_support( 'editor-styles' );
+		// Enqueue editor styles.
+		add_editor_style( 'style-editor.css' );
+
 		// Add custom image sizes.
 		add_image_size( 'boyo-200', 200 ); // 200 pixels wide (and unlimited height);
 		add_image_size( 'boyo-320', 320 ); // 320 pixels wide (and unlimited height);

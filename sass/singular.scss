@@ -139,10 +139,16 @@ cite {
     }
     
     .entry-content {
-        .alignnone {
+        .alignnone,
+        .alignwide {
             max-width: 960px;
             margin-left: -120px;
             margin-right: -120px;
+        }
+        .alignfull {
+            max-width: 100vw;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
         }
     }
 }
@@ -156,7 +162,8 @@ cite {
     }
     
     .entry-content {
-        .alignnone {
+        .alignnone,
+        .alignwide {
             max-width: 1200px;
             margin-left: -240px;
             margin-right: -240px;
