@@ -1,5 +1,11 @@
 # Changes to Boyo
 
+## [1.1] - 2018-12-18
+
+### Added
+
+- Block editor (Gutenberg) related front-end styling
+
 ## [1.0.3] - 2018-12-13
 
 ### Changed
