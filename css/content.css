@@ -288,6 +288,37 @@ code {
   text-align: center;
 }
 
+/*--------------------------------------------------------------
+## Blocks related CSS
+--------------------------------------------------------------*/
+p.has-drop-cap:not(:focus)::first-letter {
+  font-size: 78px;
+  float: left;
+  line-height: 1;
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+a.wp-block-button__link {
+  border: none;
+  text-transform: uppercase;
+  padding: .6em 1em;
+  text-decoration: none;
+}
+
+.wp-block-separator.is-style-default {
+  width: 120px;
+}
+
+.wp-block-separator.is-style-dots::before {
+  font-size: 80px;
+  letter-spacing: .1em;
+  padding-left: .1em;
+}
+
+/*--------------------------------------------------------------
+## Handling of responsive view - for bigger screens
+--------------------------------------------------------------*/
 @media (min-width: 601px) {
   .content-area,
   .entry-header,
