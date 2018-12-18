@@ -300,13 +300,8 @@ p.has-drop-cap:not(:focus)::first-letter {
 }
 
 a.wp-block-button__link {
-  border: 2px solid;
-  font-size: 0.875rem;
+  border: none;
   text-transform: uppercase;
-  color: #1f2023;
-  border-color: #1f2023;
-  background: transparent;
-  line-height: 1;
   padding: .6em 1em;
   text-decoration: none;
 }

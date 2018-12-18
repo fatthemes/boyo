@@ -310,13 +310,8 @@ p {
 }
 
 a.wp-block-button__link {
-	border: 2px solid;
-	font-size: 0.875rem;
+	border: none;
 	text-transform: uppercase;
-	color: $color_1;
-	border-color: $color_1;
-	background: transparent;
-	line-height: 1;
 	padding: .6em 1em;
 	text-decoration: none;
 }
