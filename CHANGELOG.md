@@ -1,5 +1,11 @@
 # Changes to Boyo
 
+## [1.2] - 2019-01-02
+
+### Added
+
+- support for AMP plugin
+
 ## [1.1] - 2018-12-18
 
 ### Added
