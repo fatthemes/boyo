@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/5.0" created="2018-12-13 14:28" -->
+<!-- generator="WordPress/5.0.3" created="2019-01-18 10:15" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -28,15 +28,17 @@
 <channel>
 	<title>Boyo 2</title>
 	<link>http://boyo2.blogonyourown.com</link>
-	<description>Just another BlogOnYourOwn site</description>
-	<pubDate>Thu, 13 Dec 2018 14:28:40 +0000</pubDate>
+	<description>Just another FatThemes Sites site</description>
+	<pubDate>Fri, 18 Jan 2019 10:15:39 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://blogonyourown.com/</wp:base_site_url>
 	<wp:base_blog_url>http://boyo2.blogonyourown.com</wp:base_blog_url>
 
+	<wp:author><wp:author_id>3</wp:author_id><wp:author_login><![CDATA[monika]]></wp:author_login><wp:author_email><![CDATA[monika.dziedzic@limestreet.pl]]></wp:author_email><wp:author_display_name><![CDATA[Monika]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 	<wp:author><wp:author_id>24</wp:author_id><wp:author_login><![CDATA[jacobroy]]></wp:author_login><wp:author_email><![CDATA[jacobroy@blogonyourown.com]]></wp:author_email><wp:author_display_name><![CDATA[Jacob Roy]]></wp:author_display_name><wp:author_first_name><![CDATA[Jacob]]></wp:author_first_name><wp:author_last_name><![CDATA[Roy]]></wp:author_last_name></wp:author>
-	
+	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[patryk]]></wp:author_login><wp:author_email><![CDATA[patryk.kachel@limestreet.pl]]></wp:author_email><wp:author_display_name><![CDATA[Patryk]]></wp:author_display_name><wp:author_first_name><![CDATA[Patryk]]></wp:author_first_name><wp:author_last_name><![CDATA[Kachel]]></wp:author_last_name></wp:author>
+
 	<wp:category>
 		<wp:term_id>3</wp:term_id>
 		<wp:category_nicename><![CDATA[design]]></wp:category_nicename>
@@ -133,201 +135,6 @@
 		<wp:tag_name><![CDATA[WordPress]]></wp:tag_name>
 <wp:tag_description><![CDATA[Tags posts about WordPress.]]></wp:tag_description>
 	</wp:tag>
-	<wp:term>
-		<wp:term_id><![CDATA[27]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_format]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[post-format-aside]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Aside]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[28]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_format]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[post-format-audio]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Audio]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[15]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[css]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[css]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[3]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[design]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[DESIGN]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[29]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[nav_menu]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[footer-menu]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Footer menu]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[16]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[fun]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Fun]]></wp:term_name>
-		<wp:term_description><![CDATA[Tags posts about fun.]]></wp:term_description>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[17]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[gallery]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[gallery]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[30]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_format]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[post-format-gallery]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Gallery]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[18]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[html]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[html]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[19]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[image]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[image]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[31]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_format]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[post-format-image]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Image]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[34]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_format]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[post-format-link]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Link]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[20]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[love]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Love]]></wp:term_name>
-		<wp:term_description><![CDATA[Tags posts about love.]]></wp:term_description>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[36]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[nav_menu]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[menu]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Menu]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[21]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[mustread]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Must Read]]></wp:term_name>
-		<wp:term_description><![CDATA[Tags posts about articles you must read.]]></wp:term_description>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[22]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[pictures]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Pictures]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[10]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[post-formats]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Post Formats]]></wp:term_name>
-		<wp:term_description><![CDATA[Posts in this category test post formats.]]></wp:term_description>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[23]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[post-formats]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Post Formats]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[39]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_format]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[post-format-quote]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Quote]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[40]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[nav_menu]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[short-menu]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Short menu]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[24]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[success]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Success]]></wp:term_name>
-		<wp:term_description><![CDATA[Tags posts about success.]]></wp:term_description>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[12]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[tech]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[TECHNOLOGY]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[1]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[uncategorized]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Uncategorized]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[25]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[video]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[video]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[42]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_format]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[post-format-video]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Video]]></wp:term_name>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[26]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[post_tag]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[wordpress]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[WordPress]]></wp:term_name>
-		<wp:term_description><![CDATA[Tags posts about WordPress.]]></wp:term_description>
-	</wp:term>
-	<wp:term>
-		<wp:term_id><![CDATA[14]]></wp:term_id>
-		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[world]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[WORLD]]></wp:term_name>
-	</wp:term>
 	<wp:term><wp:term_id>29</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[footer-menu]]></wp:term_slug><wp:term_name><![CDATA[Footer menu]]></wp:term_name>
 </wp:term>
 	<wp:term><wp:term_id>36</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[menu]]></wp:term_slug><wp:term_name><![CDATA[Menu]]></wp:term_name>
@@ -335,7 +142,7 @@
 	<wp:term><wp:term_id>40</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[short-menu]]></wp:term_slug><wp:term_name><![CDATA[Short menu]]></wp:term_name>
 </wp:term>
 
-	<generator>https://wordpress.org/?v=5.0</generator>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
 
 <image>
 	<url>http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/cropped-favicon_red-32x32.jpg</url>
@@ -531,7 +338,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/jean-philippe-delberghe.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/jean-philippe-delberghe.jpg]]></wp:meta_value>
@@ -566,7 +373,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/marius-george-oprea.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/marius-george-oprea.jpg]]></wp:meta_value>
@@ -601,7 +408,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/paige-cody.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/paige-cody.jpg]]></wp:meta_value>
@@ -636,7 +443,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/bench_accounting2.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/bench_accounting2.jpg]]></wp:meta_value>
@@ -671,7 +478,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/300x200.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/300x200.jpg]]></wp:meta_value>
@@ -706,7 +513,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/580x300.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/580x300.jpg]]></wp:meta_value>
@@ -741,7 +548,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/favicon_red.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/favicon_red.jpg]]></wp:meta_value>
@@ -776,7 +583,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/cropped-favicon_red.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/cropped-favicon_red.jpg]]></wp:meta_value>
@@ -819,7 +626,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/09/sebastian-spindler.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/09/sebastian-spindler.jpg]]></wp:meta_value>
@@ -854,7 +661,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/jon-tyson_star.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/jon-tyson_star.jpg]]></wp:meta_value>
@@ -889,7 +696,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/mahdis-mousavi-small.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/mahdis-mousavi-small.jpg]]></wp:meta_value>
@@ -924,7 +731,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/alex-holyoake.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/alex-holyoake.jpg]]></wp:meta_value>
@@ -959,7 +766,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/chris-barbalis.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/chris-barbalis.jpg]]></wp:meta_value>
@@ -994,7 +801,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/chris-barbalis_art.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/chris-barbalis_art.jpg]]></wp:meta_value>
@@ -1029,7 +836,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/10/how_to_write_a_new_blog_post.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/10/how_to_write_a_new_blog_post.jpg]]></wp:meta_value>
@@ -1064,7 +871,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/how_to_start_a_blog.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/how_to_start_a_blog.jpg]]></wp:meta_value>
@@ -1099,7 +906,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://boyo2.blogonyourown.com/wp-content/uploads/sites/52/2018/11/boyo.png]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://blogonyourown.com/demos/placeholder.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018/11/boyo.png]]></wp:meta_value>
@@ -1334,61 +1141,6 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Home</title>
-		<link>http://boyo2.blogonyourown.com/2018/11/21/home-2/</link>
-		<pubDate>Wed, 21 Nov 2018 11:55:48 +0000</pubDate>
-		<dc:creator><![CDATA[monika]]></dc:creator>
-		<guid isPermaLink="false">http://boyo2.blogonyourown.com/2018/11/21/home-2/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>39</wp:post_id>
-		<wp:post_date><![CDATA[2018-11-21 11:55:48]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-11-21 11:55:48]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[home-2]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>1</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="short-menu"><![CDATA[Short menu]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[39]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[http://pat.test/monia/]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>London street artists work with city on legal graffiti walls</title>
 		<link>http://boyo2.blogonyourown.com/2018/09/18/london-street-artists-work-with-city-on-legal-graffiti-walls/</link>
 		<pubDate>Tue, 18 Sep 2018 15:54:34 +0000</pubDate>
@@ -1462,6 +1214,108 @@ Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qu
 			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
 			<wp:meta_value><![CDATA[3065]]></wp:meta_value>
 		</wp:postmeta>
+	</item>
+	<item>
+		<title>New Trends in Street Design</title>
+		<link>http://boyo2.blogonyourown.com/2018/09/28/new-trends-in-web-design/</link>
+		<pubDate>Fri, 28 Sep 2018 22:18:32 +0000</pubDate>
+		<dc:creator><![CDATA[jacobroy]]></dc:creator>
+		<guid isPermaLink="false">https://blogonyourown.com/demos/whatever/?p=1774</guid>
+		<description></description>
+		<content:encoded><![CDATA[<span class="first-letter">E</span>t est essent honestatis, mel nisl euismod commune et. Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. An ignota vituperata sea, ne mei tantas insolens maiestatis. In ius erat summo, elit nonumes euripidis eu quo, ne choro putent detraxit mea. His fugit intellegat in. Ex mea causae constituto. 
+
+Noster assueverit temporibus eos an, enim tibique ius ei. Equidem incorrupte in vix. Qui enim tibique ius ei. An ignota vituperata sea, ne mei tantas insolens maiestatis. In ius erat summo elit.
+<blockquote>Et est essent honestatis, mel nisl euismod commune et. Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque.
+<cite>John Doe</cite></blockquote>
+Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et. Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et. Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et. Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et.
+
+Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et.
+<h2>Header H2</h2>
+Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et.
+<h3>Header H3</h3>
+Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et.
+<h4>Header H4</h4>
+Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1774</wp:post_id>
+		<wp:post_date><![CDATA[2018-09-28 22:18:32]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-09-28 22:18:32]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[new-trends-in-web-design]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="design"><![CDATA[DESIGN]]></category>
+		<category domain="post_tag" nicename="fun"><![CDATA[Fun]]></category>
+		<category domain="post_tag" nicename="mustread"><![CDATA[Must Read]]></category>
+		<category domain="post_tag" nicename="wordpress"><![CDATA[WordPress]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[whatever-meta-slider-checkbox]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[whatever-meta-slider-checkbox]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[3]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2015-12-10]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2018-05-10]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:comment>
+			<wp:comment_id>4</wp:comment_id>
+			<wp:comment_author><![CDATA[Joe Doe]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[examle@example.org]]></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[192.168.200.31]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2015-10-07 09:49:17]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2015-10-07 09:49:17]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hi, this is a comment.
+Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Claritas est etiam processus dynamicus, qui sequitur mutationem.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
+		<wp:comment>
+			<wp:comment_id>5</wp:comment_id>
+			<wp:comment_author><![CDATA[Jane Doe]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[examle@example.org]]></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[192.168.200.31]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2015-10-07 09:51:09]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2015-10-07 09:51:09]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Claritas est etiam processus dynamicus, qui sequitur mutationem.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
+		<wp:comment>
+			<wp:comment_id>6</wp:comment_id>
+			<wp:comment_author><![CDATA[Robert Summer]]></wp:comment_author>
+			<wp:comment_author_email><![CDATA[fatthemes@blogonyourown.com]]></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_author_IP><![CDATA[192.168.200.31]]></wp:comment_author_IP>
+			<wp:comment_date><![CDATA[2015-10-07 10:12:04]]></wp:comment_date>
+			<wp:comment_date_gmt><![CDATA[2015-10-07 10:12:04]]></wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.]]></wp:comment_content>
+			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
+			<wp:comment_type><![CDATA[]]></wp:comment_type>
+			<wp:comment_parent>5</wp:comment_parent>
+			<wp:comment_user_id>0</wp:comment_user_id>
+		</wp:comment>
 	</item>
 	<item>
 		<title>Terms and Conditions</title>
@@ -2203,7 +2057,7 @@ Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qu
 		<wp:post_name><![CDATA[2963]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>2</wp:menu_order>
+		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -2258,7 +2112,7 @@ Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qu
 		<wp:post_name><![CDATA[2964]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>3</wp:menu_order>
+		<wp:menu_order>2</wp:menu_order>
 		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -2371,108 +2225,6 @@ Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qu
 			<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2018-11-05]]></wp:meta_value>
 		</wp:postmeta>
-	</item>
-	<item>
-		<title>New Trends in Street Design</title>
-		<link>http://boyo2.blogonyourown.com/2018/09/28/new-trends-in-web-design/</link>
-		<pubDate>Fri, 28 Sep 2018 22:18:32 +0000</pubDate>
-		<dc:creator><![CDATA[jacobroy]]></dc:creator>
-		<guid isPermaLink="false">https://blogonyourown.com/demos/whatever/?p=1774</guid>
-		<description></description>
-		<content:encoded><![CDATA[<span class="first-letter">E</span>t est essent honestatis, mel nisl euismod commune et. Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. An ignota vituperata sea, ne mei tantas insolens maiestatis. In ius erat summo, elit nonumes euripidis eu quo, ne choro putent detraxit mea. His fugit intellegat in. Ex mea causae constituto. 
-
-Noster assueverit temporibus eos an, enim tibique ius ei. Equidem incorrupte in vix. Qui enim tibique ius ei. An ignota vituperata sea, ne mei tantas insolens maiestatis. In ius erat summo elit.
-<blockquote>Et est essent honestatis, mel nisl euismod commune et. Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque.
-<cite>John Doe</cite></blockquote>
-Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et. Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et. Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et. Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et.
-
-Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et.
-<h2>Header H2</h2>
-Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et.
-<h3>Header H3</h3>
-Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et.
-<h4>Header H4</h4>
-Tibique expetenda mnesarchum duo id, unum consequat quo ea, te duo sumo omnis qualisque. Ius melius verear alterum no, essent inermis in nec. Et est essent honestatis, mel nisl euismod commune et.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1774</wp:post_id>
-		<wp:post_date><![CDATA[2018-09-28 22:18:32]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-09-28 22:18:32]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[new-trends-in-web-design]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[post]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="category" nicename="design"><![CDATA[DESIGN]]></category>
-		<category domain="post_tag" nicename="fun"><![CDATA[Fun]]></category>
-		<category domain="post_tag" nicename="mustread"><![CDATA[Must Read]]></category>
-		<category domain="post_tag" nicename="wordpress"><![CDATA[WordPress]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[whatever-meta-slider-checkbox]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[whatever-meta-slider-checkbox]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[3]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2015-12-10]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
-			<wp:meta_value><![CDATA[2018-05-10]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>4</wp:comment_id>
-			<wp:comment_author><![CDATA[Joe Doe]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[examle@example.org]]></wp:comment_author_email>
-			<wp:comment_author_url></wp:comment_author_url>
-			<wp:comment_author_IP><![CDATA[192.168.200.31]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2015-10-07 09:49:17]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2015-10-07 09:49:17]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Hi, this is a comment.
-Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Claritas est etiam processus dynamicus, qui sequitur mutationem.]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
-			<wp:comment_type><![CDATA[]]></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
-		<wp:comment>
-			<wp:comment_id>5</wp:comment_id>
-			<wp:comment_author><![CDATA[Jane Doe]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[examle@example.org]]></wp:comment_author_email>
-			<wp:comment_author_url></wp:comment_author_url>
-			<wp:comment_author_IP><![CDATA[192.168.200.31]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2015-10-07 09:51:09]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2015-10-07 09:51:09]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Claritas est etiam processus dynamicus, qui sequitur mutationem.]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
-			<wp:comment_type><![CDATA[]]></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
-		<wp:comment>
-			<wp:comment_id>6</wp:comment_id>
-			<wp:comment_author><![CDATA[Robert Summer]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[fatthemes@blogonyourown.com]]></wp:comment_author_email>
-			<wp:comment_author_url></wp:comment_author_url>
-			<wp:comment_author_IP><![CDATA[192.168.200.31]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2015-10-07 10:12:04]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2015-10-07 10:12:04]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[1]]></wp:comment_approved>
-			<wp:comment_type><![CDATA[]]></wp:comment_type>
-			<wp:comment_parent>5</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
 	</item>
 	<item>
 		<title>Post Format: Gallery New Trend</title>

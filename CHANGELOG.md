@@ -1,5 +1,11 @@
 # Changes to Boyo
 
+## [1.2.1] - 2019-01-18
+
+### Changed
+
+- All images in demo import replaced with placeholder image
+
 ## [1.2] - 2019-01-02
 
 ### Added
