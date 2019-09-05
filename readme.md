@@ -28,6 +28,6 @@ BOYO is another WordPress theme by BlogOnYourOwn.com. Clear, readable, fully ada
 
 Please see CHANGELOG.md
 
-Theme tested with:
+![browserstack-logo-600x315](https://user-images.githubusercontent.com/25641280/64346310-2d445900-cff2-11e9-92f3-1138b1b7a14f.png)
 
-<a href="https://www.browserstack.com/"><img src="https://user-images.githubusercontent.com/25641280/64346310-2d445900-cff2-11e9-92f3-1138b1b7a14f.png" alt="browserstack-logo-600x315"></a>
+Theme tested with [BrowserStack](https://www.browserstack.com/)
