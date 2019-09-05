@@ -31,3 +31,5 @@ Please see CHANGELOG.md
 ![browserstack-logo-600x315](https://user-images.githubusercontent.com/25641280/64346310-2d445900-cff2-11e9-92f3-1138b1b7a14f.png)
 
 Theme tested with [BrowserStack](https://www.browserstack.com/)
+
+<a href="https://www.browserstack.com/"><img src="https://user-images.githubusercontent.com/25641280/64346310-2d445900-cff2-11e9-92f3-1138b1b7a14f.png" alt="browserstack-logo-600x315"></a>
