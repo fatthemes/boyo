@@ -5,6 +5,7 @@
 ### Added
 
 - Full AMP support in standard mode
+- wp_body_open support
 
 ### Fixed
 
