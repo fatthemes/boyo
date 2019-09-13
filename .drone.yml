@@ -120,6 +120,9 @@ steps:
 
 trigger:
   event: [ push ]
+  branch:
+    exclude:
+    - master
 
 kind: pipeline
 name: tag
