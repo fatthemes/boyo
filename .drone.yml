@@ -6,10 +6,10 @@ steps:
   image: mariadb
   detach: true
   environment:
-  - MYSQL_ROOT_PASSWORD: pass
-  - MYSQL_USER: wp
-  - MYSQL_PASSWORD: wp
-  - MYSQL_DATABASE: wordpress_test
+    MYSQL_ROOT_PASSWORD: pass
+    MYSQL_USER: wp
+    MYSQL_PASSWORD: wp
+    MYSQL_DATABASE: wordpress_test
   
 - name: changelog
   image: limestreet/apache-php-7
@@ -26,11 +26,11 @@ steps:
 - name: codetest
   image: limestreet/php-cli
   environment:
-  - PHPCS_DIR: /tmp/phpcs
-  - WPCS_DIR: /tmp/sniffs/WordPress-Coding-Standards
-  - PHPCompatibility: /tmp/sniffs/PHPCompatibility
-  - PHPCompatibilityWP: /tmp/sniffs/PHPCompatibilityWP
-  - PHPCompatibilityParagonie: /tmp/sniffs/PHPCompatibilityParagonie
+    PHPCS_DIR: /tmp/phpcs
+    WPCS_DIR: /tmp/sniffs/WordPress-Coding-Standards
+    PHPCompatibility: /tmp/sniffs/PHPCompatibility
+    PHPCompatibilityWP: /tmp/sniffs/PHPCompatibilityWP
+    PHPCompatibilityParagonie: /tmp/sniffs/PHPCompatibilityParagonie
   commands:
   - git clone -b master --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git $PHPCS_DIR
   - git clone -b master --depth 1 https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git $WPCS_DIR
@@ -48,8 +48,8 @@ steps:
 - name: wptest
   image: limestreet/apache-php-7
   environment:
-  - WP_VERSION: master
-  - WP_DEVELOP_DIR: /tmp/wp
+    WP_VERSION: master
+    WP_DEVELOP_DIR: /tmp/wp
   commands:
   #- echo "wptest"
   - php -v
