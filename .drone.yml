@@ -157,14 +157,14 @@ steps:
   - grunt
   - rm -rf *.yml .drone.yml .g* .j* .n* .v* scss sass node_modules vendor tests Gruntfile.js casper-tests.js package.json *.ruleset.xml nbproject *.rb *.tmp *.map css/*.map *.log Dockerfile
   - cd ..
-  - ls -la
+  #- ls -la
   #- echo $pwd
   #- echo $DRONE_REPO_NAME
   - mkdir -p /drone/$DRONE_REPO_NAME
-  - rsync -avz /drone/src/ /drone/$DRONE_REPO_NAME/
+  - rsync -az /drone/src/ /drone/$DRONE_REPO_NAME/
   - zip -FSr $DRONE_REPO_NAME.zip $DRONE_REPO_NAME
   #- zip -FSr $DRONE_REPO_NAME.zip ./src
-  - ls -la
+  #- ls -la
   - mkdir -p /drone/src/dist
   - cp $DRONE_REPO_NAME.zip /drone/src/dist/$DRONE_REPO_NAME.zip
       
