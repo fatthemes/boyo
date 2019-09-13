@@ -11,6 +11,10 @@
 
 - Submenu background issue
 
+### Removed
+
+- Demo importing
+
 ## [1.2.1] - 2019-01-18
 
 ### Changed
