@@ -151,14 +151,14 @@ steps:
   #- echo $TAG.$DRONE_BUILD_NUMBER
   #- if [ $TAG.$DRONE_BUILD_NUMBER != $THEMEVERSION ]; then echo "Wrong theme/tag version - version from repo tag (+ build number) is $TAG.$DRONE_BUILD_NUMBER but theme version from style.css is $THEMEVERSION" && exit 1 ;fi
   - grep -q "\[$VERSION\]" $PWD/CHANGELOG.md
-  - ls -la
+  #- ls -la
   - apt-get update && apt-get install -y zip
   - npm install --silent
   - grunt
   - rm -rf *.yml .drone.yml .g* .j* .n* .v* scss sass node_modules vendor tests Gruntfile.js casper-tests.js package.json *.ruleset.xml nbproject *.rb *.tmp *.map css/*.map *.log Dockerfile
   - cd ..
   #- ls -la
-  #- echo $pwd
+  - echo $PWD
   #- echo $DRONE_REPO_NAME
   - mkdir -p /drone/$DRONE_REPO_NAME
   - rsync -az /drone/src/ /drone/$DRONE_REPO_NAME/
