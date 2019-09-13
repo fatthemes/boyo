@@ -283,11 +283,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 require_once get_template_directory() . '/inc/tgmpa-plugins.php';
 
 /**
- * Demo import.
- */
-require_once get_template_directory() . '/inc/demo-import.php';
-
-/**
  * AMP.
  */
 require_once get_template_directory() . '/inc/amp.php';
