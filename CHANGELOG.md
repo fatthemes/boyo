@@ -1,5 +1,11 @@
 # Changes to Boyo
 
+## [2.0.1] - 2019-09-13
+
+### Fixed
+
+- Submenu css background issue
+
 ## [2.0] - 2019-09-13
 
 ### Added
