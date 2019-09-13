@@ -151,6 +151,7 @@ steps:
   #- echo $TAG.$DRONE_BUILD_NUMBER
   #- if [ $TAG.$DRONE_BUILD_NUMBER != $THEMEVERSION ]; then echo "Wrong theme/tag version - version from repo tag (+ build number) is $TAG.$DRONE_BUILD_NUMBER but theme version from style.css is $THEMEVERSION" && exit 1 ;fi
   - grep -q "\[$VERSION\]" $PWD/CHANGELOG.md
+  - ls -la
   - apt-get update && apt-get install -y zip
   - npm install --silent
   - grunt
