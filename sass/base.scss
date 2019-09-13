@@ -793,7 +793,10 @@ a:hover, a:active {
 
 .main-navigation .custom-logo {
     height: 30px;
-    width: auto;
+	width: auto;
+	.i-amphtml-intrinsic-sizer {
+		max-height: 30px;
+	}
 }
 
 .main-menu {

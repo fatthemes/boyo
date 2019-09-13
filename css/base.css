@@ -790,6 +790,10 @@ a:hover, a:active {
   width: auto;
 }
 
+.main-navigation .custom-logo .i-amphtml-intrinsic-sizer {
+  max-height: 30px;
+}
+
 .main-menu {
   display: inline-block;
 }
