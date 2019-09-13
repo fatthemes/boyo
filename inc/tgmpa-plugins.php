@@ -38,13 +38,6 @@ function boyo_register_required_plugins() {
 			'slug'      => 'contact-form-7',
 			'required'  => false,
 		),
-
-		// One Click Demo Import from WordPress Plugin Repository.
-		array(
-			'name'      => esc_html__( 'One Click Demo Import', 'boyo' ),
-			'slug'      => 'one-click-demo-import',
-			'required'  => false,
-		),
 	);
 
 	/**

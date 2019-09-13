@@ -1,5 +1,20 @@
 # Changes to Boyo
 
+## [2.0] - 2019-09-13
+
+### Added
+
+- Full AMP support in standard mode
+- wp_body_open support
+
+### Fixed
+
+- Submenu background issue
+
+### Removed
+
+- Demo importing
+
 ## [1.2.1] - 2019-01-18
 
 ### Changed
