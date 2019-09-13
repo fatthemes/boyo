@@ -158,15 +158,15 @@ steps:
   - rm -rf *.yml .drone.yml .g* .j* .n* .v* scss sass node_modules vendor tests Gruntfile.js casper-tests.js package.json *.ruleset.xml nbproject *.rb *.tmp *.map css/*.map *.log Dockerfile
   - cd ..
   - ls -la
-  - echo $pwd
-  - echo $DRONE_REPO_NAME
+  #- echo $pwd
+  #- echo $DRONE_REPO_NAME
   - mkdir -p /drone/$DRONE_REPO_NAME
-  - mv /drone/src /drone/$DRONE_REPO_NAME
+  - rsync -avz /drone/src/ /drone/$DRONE_REPO_NAME/
   - zip -FSr $DRONE_REPO_NAME.zip $DRONE_REPO_NAME
   #- zip -FSr $DRONE_REPO_NAME.zip ./src
   - ls -la
-  - mkdir -p $DRONE_REPO_NAME/dist
-  - cp $DRONE_REPO_NAME.zip $DRONE_REPO_NAME/dist/$DRONE_REPO_NAME.zip
+  - mkdir -p /drone/src/dist
+  - cp $DRONE_REPO_NAME.zip /drone/src/dist/$DRONE_REPO_NAME.zip
       
 - name: github_release
   image: plugins/github-release
