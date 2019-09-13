@@ -239,7 +239,7 @@ function boyo_scripts() {
 
 	boyo_register_stylesheets();
 
-	if (!boyo_is_amp()) {
+	if ( ! boyo_is_amp() ) {
 		wp_enqueue_script( 'boyo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 		wp_enqueue_script( 'boyo-search', get_template_directory_uri() . '/js/search.js', array(), '20181018', true );
 		wp_enqueue_script( 'boyo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

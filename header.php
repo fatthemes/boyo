@@ -21,13 +21,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php function_exists('wp_body_open') ? wp_body_open() : ''; ?>
+<?php function_exists( 'wp_body_open' ) ? wp_body_open() : ''; ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'boyo' ); ?></a>
 
 	<header id="masthead" class="site-header">
-	<?php 
-		get_template_part('template-parts/navigation', boyo_is_amp() ? 'amp' : '' );
+	<?php
+		get_template_part( 'template-parts/navigation', boyo_is_amp() ? 'amp' : '' );
 	?>
 	</header><!-- #masthead -->
 

@@ -5,7 +5,9 @@
  * @package boyo
  */
 
-
+/**
+ * Check for amp endpoint.
+ */
 function boyo_is_amp() {
 	return function_exists( 'is_amp_endpoint' ) && is_amp_endpoint();
 }
