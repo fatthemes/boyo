@@ -119,7 +119,8 @@ steps:
 #      event: push
 
 trigger:
-  event: [ push ]
+  event:
+  - push
   branch:
     exclude:
     - master
@@ -163,4 +164,6 @@ steps:
   files: dist/*
 
 trigger:
-  event: [ tag ]
+  event:
+  - tag
+  
