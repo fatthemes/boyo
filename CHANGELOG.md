@@ -1,5 +1,15 @@
 # Changes to Boyo
 
+## [2.0] - 2019-09-13
+
+### Added
+
+- Full AMP support in standard mode
+
+### Fixed
+
+- Submenu background issue
+
 ## [1.2.1] - 2019-01-18
 
 ### Changed
