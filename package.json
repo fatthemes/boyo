@@ -5,6 +5,6 @@
     "grunt-perfbudget": "^0.1.8",
     "grunt-wp-i18n": "^0.5.3",
     "install": "^0.6.1",
-    "npm": "^3.8.5"
+    "npm": "^6.13.4"
   }
 }
