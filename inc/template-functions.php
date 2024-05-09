@@ -74,7 +74,7 @@ add_filter( 'excerpt_length', 'boyo_excerpt_length', 100 );
  * Registers stylesheets for usage outside the class.
  */
 function boyo_register_stylesheets() {
-    Boyo_CSS_Loader::register_stylesheets();
+	Boyo_CSS_Loader::register_stylesheets();
 }
 
 /**
@@ -85,5 +85,5 @@ function boyo_register_stylesheets() {
  * @see Boyo_CSS_Loader::css_loader()
  */
 function boyo_css_loader( $filename ) {
-    Boyo_CSS_Loader::css_loader( $filename );
+	Boyo_CSS_Loader::css_loader( $filename );
 }
