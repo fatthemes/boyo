@@ -50,8 +50,7 @@ if ( ! function_exists( 'boyo_posted_by' ) ) :
 			$byline = '<span class="author vcard">' . get_avatar( get_the_author_meta( 'ID' ), 48 ) . '<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>';
 		}
 
-		echo '<div class="byline"> ' . $byline . '</div>'; // WPCS: XSS OK.
-
+		echo '<div class="byline"> ' . esc_html( $byline ) . '</div>';
 	}
 endif;
 
@@ -110,8 +109,7 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 							</div><!-- .post-thumbnail -->
 				<?php
 			endif;
-		else :
-			if ( has_post_thumbnail() ) {
+		elseif ( has_post_thumbnail() ) :
 				?>
 					<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
@@ -129,13 +127,12 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 				<?php boyo_the_post_format_icon( get_post_format() ); ?>
 					</a>
 					<?php
-			} else {
+			else :
 				?>
 					<a class="no-post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 					<?php boyo_the_post_format_icon( get_post_format() ); ?>
 					</a>
 					<?php
-			}
 		endif; // End is_singular().
 	}
 endif;
@@ -225,7 +222,7 @@ if ( ! function_exists( 'boyo_the_post_format_icon' ) ) :
 		}
 		?>
 		<span class="<?php echo esc_attr( $post_format ); ?>-post-format-icon post-format-icon">
-			<?php echo $icon; // WPCS: XSS OK. ?>
+			<?php echo esc_html( $icon ); // WPCS: XSS OK. ?>
 		</span>
 		<?php
 	}
@@ -240,7 +237,7 @@ if ( ! function_exists( 'boyo_the_categories' ) ) :
 		$category_list = get_the_category_list( esc_html__( ', ', 'boyo' ) );
 		if ( $category_list ) {
 			/* translators: 1: list of categories. */
-			echo '<span class="cat-links">' . $category_list . '</span><br/>'; // WPCS: XSS OK.
+			echo '<span class="cat-links">' . esc_html( $category_list ) . '</span><br/>'; // WPCS: XSS OK.
 		}
 	}
 endif;
@@ -291,7 +288,7 @@ if ( ! function_exists( 'boyo_the_authors' ) ) :
 			}
 			$output .= '</ul>';
 		}
-		echo $output; // WPCS: XSS OK.
+		echo esc_html( $output );
 	}
 endif;
 
