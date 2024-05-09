@@ -69,3 +69,21 @@ function boyo_excerpt_length( $length ) {
 	return get_theme_mod( 'excerpt_length', 20 );
 }
 add_filter( 'excerpt_length', 'boyo_excerpt_length', 100 );
+
+/**
+ * Registers stylesheets for usage outside the class.
+ */
+function boyo_register_stylesheets() {
+    Boyo_CSS_Loader::register_stylesheets();
+}
+
+/**
+ * Loads CSS files related to a specific template.
+ *
+ * @param string $filename Name of CSS file.
+ * @return void
+ * @see Boyo_CSS_Loader::css_loader()
+ */
+function boyo_css_loader( $filename ) {
+    Boyo_CSS_Loader::css_loader( $filename );
+}

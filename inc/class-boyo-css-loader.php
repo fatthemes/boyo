@@ -75,21 +75,3 @@ class Boyo_CSS_Loader {
 		return false;
 	}
 }
-
-/**
- * Registers stylesheets for usage outside the class.
- */
-function boyo_register_stylesheets() {
-	Boyo_CSS_Loader::register_stylesheets();
-}
-
-/**
- * Loads CSS files related to a specific template.
- *
- * @param string $filename Name of CSS file.
- * @return void
- * @see Boyo_CSS_Loader::css_loader()
- */
-function boyo_css_loader( $filename ) {
-	Boyo_CSS_Loader::css_loader( $filename );
-}

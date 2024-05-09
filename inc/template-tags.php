@@ -26,7 +26,7 @@ if ( ! function_exists( 'boyo_posted_on' ) ) :
 			esc_html( get_the_modified_date() )
 		);
 		$posted_on = $posted_updated . '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
-		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+		echo '<span class="posted-on">' . $posted_on . '</span>';  // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 endif;
 
@@ -110,7 +110,7 @@ if ( ! function_exists( 'boyo_post_thumbnail' ) ) :
 				<?php
 			endif;
 		elseif ( has_post_thumbnail() ) :
-				?>
+			?>
 					<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
 				the_post_thumbnail(
