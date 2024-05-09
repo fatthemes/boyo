@@ -288,7 +288,7 @@ if ( ! function_exists( 'boyo_the_authors' ) ) :
 			}
 			$output .= '</ul>';
 		}
-		echo  $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 endif;
 
