@@ -50,7 +50,7 @@ if ( ! function_exists( 'boyo_posted_by' ) ) :
 			$byline = '<span class="author vcard">' . get_avatar( get_the_author_meta( 'ID' ), 48 ) . '<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>';
 		}
 
-		echo '<div class="byline"> ' . esc_html( $byline ) . '</div>';
+		echo '<div class="byline"> ' . $byline . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 endif;
 
@@ -237,7 +237,7 @@ if ( ! function_exists( 'boyo_the_categories' ) ) :
 		$category_list = get_the_category_list( esc_html__( ', ', 'boyo' ) );
 		if ( $category_list ) {
 			/* translators: 1: list of categories. */
-			echo '<span class="cat-links">' . esc_html( $category_list ) . '</span><br/>'; // WPCS: XSS OK.
+			echo '<span class="cat-links">' . $category_list . '</span><br/>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	}
 endif;
@@ -288,7 +288,7 @@ if ( ! function_exists( 'boyo_the_authors' ) ) :
 			}
 			$output .= '</ul>';
 		}
-		echo esc_html( $output );
+		echo  $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 endif;
 
