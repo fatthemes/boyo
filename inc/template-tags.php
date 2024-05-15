@@ -222,7 +222,7 @@ if ( ! function_exists( 'boyo_the_post_format_icon' ) ) :
 		}
 		?>
 		<span class="<?php echo esc_attr( $post_format ); ?>-post-format-icon post-format-icon">
-			<?php echo esc_html( $icon ); // WPCS: XSS OK. ?>
+			<?php echo $icon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</span>
 		<?php
 	}
