@@ -86,17 +86,17 @@ module.exports = function (grunt) {
             options: {
               url: 'http://THEME_SLUG.dev.limestreet.pl/',
               key: 'WEBPAGETEST_API_KEY',
-	      timeout: '600',
-	      //repeatView: true,
-	      //location: 'ec2-eu-central-1',
-	      location: 'Dulles_MotoG',
-	      connectivity: '3G',
-	      budget: {
-		visualComplete: '10000',
-		render: '10000',
-		//requests: '100',
-		SpeedIndex: '10000'
-	      }
+              timeout: '600',
+              //repeatView: true,
+              //location: 'ec2-eu-central-1',
+              location: 'Dulles_MotoG',
+              connectivity: '3G',
+              budget: {
+                visualComplete: '10000',
+                render: '10000',
+                //requests: '100',
+                SpeedIndex: '10000'
+              }
             }
           }
         },
@@ -104,22 +104,22 @@ module.exports = function (grunt) {
         pagespeed: {
           options: {
             //nokey: true,
-	    key: 'PAGESPEED_API_KEY',
+	          key: 'PAGESPEED_API_KEY',
             url: 'http://THEME_SLUG.dev.limestreet.pl/'
           },
           desktop: {
             options: {
               url: 'http://THEME_SLUG.dev.limestreet.pl/',
-	      paths: [ '/', 'sample-page/', '?s=post', '?s=gergeafer', '2017/07/05/hello-world/', '2013/01/10/markup-image-alignment/', 'category/post-formats/', '2013/01/10/markup-image-alignment/', '2013/01/11/markup-html-tags-and-formatting/', 'tag/template/', 'segtegdfgdfg', 'author/themedemos/' ],
+	            paths: [ '/', 'sample-page/', '?s=post', '?s=gergeafer', '2017/07/05/hello-world/', '2013/01/10/markup-image-alignment/', 'category/post-formats/', '2013/01/10/markup-image-alignment/', '2013/01/11/markup-html-tags-and-formatting/', 'tag/template/', 'segtegdfgdfg', 'author/themedemos/' ],
               locale: 'en_GB',
               strategy: 'desktop',
               threshold: 50
             }
           },
-	  mobile: {
+	        mobile: {
             options: {
               url: 'http://THEME_SLUG.dev.limestreet.pl/',
-	      paths: [ '/', 'sample-page/', '?s=post', '?s=gergeafer', '2017/07/05/hello-world/', '2013/01/10/markup-image-alignment/', 'category/post-formats/', '2013/01/10/markup-image-alignment/', '2013/01/11/markup-html-tags-and-formatting/', 'tag/template/', 'segtegdfgdfg', 'author/themedemos/' ],
+	            paths: [ '/', 'sample-page/', '?s=post', '?s=gergeafer', '2017/07/05/hello-world/', '2013/01/10/markup-image-alignment/', 'category/post-formats/', '2013/01/10/markup-image-alignment/', '2013/01/11/markup-html-tags-and-formatting/', 'tag/template/', 'segtegdfgdfg', 'author/themedemos/' ],
               locale: 'en_GB',
               strategy: 'mobile',
               threshold: 50
