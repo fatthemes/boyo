@@ -19,14 +19,14 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y jq
           CURRENT_WP_VERSION_API=`curl https://api.wordpress.org/core/version-check/1.7/ | jq '.["offers"][0].current'`
-          CURRENT_WP_VERSION=`echo "$CURRENT_WP_VERSION_API" | sed 's/"//g'`
+          CURRENT_WP_VERSION=`echo "$CURRENT_WP_VERSION_API" | sed 's/"//g' | grep -Po "\d\d?\.\d\d?"`
           echo $CURRENT_WP_VERSION
           README_TESTED_UP_TO_WP_LINE=$(grep -Po "Tested\ up\ to:\s?\s?\d\d?\.\d\d?\.?\d?\d?.*" $PWD/readme.txt)
-          README_TESTED_UP_TO_WP=$(echo $README_TESTED_UP_TO_WP_LINE | grep -Po "\d\d?\.\d\d?\.?\d?\d?")
+          README_TESTED_UP_TO_WP=$(echo $README_TESTED_UP_TO_WP_LINE | grep -Po "\d\d?\.\d\d?")
           echo $README_TESTED_UP_TO_WP
           if [ $README_TESTED_UP_TO_WP != $CURRENT_WP_VERSION ]; then echo "readme.txt - tested up to - use $CURRENT_WP_VERSION instead of $README_TESTED_UP_TO_WP" && exit 1 ;fi
           STYLE_TESTED_UP_TO_WP_LINE=$(grep -Po "Tested\ up\ to:\s?\s?\d\d?\.\d\d?\.?\d?\d?.*" $PWD/style.css)
-          STYLE_TESTED_UP_TO_WP=$(echo $STYLE_TESTED_UP_TO_WP_LINE | grep -Po "\d\d?\.\d\d?\.?\d?\d?")
+          STYLE_TESTED_UP_TO_WP=$(echo $STYLE_TESTED_UP_TO_WP_LINE | grep -Po "\d\d?\.\d\d?")
           echo $STYLE_TESTED_UP_TO_WP
           if [ $STYLE_TESTED_UP_TO_WP != $CURRENT_WP_VERSION ]; then echo "style.css - tested up to - use $CURRENT_WP_VERSION instead of $STYLE_TESTED_UP_TO_WP" && exit 1 ;fi
 
