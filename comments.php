@@ -30,10 +30,10 @@ boyo_css_loader( 'comments' );
 		<h2 class="comments-title">
 			<?php
 			$boyo_comment_count = get_comments_number();
-			printf( // WPCS: XSS OK.
+			printf(
 				/* translators: 1: comment count number */
 				esc_html( _nx( '%1$s comment', '%1$s comments', $boyo_comment_count, 'comments title', 'boyo' ) ),
-				number_format_i18n( $boyo_comment_count )
+				esc_html( number_format_i18n( $boyo_comment_count ) )
 			);
 			?>
 		</h2><!-- .comments-title -->

@@ -127,7 +127,6 @@ if ( ! function_exists( 'boyo_setup' ) ) :
 		add_image_size( 'boyo-720', 720 ); // 720 pixels wide (and unlimited height);
 		add_image_size( 'boyo-880', 880 ); // 880 pixels wide (and unlimited height);
 		add_image_size( 'boyo-1200', 1200 ); // 1200 pixels wide (and unlimited height);
-
 	}
 endif;
 add_action( 'after_setup_theme', 'boyo_setup' );

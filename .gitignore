@@ -1,2 +1,5 @@
 node_modules
 nbproject
+vendor
+.vscode
+composer.lock

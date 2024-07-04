@@ -6,12 +6,11 @@
  */
 
 /**
- * Loads css styles.
+ * Handles CSS file loading.
  */
 class Boyo_CSS_Loader {
-
 	/**
-	 * Registering stylesheets for future use.
+	 * Register stylesheets for future use.
 	 */
 	public static function register_stylesheets() {
 		$dir = new DirectoryIterator( get_template_directory() . '/css' );
@@ -30,10 +29,10 @@ class Boyo_CSS_Loader {
 	}
 
 	/**
-	 * Load required css files.
-	 * Atomic loading of css files related to specific template.
+	 * Load required CSS files.
+	 * Atomic loading of CSS files related to a specific template.
 	 *
-	 * @param array $filename Name of css file.
+	 * @param string $filename Name of CSS file.
 	 * @return void
 	 */
 	public static function css_loader( $filename ) {
@@ -42,7 +41,7 @@ class Boyo_CSS_Loader {
 
 	/**
 	 * Based on https://github.com/Fall-Back/CSS-Mustard-Cut
-	 * No CSS applied for old browsers - only html served.
+	 * No CSS applied for old browsers - only HTML served.
 	 *
 	 * Print (Edge doesn't apply to print otherwise)
 	 * IE 10, 11
@@ -64,9 +63,9 @@ class Boyo_CSS_Loader {
 	}
 
 	/**
-	 * Checks if css file should go to head section - if it's named header-*.css.
+	 * Checks if CSS file should go to the head section - if it's named header-*.css.
 	 *
-	 * @param array $filename Name of css file.
+	 * @param string $filename Name of CSS file.
 	 * @return bool
 	 */
 	private static function is_header_css( $filename ) {
@@ -75,22 +74,4 @@ class Boyo_CSS_Loader {
 		}
 		return false;
 	}
-}
-
-/**
- * Function for registering stylesheets - for usage outside the class.
- */
-function boyo_register_stylesheets() {
-	Boyo_CSS_Loader::register_stylesheets();
-}
-
-/**
- * Function for loading css files related to specific template.
- *
- * @param array $filename Name of css file.
- * @return void
- * @see Boyo_CSS_Loader::css_loader()
- */
-function boyo_css_loader( $filename ) {
-	Boyo_CSS_Loader::css_loader( $filename );
 }

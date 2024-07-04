@@ -235,7 +235,6 @@ function boyo_customize_register( $wp_customize ) {
 			'type' => 'checkbox',
 		)
 	);
-
 }
 add_action( 'customize_register', 'boyo_customize_register' );
 
