@@ -1,5 +1,10 @@
 # Changes to Boyo
 
+## [2.1.1] - 2024-09-12
+ - Added Block Editor support
+ - Fixed default style for block buttons
+ - Tested up to 6.6.2 (WordPress version)
+
 ## [2.1.0] - 2024-06-04
 
 ### Changed
