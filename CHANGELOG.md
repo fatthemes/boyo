@@ -1,5 +1,8 @@
 # Changes to Boyo
 
+## [2.1.2] - 2024-09-13
+- Removed `theme.json` to resolve conflicts with block editor styles.
+
 ## [2.1.1] - 2024-09-12
  - Added Block Editor support
  - Fixed default style for block buttons
