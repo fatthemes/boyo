@@ -1,16 +1,24 @@
 # Changes to Boyo
 
+## [Unreleased]
+
+- Fixed header styling when no menu is assigned
+- Added option to show or hide the Top widget area (hidden by default on new activations)
+
 ## [2.1.2] - 2024-09-13
+
 - Removed `theme.json` to resolve conflicts with block editor styles.
 
 ## [2.1.1] - 2024-09-12
- - Added Block Editor support
- - Fixed default style for block buttons
- - Tested up to 6.6.2 (WordPress version)
+
+- Added Block Editor support
+- Fixed default style for block buttons
+- Tested up to 6.6.2 (WordPress version)
 
 ## [2.1.0] - 2024-06-04
 
 ### Changed
+
 - Tested up to 6.5.3 (WordPress version)
 
 ## [2.0.1] - 2019-09-13

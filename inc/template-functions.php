@@ -87,3 +87,126 @@ function boyo_register_stylesheets() {
 function boyo_css_loader( $filename ) {
 	Boyo_CSS_Loader::css_loader( $filename );
 }
+
+/**
+ * Checks if the Top widget area should be displayed.
+ *
+ * An unsaved setting counts as enabled, so sites that already used the theme
+ * before this setting existed keep displaying the Top widget area.
+ *
+ * @return bool
+ */
+function boyo_show_top_widget_area() {
+	return (bool) get_theme_mod( 'boyo_show_top_widget_area', true );
+}
+
+/**
+ * Hides the Top widget area by default when the theme is activated.
+ */
+function boyo_hide_top_widget_area_on_activation() {
+	if ( null === get_theme_mod( 'boyo_show_top_widget_area', null ) ) {
+		set_theme_mod( 'boyo_show_top_widget_area', false );
+	}
+}
+add_action( 'after_switch_theme', 'boyo_hide_top_widget_area_on_activation' );
+
+/**
+ * Renames page list classes to their nav menu equivalents.
+ *
+ * Only hooked while boyo_primary_menu_fallback() runs.
+ *
+ * @param array   $css_class Classes of the page list item.
+ * @param WP_Post $page      Page data object.
+ * @param int     $depth     Depth of page.
+ * @param array   $args      Arguments of wp_list_pages().
+ * @return array
+ */
+function boyo_primary_menu_fallback_classes( $css_class, $page, $depth, $args ) {
+	// Children beyond the depth limit are not displayed.
+	if ( ! empty( $args['depth'] ) && $depth + 1 >= $args['depth'] ) {
+		$css_class = array_diff( $css_class, array( 'page_item_has_children' ) );
+	}
+
+	$map = array(
+		'page_item'              => 'menu-item',
+		'page_item_has_children' => 'menu-item-has-children',
+		'current_page_item'      => 'current-menu-item',
+		'current_page_ancestor'  => 'current-menu-ancestor',
+		'current_page_parent'    => 'current-menu-parent',
+	);
+
+	foreach ( $css_class as $key => $class ) {
+		if ( isset( $map[ $class ] ) ) {
+			$css_class[ $key ] = $map[ $class ];
+		}
+	}
+	return $css_class;
+}
+
+/**
+ * Displays a list of pages when no menu is assigned to the Primary location.
+ *
+ * @param array $args Arguments passed from wp_nav_menu().
+ * @return string|void Menu markup when $args['echo'] is false.
+ */
+function boyo_primary_menu_fallback( $args = array() ) {
+	$args = wp_parse_args(
+		$args,
+		array(
+			'container_class' => 'main-menu',
+			'menu_id'         => 'primary-menu',
+			'menu_class'      => 'menu',
+			'echo'            => true,
+		)
+	);
+
+	$defaults      = array(
+		'number' => 4,
+		'depth'  => 2,
+	);
+	$fallback_args = wp_parse_args( apply_filters( 'boyo_primary_menu_fallback_args', $defaults ), $defaults );
+
+	$sort_column  = 'menu_order,post_title';
+	$exclude_tree = array();
+	if ( absint( $fallback_args['number'] ) > 0 ) {
+		$top_level    = get_pages(
+			array(
+				'parent'       => 0,
+				'hierarchical' => 0,
+				'sort_column'  => $sort_column,
+			)
+		);
+		$exclude_tree = array_slice( wp_list_pluck( $top_level, 'ID' ), absint( $fallback_args['number'] ) );
+	}
+
+	add_filter( 'page_css_class', 'boyo_primary_menu_fallback_classes', 10, 4 );
+	$items = wp_list_pages(
+		array(
+			'title_li'     => '',
+			'echo'         => false,
+			'depth'        => absint( $fallback_args['depth'] ),
+			'sort_column'  => $sort_column,
+			'exclude_tree' => implode( ',', $exclude_tree ),
+			'walker'       => new Boyo_Walker_Primary_Menu_Fallback(),
+		)
+	);
+	remove_filter( 'page_css_class', 'boyo_primary_menu_fallback_classes', 10 );
+
+	if ( empty( $items ) ) {
+		return;
+	}
+
+	$menu = sprintf(
+		'<div class="%1$s"><ul id="%2$s" class="%3$s">%4$s</ul></div>',
+		esc_attr( $args['container_class'] ),
+		esc_attr( $args['menu_id'] ),
+		esc_attr( $args['menu_class'] ),
+		$items
+	);
+
+	if ( $args['echo'] ) {
+		echo $menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	} else {
+		return $menu;
+	}
+}

@@ -209,6 +209,33 @@ function boyo_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Section - "Top Widget Area".
+	$wp_customize->add_section(
+		'top_widget_area',
+		array(
+			'title'       => esc_html__( 'Top Widget Area', 'boyo' ),
+			'priority'    => 1020,
+			'description' => esc_html__( 'The Top widget area is displayed below the header.', 'boyo' ),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'boyo_show_top_widget_area',
+		array(
+			'default'           => true,
+			'sanitize_callback' => 'rest_sanitize_boolean',
+		)
+	);
+
+	$wp_customize->add_control(
+		'boyo_show_top_widget_area',
+		array(
+			'label'   => esc_html__( 'Show Top widget area', 'boyo' ),
+			'section' => 'top_widget_area',
+			'type'    => 'checkbox',
+		)
+	);
+
 	// Section - "Advanced settings".
 	$wp_customize->add_section(
 		'advanced_settings',
