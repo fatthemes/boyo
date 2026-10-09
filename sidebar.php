@@ -7,7 +7,7 @@
  * @package Boyo
  */
 
-if ( ! is_active_sidebar( 'sidebar-2' ) ) {
+if ( ! boyo_show_top_widget_area() || ! is_active_sidebar( 'sidebar-2' ) ) {
 	return;
 }
 boyo_css_loader( 'widgets' );

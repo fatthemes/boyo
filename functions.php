@@ -156,7 +156,7 @@ function boyo_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Top', 'boyo' ),
 			'id'            => 'sidebar-2',
-			'description'   => esc_html__( 'Add widgets here.', 'boyo' ),
+			'description'   => esc_html__( 'Hidden by default. Enable it in Appearance → Customize → Top Widget Area.', 'boyo' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -268,6 +268,11 @@ require get_template_directory() . '/inc/customizer.php';
  * CSS loader.
  */
 require get_template_directory() . '/inc/class-boyo-css-loader.php';
+
+/**
+ * Page walker for the primary menu fallback.
+ */
+require get_template_directory() . '/inc/class-boyo-walker-primary-menu-fallback.php';
 
 /**
  * Load Jetpack compatibility file.
