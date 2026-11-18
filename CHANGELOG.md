@@ -4,6 +4,9 @@
 
 - Fixed header styling when no menu is assigned
 - Added option to show or hide the Top widget area (hidden by default on new activations)
+- Added WooCommerce support, styled to match Boyo, with a Shop Sidebar and a header cart link
+- Added WooCommerce to the recommended plugins
+- Existing shops will be restyled with Boyo's design and a wider layout
 
 ## [2.1.2] - 2024-09-13
 

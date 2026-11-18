@@ -49,7 +49,7 @@ if ( ! defined( 'WPINC' ) ) {
 			<span class="hamburger-bar-third"></span>
 		</span>
 	</button>
-	<button
+	<?php do_action( 'boyo_navigation_buttons' ); ?><button
 		id="search-toggle"
 		class="search-toggle"
 		on="tap:AMP.setState( { searchFormExpanded: ! searchFormExpanded } )"
