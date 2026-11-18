@@ -38,6 +38,13 @@ function boyo_register_required_plugins() {
 			'slug'      => 'contact-form-7',
 			'required'  => false,
 		),
+
+		// WooCommerce from WordPress Plugin Repository.
+		array(
+			'name'     => 'WooCommerce',
+			'slug'     => 'woocommerce',
+			'required' => false,
+		),
 	);
 
 	/**

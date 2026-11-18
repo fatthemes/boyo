@@ -1,0 +1,1606 @@
+/*!
+* @package Boyo
+*/
+/*
+ * WooCommerce styles for Boyo. Registered by Boyo_CSS_Loader, enqueued only when WooCommerce is active.
+ *
+ * Colours: text #1f2023, muted text and field borders #767676 (4.5:1), accents #f05368 and #ffd73e.
+ */
+
+/*--------------------------------------------------------------
+# Header cart link: as tall as the search toggle, 48px wide.
+--------------------------------------------------------------*/
+.boyo-cart-link {
+	position: relative;
+	float: right;
+	display: block;
+	padding: 22px 12px;
+	color: #f05368;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.boyo-cart-link:visited,
+.boyo-cart-link:hover,
+.boyo-cart-link:focus {
+	color: #f05368;
+}
+
+.boyo-cart-link svg {
+	display: block;
+	width: 24px;
+	height: 24px;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 1.8;
+	stroke-linejoin: round;
+}
+
+.boyo-cart-link svg circle {
+	fill: currentColor;
+	stroke: none;
+}
+
+/* Boyo's yellow with dark text: 11.7:1. */
+.boyo-cart-count {
+	position: absolute;
+	top: 13px;
+	right: 2px;
+	min-width: 18px;
+	height: 18px;
+	padding: 0 4px;
+	box-sizing: border-box;
+	background-color: #ffd73e;
+	color: #1f2023;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 18px;
+	text-align: center;
+}
+
+.boyo-cart-link:focus-visible {
+	outline: 2px dotted #1f2023;
+	outline-offset: -6px;
+}
+
+/*--------------------------------------------------------------
+# Shop layout: the Shop Sidebar left of the products from 961px, above them below.
+--------------------------------------------------------------*/
+.boyo-shop {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 20px 60px;
+}
+
+.boyo-shop .content-area {
+	padding: 0;
+}
+
+.shop-widget-area {
+	margin-bottom: 40px;
+}
+
+@media (min-width: 961px) {
+	.boyo-shop {
+		padding-top: 60px;
+	}
+
+	.boyo-shop.has-shop-sidebar {
+		display: grid;
+		grid-template-columns: 260px minmax(0, 1fr);
+		gap: 60px;
+		align-items: start;
+	}
+
+	.shop-widget-area {
+		margin-bottom: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+# Buttons: Boyo's 2px uppercase outline, filled for main actions.
+--------------------------------------------------------------*/
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit,
+.woocommerce-page a.button,
+.woocommerce-page button.button {
+	display: inline-block;
+	padding: 0.6em 1em;
+	background-color: transparent;
+	color: #1f2023;
+	border: 2px solid #1f2023;
+	border-radius: 0;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce-page a.button:hover,
+.woocommerce-page button.button:hover {
+	background-color: transparent;
+	color: #1f2023;
+	border-color: #ccc #bbb #aaa;
+}
+
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
+.woocommerce #respond input#submit.alt {
+	background-color: #1f2023;
+	color: #fff;
+	border-color: #1f2023;
+}
+
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce #respond input#submit.alt:hover {
+	background-color: #fff;
+	color: #1f2023;
+	border-color: #1f2023;
+}
+
+/* Disabled, e.g. before a product option is chosen: a grey outline that stays readable. */
+.woocommerce a.button.disabled,
+.woocommerce a.button:disabled,
+.woocommerce a.button:disabled[disabled],
+.woocommerce button.button.disabled,
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled],
+.woocommerce button.button.alt.disabled,
+.woocommerce button.button.alt:disabled,
+.woocommerce button.button.alt:disabled[disabled],
+.woocommerce button.button.alt.disabled:hover {
+	padding: 0.6em 1em;
+	background-color: #fff;
+	color: #767676;
+	border-color: #767676;
+	opacity: 1;
+}
+
+/* Spinner state after "Add to cart". */
+.woocommerce a.button.loading,
+.woocommerce button.button.loading {
+	opacity: 0.6;
+}
+
+/*--------------------------------------------------------------
+# Fields: a 3:1 border on Boyo's inputs.
+--------------------------------------------------------------*/
+.woocommerce .woocommerce-ordering select,
+.woocommerce .quantity .qty,
+.woocommerce form .form-row .input-text,
+.woocommerce form .form-row select,
+.woocommerce form .form-row textarea,
+.woocommerce div.product form.cart .variations select,
+.woocommerce .coupon .input-text,
+.woocommerce #review_form #respond input[type="text"],
+.woocommerce #review_form #respond input[type="email"],
+.woocommerce #review_form #respond textarea,
+.woocommerce-product-search .search-field,
+.shop-widget-area input[type="search"],
+.shop-widget-area input[type="text"],
+.shop-widget-area select {
+	min-height: 2.5em;
+	padding: 0.4em 0.6em;
+	background-color: #fff;
+	color: #1f2023;
+	border: 1px solid #767676;
+	border-radius: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+.woocommerce .woocommerce-ordering select {
+	padding-right: 2em;
+}
+
+.woocommerce input[type="checkbox"],
+.woocommerce input[type="radio"] {
+	accent-color: #1f2023;
+}
+
+/*--------------------------------------------------------------
+# Shop header: Boyo's page title, result count and sorting as meta.
+--------------------------------------------------------------*/
+.boyo-shop .page-title {
+	margin: 0 0 20px;
+	color: #1f2023;
+}
+
+.woocommerce .term-description,
+.woocommerce .page-description {
+	max-width: 720px;
+	margin-bottom: 30px;
+}
+
+.woocommerce .woocommerce-result-count {
+	margin: 0 0 20px;
+	color: #767676;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	line-height: 2.5rem;
+	text-transform: uppercase;
+}
+
+.woocommerce .woocommerce-ordering {
+	margin: 0 0 30px;
+}
+
+/*--------------------------------------------------------------
+# Product grid: WooCommerce's "Products per row" setting, stepped down on narrower screens.
+--------------------------------------------------------------*/
+.woocommerce ul.products[class*="columns-"] {
+	--boyo-columns: 2;
+	display: grid;
+	grid-template-columns: repeat(var(--boyo-columns), minmax(0, 1fr));
+	gap: 30px 20px;
+	clear: both;
+	margin: 0 0 40px;
+}
+
+.woocommerce ul.products[class*="columns-"]::before,
+.woocommerce ul.products[class*="columns-"]::after {
+	display: none;
+}
+
+.woocommerce ul.products[class*="columns-"] li.product,
+.woocommerce-page ul.products[class*="columns-"] li.product {
+	float: none;
+	clear: none;
+	width: auto;
+	margin: 0;
+}
+
+/* Phones: at most 2 columns. */
+.woocommerce ul.products.columns-1 {
+	--boyo-columns: 1;
+}
+
+/* Tablets: at most 3 columns, the Shop Sidebar being above the products. */
+@media (min-width: 601px) {
+	.woocommerce ul.products[class*="columns-"] {
+		--boyo-columns: 3;
+		gap: 40px 30px;
+	}
+
+	.woocommerce ul.products.columns-1 {
+		--boyo-columns: 1;
+	}
+
+	.woocommerce ul.products.columns-2 {
+		--boyo-columns: 2;
+	}
+}
+
+/* Desktop: the setting as is, or at most 3 columns next to the Shop Sidebar below 1281px. */
+@media (min-width: 961px) {
+	.woocommerce ul.products.columns-4 {
+		--boyo-columns: 4;
+	}
+
+	.woocommerce ul.products.columns-5 {
+		--boyo-columns: 5;
+	}
+
+	.woocommerce ul.products.columns-6 {
+		--boyo-columns: 6;
+	}
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {
+	.has-shop-sidebar ul.products.columns-4,
+	.has-shop-sidebar ul.products.columns-5,
+	.has-shop-sidebar ul.products.columns-6 {
+		--boyo-columns: 3;
+	}
+}
+
+/*--------------------------------------------------------------
+# Product cards.
+--------------------------------------------------------------*/
+.woocommerce ul.products li.product a {
+	text-decoration: none;
+}
+
+.woocommerce ul.products li.product a img {
+	margin: 0 0 15px;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product .woocommerce-loop-category__title {
+	padding: 0;
+	margin: 0 0 8px;
+	color: #1f2023;
+	font-family: Montserrat, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 1.3;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title .count {
+	background: none;
+	color: #767676;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.woocommerce ul.products li.product .star-rating {
+	margin: 0 0 8px;
+	color: #1f2023;
+	font-size: 0.75rem;
+}
+
+.woocommerce ul.products li.product .button {
+	margin-top: 12px;
+}
+
+.woocommerce ul.products li.product a.added_to_cart {
+	display: inline-block;
+	padding: 12px 0 0 12px;
+	color: #1f2023;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+/* Prices: Boyo's text colour instead of WooCommerce's low-contrast olive, old prices in muted grey. */
+.woocommerce ul.products li.product .price,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+	color: #1f2023;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.woocommerce ul.products li.product .price del,
+.woocommerce div.product p.price del,
+.woocommerce div.product span.price del {
+	color: #767676;
+	opacity: 1;
+}
+
+.woocommerce ul.products li.product .price ins,
+.woocommerce div.product p.price ins,
+.woocommerce div.product span.price ins {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+/* Sale badge: a square in Boyo's yellow on the image corner. */
+.woocommerce span.onsale,
+.woocommerce ul.products li.product .onsale {
+	top: 10px;
+	right: auto;
+	left: 10px;
+	min-width: 0;
+	min-height: 0;
+	padding: 6px 10px;
+	margin: 0;
+	background-color: #ffd73e;
+	color: #1f2023;
+	border-radius: 0;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+/* Pagination: Boyo's page number squares. */
+.woocommerce nav.woocommerce-pagination {
+	padding: 20px 0 0;
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+	border: 0;
+}
+
+.woocommerce nav.woocommerce-pagination ul li {
+	margin: 0 4px;
+	border: 0;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce nav.woocommerce-pagination ul li span {
+	min-width: 1em;
+	padding: 0.6em 0.9em;
+	color: #1f2023;
+	border: 1px solid #1f2023;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+	background-color: #1f2023;
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Notices: Boyo's light grey panel with a dark top border.
+--------------------------------------------------------------*/
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error,
+.woocommerce-noreviews,
+p.no-comments {
+	background-color: #f8f8f8;
+	color: #1f2023;
+	border-top: 2px solid #1f2023;
+}
+
+.woocommerce-message::before,
+.woocommerce-info::before {
+	color: #1f2023;
+}
+
+.woocommerce-error {
+	border-top-color: #b32d2e;
+}
+
+.woocommerce-error::before {
+	color: #b32d2e;
+}
+
+.woocommerce-noreviews,
+p.no-comments {
+	padding: 1em 1.5em;
+}
+
+.woocommerce-message .button,
+.woocommerce-info .button {
+	margin-left: 1em;
+}
+
+/*--------------------------------------------------------------
+# Single product.
+--------------------------------------------------------------*/
+.woocommerce div.product {
+	margin-bottom: 40px;
+}
+
+.woocommerce div.product .product_title {
+	margin: 0 0 15px;
+	padding: 0;
+}
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+	margin: 0 0 20px;
+	font-family: Montserrat, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+}
+
+.woocommerce div.product p.price del,
+.woocommerce div.product span.price del {
+	font-weight: 400;
+}
+
+.woocommerce div.product .woocommerce-product-details__short-description {
+	margin-bottom: 25px;
+	line-height: 1.75;
+}
+
+/* Quantity and button side by side, the same height. */
+.woocommerce div.product form.cart {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+
+.woocommerce div.product form.cart::before,
+.woocommerce div.product form.cart::after {
+	display: none;
+}
+
+.woocommerce div.product form.cart.variations_form,
+.woocommerce div.product form.cart.grouped_form {
+	display: block;
+}
+
+.woocommerce div.product form.cart .quantity,
+.woocommerce div.product form.cart .button {
+	float: none;
+	margin: 0;
+}
+
+.woocommerce div.product form.cart .woocommerce-variation-add-to-cart {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.woocommerce .quantity .qty {
+	width: 4.5em;
+	text-align: center;
+}
+
+.woocommerce div.product form.cart .button {
+	min-height: 2.5em;
+	padding: 0.6em 1.5em;
+}
+
+/* Variations: labels in Boyo's bold body text, the reset link as meta. */
+.woocommerce div.product form.cart .variations {
+	margin-bottom: 15px;
+}
+
+.woocommerce div.product form.cart .variations th,
+.woocommerce div.product form.cart .variations td {
+	padding: 0 15px 10px 0;
+	vertical-align: middle;
+}
+
+.woocommerce div.product form.cart .variations label {
+	font-weight: 700;
+}
+
+.woocommerce div.product form.cart .variations select {
+	min-width: 12em;
+	margin: 0;
+}
+
+.woocommerce div.product form.cart .reset_variations {
+	margin-left: 10px;
+	color: #1f2023;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.woocommerce div.product .woocommerce-variation-price {
+	margin-bottom: 15px;
+}
+
+.woocommerce div.product .stock {
+	color: #1f2023;
+}
+
+.woocommerce div.product .out-of-stock {
+	color: #b32d2e;
+}
+
+/* SKU, categories and tags as Boyo's entry meta. */
+.woocommerce div.product .product_meta {
+	padding-top: 20px;
+	border-top: 1px solid #dedede;
+	color: #767676;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	line-height: 2;
+	text-transform: uppercase;
+}
+
+.woocommerce div.product .product_meta > span {
+	display: block;
+}
+
+.woocommerce div.product .product_meta a,
+.woocommerce div.product .product_meta .sku {
+	color: #1f2023;
+}
+
+/* Gallery. */
+.woocommerce div.product div.images .flex-control-thumbs {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li {
+	width: auto;
+	float: none;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li img {
+	opacity: 0.6;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li img.flex-active,
+.woocommerce div.product div.images .flex-control-thumbs li img:hover {
+	opacity: 1;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+	border-radius: 0;
+}
+
+/* Tabs, labelled like Boyo's menu: dark underline on the open tab. */
+.woocommerce div.product .woocommerce-tabs {
+	clear: both;
+	padding-top: 40px;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 30px;
+	padding: 0;
+	margin: 0 0 30px;
+	border-bottom: 1px solid #dedede;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs::before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
+	display: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: 0;
+	border-radius: 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+	padding: 12px 0;
+	color: #767676;
+	border-bottom: 4px solid transparent;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.32em;
+	text-transform: uppercase;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+	color: #1f2023;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+	background: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+	border-bottom-color: #1f2023;
+}
+
+.woocommerce div.product .woocommerce-tabs .panel {
+	max-width: 720px;
+	margin: 0 0 40px;
+	line-height: 1.75;
+}
+
+.woocommerce div.product .woocommerce-tabs .panel > h2:first-child {
+	font-size: 24px;
+}
+
+.woocommerce table.shop_attributes {
+	border-top: 1px solid #dedede;
+}
+
+.woocommerce table.shop_attributes th,
+.woocommerce table.shop_attributes td {
+	padding: 10px 0;
+	border-bottom: 1px solid #dedede;
+	font-style: normal;
+}
+
+.woocommerce table.shop_attributes th {
+	width: 30%;
+	text-align: left;
+}
+
+.woocommerce table.shop_attributes tr:nth-child(even) th,
+.woocommerce table.shop_attributes tr:nth-child(even) td {
+	background: none;
+}
+
+/* Reviews use WooCommerce's form, with labels shown and Boyo's fields. */
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+	border-color: #dedede;
+	border-radius: 0;
+}
+
+.woocommerce #reviews #comments ol.commentlist li .meta {
+	color: #767676;
+}
+
+.woocommerce .star-rating,
+.woocommerce p.stars a {
+	color: #1f2023;
+}
+
+.woocommerce #review_form #respond p {
+	margin: 0 0 15px;
+}
+
+.woocommerce #review_form #respond label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.woocommerce #review_form #respond .comment-form-cookies-consent label {
+	display: inline;
+	font-weight: 400;
+}
+
+.woocommerce #review_form #respond p.stars a {
+	display: inline-block;
+	text-decoration: none;
+	min-width: 24px;
+	min-height: 24px;
+}
+
+.woocommerce #review_form #respond input#submit {
+	background-color: #1f2023;
+	color: #fff;
+	border-color: #1f2023;
+}
+
+.woocommerce #review_form #respond input#submit:hover {
+	background-color: #fff;
+	color: #1f2023;
+}
+
+/* Related, upsell and cross-sell headings. */
+.woocommerce .related > h2,
+.woocommerce .upsells > h2,
+.woocommerce .cross-sells > h2 {
+	margin: 0 0 30px;
+	font-size: 24px;
+}
+
+@media (max-width: 960px) {
+	.woocommerce div.product div.images,
+	.woocommerce div.product div.summary {
+		float: none;
+		width: 100%;
+	}
+
+	.woocommerce div.product div.images {
+		margin-bottom: 30px;
+	}
+}
+
+/*--------------------------------------------------------------
+# Cart, checkout and My Account: full width, in Boyo's body text size.
+--------------------------------------------------------------*/
+.woocommerce-cart .entry-content,
+.woocommerce-checkout .entry-content,
+.woocommerce-account .entry-content {
+	max-width: 1200px;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+/* The Cart and Checkout blocks are wide-aligned; the page is already wide. */
+.woocommerce-cart .entry-content .alignwide,
+.woocommerce-checkout .entry-content .alignwide,
+.woocommerce-account .entry-content .alignwide {
+	max-width: none;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.woocommerce-cart .entry-content a,
+.woocommerce-checkout .entry-content a,
+.woocommerce-account .entry-content a {
+	color: #1f2023;
+}
+
+/* No content link underline on thumbnails, remove links and the account menu. */
+.woocommerce-cart .entry-content .product-thumbnail a,
+.woocommerce-cart .entry-content .wc-block-cart-item__image a,
+.woocommerce-cart .entry-content a.remove,
+.woocommerce-account .entry-content .woocommerce-MyAccount-navigation a {
+	border-bottom: 0;
+}
+
+/* Classic cart, checkout and account tables. */
+.woocommerce table.shop_table {
+	border-color: #dedede;
+	border-radius: 0;
+}
+
+.woocommerce table.shop_table th,
+.woocommerce table.shop_table td,
+.woocommerce table.shop_table tbody th,
+.woocommerce table.shop_table tfoot th,
+.woocommerce table.shop_table tfoot td {
+	border-top-color: #dedede;
+}
+
+.woocommerce table.shop_table th {
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.woocommerce table.shop_table td.product-name a {
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.woocommerce table.cart img {
+	width: 64px;
+}
+
+.woocommerce a.remove {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.5em;
+	height: 1.5em;
+	color: #b32d2e !important; /* WooCommerce sets this colour with !important. */
+	border-radius: 0;
+}
+
+.woocommerce a.remove:hover {
+	background-color: #b32d2e;
+	color: #fff !important; /* WooCommerce sets this colour with !important. */
+}
+
+.woocommerce-cart #content table.cart td.actions .coupon .input-text {
+	width: 10em;
+	border-color: #767676;
+	margin-right: 8px;
+}
+
+.woocommerce .cart-collaterals .cart_totals h2,
+.woocommerce-checkout h3,
+.woocommerce-account h2,
+.woocommerce-account h3 {
+	font-size: 24px;
+}
+
+/* Classic checkout fields and payment box. */
+.woocommerce form .form-row label {
+	font-weight: 700;
+}
+
+.woocommerce form .form-row .required {
+	color: #b32d2e;
+}
+
+.woocommerce-checkout #payment {
+	background-color: #f8f8f8;
+	border-radius: 0;
+}
+
+.woocommerce-checkout #payment ul.payment_methods {
+	border-bottom-color: #dedede;
+}
+
+.woocommerce-checkout #payment div.payment_box {
+	background-color: #fff;
+	color: #1f2023;
+}
+
+.woocommerce-checkout #payment div.payment_box::before {
+	border-bottom-color: #fff;
+}
+
+.woocommerce-checkout #payment div.form-row {
+	padding: 1em;
+}
+
+.woocommerce #payment #place_order {
+	min-height: 44px;
+	padding: 0.6em 2em;
+}
+
+.woocommerce .select2-container .select2-selection--single {
+	height: auto;
+	min-height: 2.5em;
+	padding: 0.3em 0.2em;
+	border: 1px solid #767676;
+	border-radius: 0;
+}
+
+.woocommerce .select2-container .select2-selection--single .select2-selection__arrow {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* Show password: a full-height button for a 44px target. */
+.woocommerce form .password-input .show-password-input {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	padding: 0;
+	border: 0;
+	transform: none;
+}
+
+.woocommerce form .password-input input {
+	padding-right: 48px;
+}
+
+/* Login and register forms at a readable width on the account page. */
+.woocommerce-account .entry-content form.login,
+.woocommerce-account .entry-content form.register,
+.woocommerce-account .entry-content form.lost_reset_password {
+	max-width: 560px;
+}
+
+/* My Account navigation, styled like Boyo's menu labels. */
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+	padding: 0;
+	margin: 0 0 30px;
+	list-style: none;
+	border-top: 1px solid #dedede;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li {
+	border-bottom: 1px solid #dedede;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li a {
+	display: flex;
+	align-items: center;
+	min-height: 44px;
+	padding: 0 0 0 12px;
+	color: #767676;
+	border-left: 4px solid transparent;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li a:hover,
+.woocommerce-account .woocommerce-MyAccount-navigation li.is-active a {
+	color: #1f2023;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li.is-active a {
+	border-left-color: #1f2023;
+}
+
+.woocommerce-account .woocommerce-Address-title .edit {
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.woocommerce-account .addresses .title h2 {
+	font-size: 20px;
+}
+
+@media (min-width: 961px) {
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+		width: 25%;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-content {
+		width: 70%;
+	}
+}
+
+/* Login and register forms. */
+.woocommerce form.login,
+.woocommerce form.register,
+.woocommerce form.checkout_coupon,
+.woocommerce form.lost_reset_password {
+	border-color: #dedede;
+	border-radius: 0;
+}
+
+/*--------------------------------------------------------------
+# Cart and Checkout blocks: Boyo's buttons and 3:1 fields.
+--------------------------------------------------------------*/
+.wp-block-woocommerce-cart,
+.wp-block-woocommerce-checkout {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wp-block-woocommerce-cart .wc-block-components-button:not(.is-link),
+.wp-block-woocommerce-checkout .wc-block-components-button:not(.is-link) {
+	min-height: 44px;
+	background-color: #1f2023;
+	color: #fff;
+	border: 2px solid #1f2023;
+	border-radius: 0;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+}
+
+.wp-block-woocommerce-cart .wc-block-components-button:not(.is-link):hover,
+.wp-block-woocommerce-checkout .wc-block-components-button:not(.is-link):hover {
+	background-color: #fff;
+	color: #1f2023;
+}
+
+.wp-block-woocommerce-cart .wc-block-components-button:not(.is-link) .wc-block-components-button__text,
+.wp-block-woocommerce-checkout .wc-block-components-button:not(.is-link) .wc-block-components-button__text {
+	color: inherit;
+}
+
+.wp-block-woocommerce-cart .wc-block-components-product-name,
+.wp-block-woocommerce-checkout .wc-block-components-product-name {
+	color: #1f2023;
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.wp-block-woocommerce-cart .wc-block-components-product-metadata,
+.wp-block-woocommerce-cart .wc-block-cart-items th,
+.wp-block-woocommerce-checkout .wc-block-components-checkout-step__description {
+	color: #767676;
+}
+
+.wp-block-woocommerce-cart .wc-block-cart-items th {
+	font-size: 12px;
+	letter-spacing: 0.2em;
+}
+
+.wp-block-woocommerce-cart .wc-block-components-product-badge {
+	color: #1f2023;
+	background-color: #ffd73e;
+	border: 0;
+	border-radius: 0;
+}
+
+.wp-block-woocommerce-cart .wc-block-cart-item__remove-link {
+	color: #1f2023;
+}
+
+.wp-block-woocommerce-checkout .wc-block-components-checkout-step__title,
+.wp-block-woocommerce-cart .wc-block-cart__totals-title {
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+}
+
+.wp-block-woocommerce-cart .wc-block-components-text-input input,
+.wp-block-woocommerce-cart .wc-block-components-quantity-selector,
+.wp-block-woocommerce-cart .wc-blocks-components-select .wc-blocks-components-select__select,
+.wp-block-woocommerce-checkout .wc-block-components-text-input input,
+.wp-block-woocommerce-checkout .wc-block-components-textarea,
+.wp-block-woocommerce-checkout .wc-blocks-components-select .wc-blocks-components-select__select,
+.wp-block-woocommerce-checkout .wc-block-components-form .wc-block-components-text-input input,
+.wp-block-woocommerce-checkout .wc-block-components-address-form input[type="text"] {
+	border-color: #767676;
+	border-radius: 0;
+}
+
+.wp-block-woocommerce-cart .wc-block-components-checkbox .wc-block-components-checkbox__input[type="checkbox"],
+.wp-block-woocommerce-checkout .wc-block-components-checkbox .wc-block-components-checkbox__input[type="checkbox"],
+.wp-block-woocommerce-checkout .wc-block-components-radio-control__input {
+	border-color: #767676;
+}
+
+.wp-block-woocommerce-cart .wc-block-components-checkbox .wc-block-components-checkbox__input[type="checkbox"],
+.wp-block-woocommerce-checkout .wc-block-components-checkbox .wc-block-components-checkbox__input[type="checkbox"] {
+	border-radius: 0;
+}
+
+.wp-block-woocommerce-checkout .wc-block-components-radio-control__input:checked {
+	border-color: #1f2023;
+}
+
+.wp-block-woocommerce-checkout .wc-block-components-radio-control__input:checked::before {
+	background-color: #1f2023;
+}
+
+.wp-block-woocommerce-checkout .wc-block-components-radio-control-accordion-option,
+.wp-block-woocommerce-checkout .wc-block-components-radio-control--highlight-checked::after,
+.wp-block-woocommerce-checkout .wc-block-components-radio-control--highlight-checked .wc-block-components-radio-control-accordion-option--checked-option-highlighted {
+	border-radius: 0;
+}
+
+/*--------------------------------------------------------------
+# Shop Sidebar widgets, titled like Boyo's menu labels.
+--------------------------------------------------------------*/
+.shop-widget-area .widget {
+	margin: 0 0 40px;
+}
+
+.shop-widget-area .widget-title,
+.shop-widget-area .wp-block-heading,
+.shop-widget-area .wp-block-search__label {
+	margin: 0 0 15px;
+	color: #1f2023;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.32em;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.shop-widget-area ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.shop-widget-area li {
+	padding: 4px 0;
+}
+
+.shop-widget-area a {
+	color: #1f2023;
+}
+
+/* Product search: field and button side by side, the button filled like Boyo's main actions. */
+.shop-widget-area .wp-block-search__inside-wrapper,
+.woocommerce-product-search {
+	display: flex;
+	gap: 8px;
+}
+
+.shop-widget-area .wp-block-search__input {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.shop-widget-area .wp-block-search__button,
+.woocommerce-product-search button {
+	flex: 0 0 auto;
+	margin: 0;
+	padding: 0.6em 1em;
+	background-color: #1f2023;
+	color: #fff;
+	border: 2px solid #1f2023;
+	border-radius: 0;
+	font-size: 0.875rem;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.shop-widget-area .wp-block-search__button:hover,
+.woocommerce-product-search button:hover {
+	background-color: #fff;
+	color: #1f2023;
+}
+
+/* Category lists with counts, product lists and the cart widget. */
+.shop-widget-area .count,
+.shop-widget-area .wc-block-product-categories-list-item-count {
+	color: #767676;
+	font-size: 12px;
+}
+
+.woocommerce .shop-widget-area ul.product_list_widget li img {
+	width: 48px;
+	margin-left: 10px;
+}
+
+/*--------------------------------------------------------------
+# WooCommerce Product Filters block in the Shop Sidebar.
+--------------------------------------------------------------*/
+.shop-widget-area .wc-block-product-filters {
+	--wc-product-filter-checkbox-list-option-element: #fff;
+	--wc-product-filter-checkbox-list-option-element-border: #767676;
+	--wc-product-filter-checkbox-list-option-element-selected: #fff;
+	--wc-product-filter-price-slider: #1f2023;
+	--wc-product-filter-price-slider-handle: #fff;
+	--wc-product-filter-price-slider-handle-border: #1f2023;
+	--wc-product-filter-removable-chips-text: #1f2023;
+	--wc-product-filter-removable-chips-border: #1f2023;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The block spaces its parts itself. */
+.shop-widget-area .wc-block-product-filters h2.wp-block-heading {
+	margin: 0;
+}
+
+.shop-widget-area .wc-block-product-filters fieldset {
+	min-width: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/* Filter names as Boyo's meta labels. */
+.shop-widget-area .wc-block-product-filters h3.wp-block-heading {
+	margin: 0 0 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+}
+
+/* Checkboxes: 3:1 border, square, dark with a white tick when checked. */
+.shop-widget-area .wc-block-product-filter-checkbox-list__input-wrapper::before {
+	display: none;
+}
+
+.shop-widget-area input[type="checkbox"].wc-block-product-filter-checkbox-list__input {
+	width: 1.125rem;
+	height: 1.125rem;
+	margin: 0;
+	border-color: #767676;
+	border-radius: 0;
+}
+
+.shop-widget-area input[type="checkbox"].wc-block-product-filter-checkbox-list__input:checked {
+	background-color: #1f2023;
+	border-color: #1f2023;
+}
+
+.shop-widget-area svg.wc-block-product-filter-checkbox-list__mark {
+	width: 1.125rem;
+	height: 1.125rem;
+}
+
+.shop-widget-area .wc-block-product-filter-checkbox-list__label {
+	min-height: 28px;
+}
+
+.shop-widget-area .wc-block-product-filter-checkbox-list__text-wrapper {
+	color: #1f2023;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+
+.shop-widget-area .wc-block-product-filter-checkbox-list__show-more-button {
+	color: #1f2023;
+	text-decoration: underline;
+}
+
+/* Price slider; its min/max boxes use the Shop Sidebar field style. */
+.shop-widget-area .wc-block-product-filter-price-slider__range {
+	border-radius: 0;
+}
+
+/* Active filter chips, styled like Boyo's page number squares. */
+.shop-widget-area .wc-block-product-filter-removable-chips__items .wc-block-product-filter-removable-chips__item {
+	border-radius: 0;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+}
+
+/* Clear filters: Boyo's outline button, a secondary action. */
+.shop-widget-area .wp-block-woocommerce-product-filter-clear-button .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 44px;
+	padding: 0.6em 1em;
+	background-color: transparent;
+	color: #1f2023;
+	border: 2px solid #1f2023;
+	border-radius: 0;
+	font-size: 0.875rem;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+/* Small-screen pop-up: open, close and apply buttons. */
+.shop-widget-area .wc-block-product-filters__open-overlay,
+.shop-widget-area .wc-block-product-filters__close-overlay {
+	min-width: 44px;
+	min-height: 44px;
+	justify-content: center;
+	color: #1f2023;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+}
+
+.shop-widget-area .wc-block-product-filters__open-overlay {
+	padding: 0 1em;
+	border: 2px solid #1f2023;
+}
+
+.shop-widget-area .wc-block-product-filters__apply {
+	width: 100%;
+	min-height: 44px;
+	background-color: #1f2023;
+	color: #fff;
+	border: 2px solid #1f2023;
+	border-radius: 0;
+	text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+# Visible focus on shop controls: Boyo's dotted outline, 2px.
+--------------------------------------------------------------*/
+.woocommerce a.button:focus-visible,
+.woocommerce button.button:focus-visible,
+.woocommerce input.button:focus-visible,
+.woocommerce #respond input#submit:focus-visible,
+.woocommerce-page a.button:focus-visible,
+.woocommerce-page button.button:focus-visible,
+.woocommerce ul.products li.product a:focus-visible,
+.woocommerce nav.woocommerce-pagination ul li a:focus-visible,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:focus-visible,
+.woocommerce div.product form.cart .reset_variations:focus-visible,
+.woocommerce div.product .product_meta a:focus-visible,
+.woocommerce-MyAccount-navigation a:focus-visible,
+.woocommerce a.remove:focus-visible,
+.woocommerce p.stars a:focus-visible,
+.woocommerce-product-gallery a:focus-visible,
+.woocommerce .woocommerce-product-gallery__trigger:focus-visible,
+.woocommerce form .form-row .input-text:focus-visible,
+.woocommerce form .form-row select:focus-visible,
+.woocommerce form .form-row textarea:focus-visible,
+.woocommerce form .form-row input[type="checkbox"]:focus-visible,
+.woocommerce form .form-row input[type="radio"]:focus-visible,
+.woocommerce-form__input-checkbox:focus-visible,
+.woocommerce #payment input[type="radio"]:focus-visible,
+.woocommerce .woocommerce-ordering select:focus-visible,
+.woocommerce .quantity .qty:focus-visible,
+.woocommerce div.product form.cart .variations select:focus-visible,
+.woocommerce .coupon .input-text:focus-visible,
+.woocommerce #review_form #respond input:focus-visible,
+.woocommerce #review_form #respond textarea:focus-visible,
+.woocommerce form .password-input .show-password-input:focus-visible,
+.woocommerce-message a:focus-visible,
+.woocommerce-info a:focus-visible,
+.woocommerce-error a:focus-visible,
+.woocommerce .select2-container .select2-selection:focus-visible,
+.woocommerce-product-search .search-field:focus-visible,
+.woocommerce-product-search button:focus-visible,
+.shop-widget-area a:focus-visible,
+.shop-widget-area button:focus-visible,
+.shop-widget-area input:focus-visible,
+.shop-widget-area select:focus-visible,
+.wp-block-woocommerce-cart a:focus-visible,
+.wp-block-woocommerce-cart button:focus-visible,
+.wp-block-woocommerce-cart input:focus-visible,
+.wp-block-woocommerce-cart select:focus-visible,
+.wp-block-woocommerce-cart [role="button"]:focus-visible,
+.wp-block-woocommerce-checkout a:focus-visible,
+.wp-block-woocommerce-checkout button:focus-visible,
+.wp-block-woocommerce-checkout input:focus-visible,
+.wp-block-woocommerce-checkout select:focus-visible,
+.wp-block-woocommerce-checkout textarea:focus-visible,
+.wp-block-woocommerce-checkout [role="button"]:focus-visible,
+.woocommerce-cart .entry-content a:focus-visible,
+.woocommerce-checkout .entry-content a:focus-visible,
+.woocommerce-account .entry-content a:focus-visible,
+.woocommerce-cart #content table.cart td.actions .coupon .input-text:focus-visible,
+.shop-widget-area input[type="checkbox"].wc-block-product-filter-checkbox-list__input:focus-visible,
+.shop-widget-area .wp-block-woocommerce-product-filter-price-slider .text input[type="text"]:focus-visible,
+.wp-block-woocommerce-cart .wc-block-components-quantity-selector input.wc-block-components-quantity-selector__input:focus-visible,
+.wp-block-woocommerce-cart .wc-block-components-quantity-selector .wc-block-components-quantity-selector__button:focus-visible,
+.woocommerce-page .wp-block-woocommerce-cart .wc-block-components-button:not(.is-link):focus-visible,
+.woocommerce-page .wp-block-woocommerce-checkout .wc-block-components-button:not(.is-link):focus-visible,
+.wp-block-woocommerce-cart .wc-block-components-checkbox .wc-block-components-checkbox__input[type="checkbox"]:focus-visible,
+.wp-block-woocommerce-checkout .wc-block-components-checkbox .wc-block-components-checkbox__input[type="checkbox"]:focus-visible {
+	outline: 2px dotted #1f2023;
+	outline-offset: 2px;
+}
+
+/* WooCommerce's own rings on the Cart and Checkout block buttons are replaced by the outline. */
+.woocommerce-page .wp-block-woocommerce-cart .wc-block-components-button:not(.is-link):focus-visible,
+.woocommerce-page .wp-block-woocommerce-checkout .wc-block-components-button:not(.is-link):focus-visible {
+	box-shadow: none;
+}
+
+/* Fields also darken their border, as Boyo darkens field text on focus. */
+.woocommerce form .form-row .input-text:focus,
+.woocommerce form .form-row select:focus,
+.woocommerce form .form-row textarea:focus,
+.woocommerce .quantity .qty:focus,
+.woocommerce .woocommerce-ordering select:focus,
+.woocommerce div.product form.cart .variations select:focus,
+.woocommerce .coupon .input-text:focus,
+.woocommerce #review_form #respond input[type="text"]:focus,
+.woocommerce #review_form #respond input[type="email"]:focus,
+.woocommerce #review_form #respond textarea:focus,
+.shop-widget-area input[type="search"]:focus,
+.shop-widget-area input[type="text"]:focus {
+	border-color: #1f2023;
+}
+
+/* The price slider handles carry the focus ring, as the range inputs themselves have no height. */
+.shop-widget-area .wc-block-product-filter-price-slider__range input[type="range"]:focus-visible {
+	outline: 0;
+}
+
+.shop-widget-area .wc-block-product-filter-price-slider__range input[type="range"]:focus-visible::-webkit-slider-thumb {
+	outline: 2px dotted #1f2023;
+	outline-offset: 2px;
+}
+
+.shop-widget-area .wc-block-product-filter-price-slider__range input[type="range"]:focus-visible::-moz-range-thumb {
+	outline: 2px dotted #1f2023;
+	outline-offset: 2px;
+}
+
+/*--------------------------------------------------------------
+# Phones: 44px touch targets on shop controls.
+--------------------------------------------------------------*/
+@media (max-width: 600px) {
+	.woocommerce a.button,
+	.woocommerce button.button,
+	.woocommerce input.button,
+	.woocommerce #respond input#submit,
+	.woocommerce-page a.button,
+	.woocommerce-page button.button,
+	.shop-widget-area .wp-block-search__button,
+	.woocommerce-product-search button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 44px;
+	}
+
+	.woocommerce ul.products li.product .button {
+		display: flex;
+		width: 100%;
+		text-align: center;
+	}
+
+	.woocommerce ul.products li.product a.added_to_cart {
+		display: flex;
+		align-items: center;
+		min-height: 44px;
+		padding: 0;
+	}
+
+	.woocommerce .woocommerce-ordering select,
+	.woocommerce .quantity .qty,
+	.woocommerce form .form-row .input-text,
+	.woocommerce form .form-row select,
+	.woocommerce .coupon .input-text,
+	.woocommerce-product-search .search-field,
+	.shop-widget-area input[type="search"],
+	.shop-widget-area select,
+	.shop-widget-area .wp-block-woocommerce-product-filter-price-slider .text input[type="text"] {
+		min-height: 44px;
+	}
+
+	.woocommerce nav.woocommerce-pagination ul li a,
+	.woocommerce nav.woocommerce-pagination ul li span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 44px;
+		min-height: 44px;
+		box-sizing: border-box;
+	}
+
+	.shop-widget-area .wc-block-product-filter-checkbox-list__label {
+		min-height: 44px;
+	}
+
+	.woocommerce div.product form.cart .variations select,
+	.woocommerce div.product form.cart .button {
+		min-height: 44px;
+	}
+
+	.woocommerce div.product form.cart .reset_variations,
+	.woocommerce div.product .product_meta a {
+		display: inline-block;
+		padding: 12px 0;
+	}
+
+	.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+		display: flex;
+		align-items: center;
+		min-height: 44px;
+		padding: 0;
+	}
+
+	.woocommerce #review_form #respond p.stars a {
+		min-width: 44px;
+		min-height: 44px;
+	}
+
+	.woocommerce table.shop_table_responsive tr td,
+	.woocommerce-page table.shop_table_responsive tr td {
+		padding: 10px 12px;
+	}
+
+	.woocommerce a.remove {
+		width: 44px;
+		height: 44px;
+	}
+
+	.woocommerce-cart #content table.cart td.actions .coupon .input-text {
+		width: 100%;
+		margin: 0 0 8px;
+	}
+
+	.woocommerce-cart table.cart td.actions .coupon .button,
+	.woocommerce-cart table.cart td.actions > .button {
+		width: 100%;
+	}
+
+	.woocommerce form .form-row input[type="checkbox"],
+	.woocommerce form .form-row input[type="radio"],
+	.woocommerce-checkout #payment input[type="radio"] {
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+	}
+
+	.woocommerce form .form-row label.checkbox,
+	.woocommerce-form__label-for-checkbox,
+	.woocommerce-checkout #payment ul.payment_methods li > label {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		min-height: 44px;
+	}
+
+	.woocommerce-account .woocommerce-MyAccount-navigation,
+	.woocommerce-account .woocommerce-MyAccount-content {
+		float: none;
+		width: 100%;
+	}
+
+	.woocommerce div.product div.images .flex-control-thumbs li img {
+		min-height: 44px;
+	}
+
+	.woocommerce .woocommerce-ordering,
+	.woocommerce .woocommerce-ordering select {
+		width: 100%;
+	}
+
+	.woocommerce #review_form #respond input[type="text"],
+	.woocommerce #review_form #respond input[type="email"],
+	.woocommerce .select2-container .select2-selection--single {
+		min-height: 44px;
+	}
+
+	.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+		width: 44px;
+		height: 44px;
+	}
+
+	.woocommerce table.shop_table td.product-name a,
+	.woocommerce-account .entry-content .lost_password a {
+		display: inline-flex;
+		align-items: center;
+		min-height: 44px;
+	}
+
+	/* Cart and Checkout blocks. */
+	.wp-block-woocommerce-cart .wc-block-cart-item__image a {
+		display: block;
+	}
+
+	.wp-block-woocommerce-cart .wc-block-components-product-name {
+		display: inline-flex;
+		align-items: center;
+		min-height: 44px;
+	}
+
+	.wp-block-woocommerce-cart .wc-block-components-quantity-selector .wc-block-components-quantity-selector__button,
+	.wp-block-woocommerce-cart .wc-block-components-quantity-selector input.wc-block-components-quantity-selector__input {
+		min-width: 44px;
+		min-height: 44px;
+	}
+
+	.wp-block-woocommerce-cart .wc-block-cart-item__remove-link,
+	.wp-block-woocommerce-cart .wc-block-cart-item__remove-link.wc-block-cart-item__remove-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 44px;
+		min-height: 44px;
+	}
+
+	.wp-block-woocommerce-cart .wc-block-components-panel__button,
+	.wp-block-woocommerce-checkout .wc-block-components-panel__button,
+	.wp-block-woocommerce-checkout .wc-block-components-address-form__address_2-toggle,
+	.wp-block-woocommerce-checkout .wc-block-components-checkbox label {
+		display: flex;
+		align-items: center;
+		min-height: 44px;
+	}
+}
