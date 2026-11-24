@@ -1107,6 +1107,57 @@ p.no-comments {
 }
 
 /*--------------------------------------------------------------
+# Product grid and Product Collection block buttons: Boyo's filled button, so page link colours can't darken their text.
+--------------------------------------------------------------*/
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
+.wp-block-woocommerce-product-button.wc-block-components-product-button.wp-block-button .wc-block-components-product-button__button {
+	padding: 0.6em 1em;
+	background-color: #1f2023;
+	color: #fff;
+	border: 2px solid #1f2023;
+	border-radius: 0;
+	box-shadow: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:hover,
+.wp-block-woocommerce-product-button.wc-block-components-product-button.wp-block-button .wc-block-components-product-button__button:hover {
+	background-color: #fff;
+	color: #1f2023;
+	border-color: #1f2023;
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link:focus-visible,
+.wp-block-woocommerce-product-button.wc-block-components-product-button.wp-block-button .wc-block-components-product-button__button:focus-visible {
+	outline: 2px dotted #1f2023;
+	outline-offset: 2px;
+}
+
+/* Loading keeps the text readable; WooCommerce fades the grid button to 25%. */
+.wc-block-grid__product-add-to-cart.wp-block-button a.wp-block-button__link.loading,
+.wp-block-woocommerce-product-button.wc-block-components-product-button.wp-block-button .wc-block-components-product-button__button.loading {
+	opacity: 1;
+}
+
+/* Disabled: Boyo's grey outline, 4.5:1. */
+.wc-block-grid__product-add-to-cart.wp-block-button a.wp-block-button__link.disabled,
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link[disabled],
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link[aria-disabled="true"],
+.wp-block-woocommerce-product-button.wc-block-components-product-button.wp-block-button .wc-block-components-product-button__button.disabled,
+.wp-block-woocommerce-product-button.wc-block-components-product-button.wp-block-button .wc-block-components-product-button__button[disabled],
+.wp-block-woocommerce-product-button.wc-block-components-product-button.wp-block-button .wc-block-components-product-button__button[aria-disabled="true"] {
+	background-color: #fff;
+	color: #767676;
+	border-color: #767676;
+	opacity: 1;
+}
+
+/*--------------------------------------------------------------
 # Shop Sidebar widgets, titled like Boyo's menu labels.
 --------------------------------------------------------------*/
 .shop-widget-area .widget {
