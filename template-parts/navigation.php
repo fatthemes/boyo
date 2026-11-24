@@ -29,7 +29,7 @@ if ( ! defined( 'WPINC' ) ) {
 					<span class="hamburger-bar-third"></span>
 				</span>
 			</button>
-			<button id="search-toggle" class="search-toggle" aria-controls="search-form-wrapper" aria-expanded="false">
+			<?php do_action( 'boyo_navigation_buttons' ); ?><button id="search-toggle" class="search-toggle" aria-controls="search-form-wrapper" aria-expanded="false">
 				<span class="screen-reader-text"><?php esc_html_e( 'Search', 'boyo' ); ?></span>
 				<span class="search-button"><svg version="1.1" id="search_icon" x="0px"
 	 y="0px" width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
